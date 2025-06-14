@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
 
-## Project info
+# Daily Motivational Quotes & Images Web App
 
-**URL**: https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b
+A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes and stunning background imagery.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Daily Motivation**: Fresh inspirational quotes every day
+- **Beautiful Design**: Stunning gradients and imagery
+- **Mobile-First**: Optimized for all devices and screen sizes
+- **Quote Categories**: Different themes for various moods
+- **Favorites System**: Save your most meaningful quotes
+- **Share-Ready**: Prepared for social media sharing
 
-**Use Lovable**
+## 🚀 Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b) and start prompting.
+### Prerequisites
+- Node.js & npm installed
+- Modern web browser
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
+4. Open your browser to view the app
 
-**Use your preferred IDE**
+## 📁 Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Special Documentation Files
+This project includes comprehensive planning and tracking documentation:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **`project-plan/`** - Complete project planning directory containing:
+  - `README.md` - Project overview and vision
+  - `ARCHITECTURE.md` - Technical architecture and system design
+  - `DESIGN.md` - UI/UX design system and guidelines
+  - `TASKS.md` - Task tracking, prioritization, and completion log
+  - `LOGS.md` - Development logs, error tracking, and resolution notes
 
-Follow these steps:
+> 📝 **Important**: The `TASKS.md` and `LOGS.md` files are actively maintained throughout development. All team members should update these files when completing tasks or encountering/resolving issues.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Code Structure
+```
+src/
+├── components/     # Reusable UI components
+├── hooks/         # Custom React hooks
+├── data/          # Quote and image data
+├── types/         # TypeScript type definitions
+├── utils/         # Utility functions
+└── pages/         # Application pages
 ```
 
-**Edit a file directly in GitHub**
+## 🛠 Technologies Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **React 18** with TypeScript
+- **Tailwind CSS** for styling
+- **Vite** for build tooling
+- **Shadcn/UI** for component library
+- **Lucide React** for icons
 
-**Use GitHub Codespaces**
+## 📱 Mobile Optimization
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This app is built with a mobile-first approach:
+- Touch-friendly interactions
+- Responsive design for all screen sizes
+- Optimized performance for mobile devices
+- Progressive Web App capabilities
 
-## What technologies are used for this project?
+## 🎨 Design System
 
-This project is built with:
+The app features a modern, clean design with:
+- Beautiful gradient backgrounds
+- Elegant typography
+- Smooth animations and transitions
+- Accessible color contrasts
+- Intuitive user interface
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📋 Development Workflow
 
-## How can I deploy this project?
+1. **Planning**: Check `project-plan/TASKS.md` for current priorities
+2. **Development**: Follow architecture guidelines in `project-plan/ARCHITECTURE.md`
+3. **Testing**: Ensure mobile responsiveness and accessibility
+4. **Documentation**: Update `TASKS.md` and `LOGS.md` as needed
 
-Simply open [Lovable](https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b) and click on Share -> Publish.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
+When contributing to this project:
+1. Review the project plan documentation
+2. Update `TASKS.md` when starting/completing tasks
+3. Log any errors and solutions in `LOGS.md`
+4. Follow the established design system
+5. Test thoroughly on mobile devices
 
-Yes, you can!
+## 📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project is part of a Lovable development environment.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+**Project URL**: https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b
+
+For technical documentation and development guidelines, see the `project-plan/` directory.
