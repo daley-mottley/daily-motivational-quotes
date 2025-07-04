@@ -11,7 +11,7 @@ const Index = () => {
   const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600">
       <Header />
       
       <main className="max-w-lg mx-auto px-4 py-6">
@@ -20,9 +20,14 @@ const Index = () => {
           <button
             onClick={refreshQuotes}
             className="flex items-center gap-3 px-8 py-4 bg-white shadow-lg rounded-full text-gray-700 hover:shadow-xl transition-all duration-300 active:scale-95 border border-gray-100"
+            disabled={loading}
           >
-            <RefreshCw size={20} className="text-blue-500" />
-            <span className="font-semibold text-lg">Fresh Inspiration</span>
+            {loading ? (
+              <div className="w-5 h-5 border-2 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
+            ) : (
+              <RefreshCw size={20} className="text-blue-500" />
+            )}
+            <span className="font-semibold text-lg">{loading ? 'Refreshing...' : 'Fresh Inspiration'}</span>
           </button>
         </div>
 
