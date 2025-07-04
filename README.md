@@ -1,7 +1,7 @@
 
 # Daily Motivational Quotes & Images Web App
 
-A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes and stunning background imagery.
+A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes.
 
 ## 🌟 Features
 
