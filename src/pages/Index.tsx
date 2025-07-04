@@ -5,46 +5,48 @@ import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
 import { Header } from '../components/Header';
 import { useEndlessScroll } from '../hooks/useEndlessScroll';
-import { RefreshCw } from 'lucide-react';
+import { RefreshCw, Sparkles } from 'lucide-react';
 
 const Index = () => {
   const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       <Header />
       
-      <main className="max-w-2xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
+      <main className="max-w-lg mx-auto px-4 py-6">
         {/* Refresh Button */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-8">
           <button
             onClick={refreshQuotes}
-            className="flex items-center gap-2 px-6 py-3 bg-white shadow-md rounded-full text-gray-700 hover:shadow-lg transition-all duration-200 active:scale-95"
+            className="flex items-center gap-3 px-8 py-4 bg-white shadow-lg rounded-full text-gray-700 hover:shadow-xl transition-all duration-300 active:scale-95 border border-gray-100"
           >
-            <RefreshCw size={18} />
-            <span className="font-medium">Refresh Feed</span>
+            <RefreshCw size={20} className="text-blue-500" />
+            <span className="font-semibold text-lg">Fresh Inspiration</span>
           </button>
         </div>
 
         {/* Quotes Feed */}
-        <div className="space-y-6 sm:space-y-8">
+        <div className="space-y-8">
           {quotes.map((quote, index) => (
-            <div key={`${quote.id}-${index}`} className="w-full">
+            <article key={`${quote.id}-${index}`} className="w-full">
               {/* Quote Card */}
-              <QuoteCard quote={quote} className="mb-4" />
+              <div className="mb-6">
+                <QuoteCard quote={quote} />
+              </div>
               
-              {/* Social Share - Mobile Optimized */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+              {/* Social Share - Enhanced Design */}
+              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300">
                 <SocialShareButtons quote={quote} />
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
         {/* Loading Indicator */}
         {loading && (
-          <div className="flex justify-center py-8">
-            <div className="flex items-center gap-3 text-gray-600">
+          <div className="flex justify-center py-12">
+            <div className="flex items-center gap-4 text-gray-600 bg-white/80 backdrop-blur-sm rounded-full px-6 py-4 shadow-lg">
               <div className="w-6 h-6 border-2 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
               <span className="text-sm font-medium">Loading more inspiration...</span>
             </div>
@@ -53,17 +55,20 @@ const Index = () => {
 
         {/* End of Feed Message */}
         {!hasMore && !loading && quotes.length > 0 && (
-          <div className="text-center py-8">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          <div className="text-center py-12">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100/50">
+              <div className="flex justify-center mb-4">
+                <Sparkles className="h-8 w-8 text-purple-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 You've reached the end! 🎉
               </h3>
-              <p className="text-gray-600 text-sm mb-4">
+              <p className="text-gray-600 text-base mb-6 leading-relaxed">
                 You've seen all our inspirational quotes. Come back tomorrow for fresh motivation!
               </p>
               <button
                 onClick={refreshQuotes}
-                className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-200 active:scale-95"
+                className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-200 active:scale-95"
               >
                 Start Over
               </button>
@@ -71,13 +76,18 @@ const Index = () => {
           </div>
         )}
 
-        {/* App Info - Mobile Optimized */}
-        <div className="text-center mt-8 mb-6 p-4 sm:p-6 bg-white/60 backdrop-blur-sm rounded-2xl">
-          <h2 className="text-lg font-semibold text-gray-800 mb-2">
-            Daily Motivation
+        {/* App Info - Enhanced Design */}
+        <div className="text-center mt-12 mb-8 p-8 bg-gradient-to-r from-gray-50 to-white backdrop-blur-sm rounded-3xl shadow-lg border border-gray-100/50">
+          <div className="flex justify-center mb-4">
+            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+              <Sparkles className="h-6 w-6 text-white" />
+            </div>
+          </div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            Daily Spark
           </h2>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Endless inspiration at your fingertips. Swipe through motivational quotes and share positivity with the world.
+          <p className="text-gray-600 text-base leading-relaxed max-w-sm mx-auto">
+            Endless inspiration at your fingertips. Discover motivational quotes and share positivity with the world.
           </p>
         </div>
       </main>
