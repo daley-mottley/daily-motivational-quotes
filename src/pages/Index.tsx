@@ -4,6 +4,7 @@ import { useQuotes } from '../hooks/useQuotes';
 import { QuoteCard } from '../components/QuoteCard';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { ActionButtons } from '../components/ActionButtons';
+import { SocialShareButtons } from '../components/SocialShareButtons';
 import { Header } from '../components/Header';
 
 const Index = () => {
@@ -34,14 +35,19 @@ const Index = () => {
           onNewQuote={handleNewQuote}
         />
         
+        {/* Social Share Buttons */}
+        <div className="mt-8 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+          <SocialShareButtons quote={currentQuote} />
+        </div>
+        
         {/* App Info */}
-        <div className="text-center mt-12 p-6 bg-white/60 backdrop-blur-sm rounded-xl">
+        <div className="text-center mt-8 p-6 bg-white/60 backdrop-blur-sm rounded-xl">
           <h2 className="text-lg font-semibold text-gray-800 mb-2">
             Daily Motivation
           </h2>
           <p className="text-gray-600 text-sm max-w-2xl mx-auto">
             Start each day with inspiration. Get a new motivational quote daily, 
-            save your favorites, and share positivity with others.
+            save your favorites, and share positivity with others across all your social platforms.
           </p>
         </div>
       </main>
