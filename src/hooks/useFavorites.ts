@@ -34,16 +34,18 @@ export const useFavorites = () => {
   };
 
   const removeFromFavorites = (quoteId: string) => {
-    setFavorites(prev => prev.filter(fav => fav.id !== quoteId));
+    const numericId = parseInt(quoteId, 10);
+    setFavorites(prev => prev.filter(fav => fav.id !== numericId));
   };
 
   const isFavorite = (quoteId: string): boolean => {
-    return favorites.some(fav => fav.id === quoteId);
+    const numericId = parseInt(quoteId, 10);
+    return favorites.some(fav => fav.id === numericId);
   };
 
   const toggleFavorite = (quote: Quote) => {
-    if (isFavorite(quote.id)) {
-      removeFromFavorites(quote.id);
+    if (isFavorite(quote.id.toString())) {
+      removeFromFavorites(quote.id.toString());
     } else {
       addToFavorites(quote);
     }

@@ -23,16 +23,16 @@ export const ActionButtons: React.FC<ActionButtonsProps> = ({
     <div className={cn("flex gap-4 justify-center p-6", className)}>
       <Button
         onClick={() => toggleFavorite(quote)}
-        variant={isFavorite(quote.id) ? "default" : "outline"}
+        variant={isFavorite(quote.id.toString()) ? "default" : "outline"}
         size="lg"
         className={cn(
           "flex-1 max-w-[140px] h-12 rounded-xl font-medium transition-all duration-200",
-          isFavorite(quote.id) 
+          isFavorite(quote.id.toString()) 
             ? "bg-red-500 hover:bg-red-600 text-white" 
             : "border-2 border-gray-300 hover:border-red-500 hover:text-red-500"
         )}
       >
-        {isFavorite(quote.id) ? (
+        {isFavorite(quote.id.toString()) ? (
           <>
             <X className="mr-2 h-4 w-4" />
             Unfavorite
