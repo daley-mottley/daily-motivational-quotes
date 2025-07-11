@@ -1,5 +1,5 @@
 
-# Daily Motivational Quotes & Images Web App
+# Daily Motivational App
 
 A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes.
 
