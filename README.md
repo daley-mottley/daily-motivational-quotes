@@ -99,3 +99,31 @@ This project is part of a Lovable development environment.
 **Project URL**: https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b
 
 For technical documentation and development guidelines, see the `project-plan/` directory.
+
+## Report A Bug 🪰
+
+If you encounter any issues or have questions, feel free to [open an issue](https://github.com/daley-mottley/customer-support-bot/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D+) or reach out to the maintainers. Please provide as much detail as possible, including steps to reproduce the bug.
+
+<a name="contributions"></a>
+## Contributions 🧑‍🔧👷‍♀️🏗️🏢
+
+Contributions are welcome! It only takes five (5) steps!
+
+To contribute:
+
+1) Fork the repository.
+2) Create a new branch for your feature or bug fix: `git checkout -b my-feature-branch`.
+3) Make your changes and commit them with clear messages: `git commit -m 'Add some feature'`.
+4) Push your changes to your forked repository: `git push origin my-feature-branch`.
+5) Open a pull request against the `main` branch of the original repository.
+
+<p align="center" ><strong><em>Please read our <a href="#">Community Guidelines</a> to get started!</em></strong> 🚀</p>
+
+<hr>
+
+<a name="lets-stay-connected"></a>
+<h2 align="center"> 🌎 Let's Stay Connected!🫸🫷 </h2>
+
+<p align="center"> If you like this project and would like to see more features or show your support.</p>
+<p align="center"> Feel free to reach out to the developers and give this project a ⭐!</p>
+
