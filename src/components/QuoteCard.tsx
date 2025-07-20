@@ -74,12 +74,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
         "
       </div>
       
-      {/* Enhanced image credit */}
-      {imageData && (
-        <div className="absolute bottom-3 right-3 text-xs text-white/70 backdrop-blur-sm bg-black/25 px-3 py-1 rounded-full border border-white/20">
-          📸 {imageData.photographer}
-        </div>
-      )}
+      
     </div>
   );
 };
