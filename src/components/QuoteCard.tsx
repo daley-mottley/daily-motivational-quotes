@@ -56,17 +56,6 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
         <cite className="text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6">
           — {quote.author}
         </cite>
-        
-        {/* Enhanced category badge */}
-      <!--
-        <div className="flex justify-center">
-          <span className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium capitalize border border-white/30 shadow-lg">
-            <div className="w-2 h-2 bg-white rounded-full mr-2 opacity-80"></div>
-            {quote.category}
-          </span>
-        </div>
-      </div>
-      -->
 
 
       {/* Decorative corner elements */}
