@@ -80,34 +80,31 @@ The app features a modern, clean design with:
 3. **Testing**: Ensure mobile responsiveness and accessibility
 4. **Documentation**: Update `TASKS.md` and `LOGS.md` as needed
 
-## 🤝 Contributing
-
-When contributing to this project:
-1. Review the project plan documentation
-2. Update `TASKS.md` when starting/completing tasks
-3. Log any errors and solutions in `LOGS.md`
-4. Follow the established design system
-5. Test thoroughly on mobile devices
-
-
 ## Report A Bug 🪰
 
 If you encounter any issues or have questions, feel free to [open an issue](https://github.com/daley-mottley/customer-support-bot/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D+) or reach out to the maintainers. Please provide as much detail as possible, including steps to reproduce the bug.
 
-<a name="contributions"></a>
 ## Contributions 🧑‍🔧👷‍♀️🏗️🏢
 
-Contributions are welcome! It only takes five (5) steps!
+Contributions are welcomed! Just follow these 5 simple steps:
 
-To contribute:
+1. **Fork** the repository.
+2. **Create a branch** for your changes:  
+   `git checkout -b my-feature-branch`
+3. **Make your changes** and commit with clear messages:  
+   `git commit -m "Add: brief description of feature or fix"`
+4. **Push to your fork**:  
+   `git push origin my-feature-branch`
+5. **Open a pull request** to the `main` branch of the original repo.
 
-1) Fork the repository.
-2) Create a new branch for your feature or bug fix: `git checkout -b my-feature-branch`.
-3) Make your changes and commit them with clear messages: `git commit -m 'Add some feature'`.
-4) Push your changes to your forked repository: `git push origin my-feature-branch`.
-5) Open a pull request against the `main` branch of the original repository.
+### 🧱 Project Structure
 
-<p align="center" ><strong><em>Please read our <a href="#">Community Guidelines</a> to get started!</em></strong> 🚀</p>
+To stay aligned with the development workflow, please note:
+
+- Tasks are tracked in [`/project-plan/TASKS.md`](./project-plan/TASKS.md)
+- Issues and fixes are logged in [`/project-plan/LOGS.md`](./project-plan/LOGS.md)
+- Architecture guidelines are in [`/project-plan/ARCHITECTURE.md`](./project-plan/ARCHITECTURE.md)
+- Design system specs are in [`/project-plan/DESIGN.md`](./project-plan/DESIGN.md)
 
 <hr>
 
