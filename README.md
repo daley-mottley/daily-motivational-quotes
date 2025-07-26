@@ -1,4 +1,3 @@
-
 # Daily Motivational App
 
 A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes.
@@ -90,15 +89,6 @@ When contributing to this project:
 4. Follow the established design system
 5. Test thoroughly on mobile devices
 
-## 📄 License
-
-This project is part of a Lovable development environment.
-
----
-
-**Project URL**: https://lovable.dev/projects/7fa9045f-1a61-416c-a89e-4085725a1d7b
-
-For technical documentation and development guidelines, see the `project-plan/` directory.
 
 ## Report A Bug 🪰
 
