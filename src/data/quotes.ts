@@ -147,5 +147,215 @@ export const motivationalQuotes: Quote[] = [
     author: "Unknown",
     category: "potential",
     backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  }
+  },
+  {
+  id: 21,
+  text: "Strive not to be a success, but rather to be of value.",
+  author: "Albert Einstein",
+  category: "value",
+  backgroundGradient: "from-red-500 via-pink-500 to-purple-500"
+},
+{
+  id: 22,
+  text: "Success usually comes to those who are too busy to be looking for it.",
+  author: "Henry David Thoreau",
+  category: "success",
+  backgroundGradient: "from-indigo-600 via-blue-500 to-green-500"
+},
+{
+  id: 23,
+  text: "Do not wait to strike till the iron is hot; but make it hot by striking.",
+  author: "William Butler Yeats",
+  category: "action",
+  backgroundGradient: "from-teal-500 via-cyan-500 to-sky-500"
+},
+{
+  id: 24,
+  text: "Whether you think you can or you think you can’t, you’re right.",
+  author: "Henry Ford",
+  category: "mindset",
+  backgroundGradient: "from-yellow-400 via-orange-500 to-red-500"
+},
+{
+  id: 25,
+  text: "Act as if what you do makes a difference. It does.",
+  author: "William James",
+  category: "impact",
+  backgroundGradient: "from-green-500 via-lime-500 to-yellow-400"
+},
+{
+  id: 26,
+  text: "Do what you can, with what you have, where you are.",
+  author: "Theodore Roosevelt",
+  category: "resilience",
+  backgroundGradient: "from-rose-500 via-pink-500 to-red-600"
+},
+{
+  id: 27,
+  text: "You must be the change you wish to see in the world.",
+  author: "Mahatma Gandhi",
+  category: "change",
+  backgroundGradient: "from-sky-400 via-blue-500 to-indigo-600"
+},
+{
+  id: 28,
+  text: "The harder the conflict, the greater the triumph.",
+  author: "George Washington",
+  category: "perseverance",
+  backgroundGradient: "from-purple-500 via-fuchsia-500 to-pink-600"
+},
+{
+  id: 29,
+  text: "Don’t count the days, make the days count.",
+  author: "Muhammad Ali",
+  category: "motivation",
+  backgroundGradient: "from-orange-500 via-yellow-500 to-lime-500"
+},
+{
+  id: 30,
+  text: "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+  author: "Ralph Waldo Emerson",
+  category: "leadership",
+  backgroundGradient: "from-lime-500 via-emerald-500 to-green-600"
+},
+{
+  id: 31,
+  text: "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+  author: "Zig Ziglar",
+  category: "growth",
+  backgroundGradient: "from-pink-600 via-rose-600 to-red-600"
+},
+{
+  id: 32,
+  text: "Keep your face always toward the sunshine—and shadows will fall behind you.",
+  author: "Walt Whitman",
+  category: "positivity",
+  backgroundGradient: "from-yellow-300 via-orange-400 to-red-400"
+},
+{
+  id: 33,
+  text: "It always seems impossible until it's done.",
+  author: "Nelson Mandela",
+  category: "determination",
+  backgroundGradient: "from-purple-700 via-indigo-700 to-blue-700"
+},
+{
+  id: 34,
+  text: "What you do today can improve all your tomorrows.",
+  author: "Ralph Marston",
+  category: "future",
+  backgroundGradient: "from-cyan-500 via-blue-400 to-indigo-500"
+},
+{
+  id: 35,
+  text: "Happiness is not something ready made. It comes from your own actions.",
+  author: "Dalai Lama",
+  category: "happiness",
+  backgroundGradient: "from-fuchsia-400 via-pink-400 to-red-400"
+},
+{
+  id: 36,
+  text: "Dream big and dare to fail.",
+  author: "Norman Vaughan",
+  category: "dreams",
+  backgroundGradient: "from-teal-600 via-cyan-600 to-blue-600"
+},
+{
+  id: 37,
+  text: "You do not find the happy life. You make it.",
+  author: "Camilla Eyring Kimball",
+  category: "life",
+  backgroundGradient: "from-lime-400 via-green-400 to-teal-400"
+},
+{
+  id: 38,
+  text: "Limit your 'always' and your 'nevers'.",
+  author: "Amy Poehler",
+  category: "balance",
+  backgroundGradient: "from-rose-400 via-fuchsia-500 to-purple-600"
+},
+{
+  id: 39,
+  text: "Try to be a rainbow in someone’s cloud.",
+  author: "Maya Angelou",
+  category: "kindness",
+  backgroundGradient: "from-indigo-500 via-blue-600 to-sky-500"
+},
+{
+  id: 40,
+  text: "You are never too old to set another goal or to dream a new dream.",
+  author: "C.S. Lewis",
+  category: "potential",
+  backgroundGradient: "from-pink-300 via-red-400 to-orange-500"
+},
+{
+  id: 41,
+  text: "I am not a product of my circumstances. I am a product of my decisions.",
+  author: "Stephen Covey",
+  category: "choice",
+  backgroundGradient: "from-slate-600 via-gray-600 to-zinc-600"
+},
+{
+  id: 42,
+  text: "A person who never made a mistake never tried anything new.",
+  author: "Albert Einstein",
+  category: "innovation",
+  backgroundGradient: "from-cyan-600 via-blue-600 to-purple-700"
+},
+{
+  id: 43,
+  text: "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
+  author: "Marie Curie",
+  category: "purpose",
+  backgroundGradient: "from-yellow-600 via-orange-600 to-red-700"
+},
+{
+  id: 44,
+  text: "You can't use up creativity. The more you use, the more you have.",
+  author: "Maya Angelou",
+  category: "creativity",
+  backgroundGradient: "from-teal-300 via-green-400 to-emerald-500"
+},
+{
+  id: 45,
+  text: "I've missed more than 9000 shots in my career. That is why I succeed.",
+  author: "Michael Jordan",
+  category: "resilience",
+  backgroundGradient: "from-pink-700 via-rose-700 to-red-700"
+},
+{
+  id: 46,
+  text: "Hardships often prepare ordinary people for an extraordinary destiny.",
+  author: "C.S. Lewis",
+  category: "destiny",
+  backgroundGradient: "from-gray-700 via-slate-800 to-zinc-900"
+},
+{
+  id: 47,
+  text: "Don't watch the clock; do what it does. Keep going.",
+  author: "Sam Levenson",
+  category: "focus",
+  backgroundGradient: "from-yellow-500 via-amber-500 to-orange-600"
+},
+{
+  id: 48,
+  text: "If you want to lift yourself up, lift up someone else.",
+  author: "Booker T. Washington",
+  category: "service",
+  backgroundGradient: "from-blue-300 via-indigo-400 to-violet-500"
+},
+{
+  id: 49,
+  text: "A goal is not always meant to be reached, it often serves simply as something to aim at.",
+  author: "Bruce Lee",
+  category: "goals",
+  backgroundGradient: "from-emerald-400 via-green-500 to-teal-600"
+},
+{
+  id: 50,
+  text: "It does not matter how slowly you go as long as you do not stop.",
+  author: "Confucius",
+  category: "perseverance",
+  backgroundGradient: "from-violet-500 via-purple-600 to-indigo-700"
+}
 ];
