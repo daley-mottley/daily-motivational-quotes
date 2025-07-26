@@ -80,9 +80,9 @@ The app features a modern, clean design with:
 3. **Testing**: Ensure mobile responsiveness and accessibility
 4. **Documentation**: Update `TASKS.md` and `LOGS.md` as needed
 
-## Report A Bug 🪰
+## 🪰 Report A Bug 
 
-If you encounter any issues or have questions, feel free to [open an issue](https://github.com/daley-mottley/customer-support-bot/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D+) or reach out to the maintainers. Please provide as much detail as possible, including steps to reproduce the bug.
+If you encounter any issues or have questions, feel free to [open an issue](https://github.com/daley-mottley/daily-motivational-quotes/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D+) or reach out to the maintainers. Please provide as much detail as possible, including steps to reproduce the bug.
 
 ## Contributions 🧑‍🔧👷‍♀️🏗️🏢
 
