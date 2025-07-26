@@ -1,6 +1,6 @@
 # Daily Motivational App
 
-A beautiful, mobile-friendly React application that delivers daily inspiration through carefully curated motivational quotes.
+A beautiful, mobile-friendly website that delivers daily inspiration through carefully curated motivational quotes.
 
 ## 🌟 Features
 
