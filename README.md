@@ -1,4 +1,4 @@
-# Daily Motivational App
+# Daily Motivational App ✨
 
 A beautiful, mobile-friendly website that delivers daily inspiration through carefully curated motivational quotes.
 
