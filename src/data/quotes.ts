@@ -848,4 +848,354 @@ export const motivationalQuotes: Quote[] = [
   category: "risk",
   backgroundGradient: "linear-gradient(to right, #ff6a00, #ee0979)"
 },
+{
+  id: 121,
+  text: "The only true wisdom is in knowing you know nothing.",
+  author: "Socrates",
+  category: "wisdom",
+  backgroundGradient: "from-gray-600 via-slate-700 to-gray-800"
+},
+{
+  id: 122,
+  text: "Quality is not an act, it is a habit.",
+  author: "Aristotle",
+  category: "excellence",
+  backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
+},
+{
+  id: 123,
+  text: "The journey of a thousand miles begins with one step.",
+  author: "Lao Tzu",
+  category: "beginnings",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 124,
+  text: "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+  author: "Johann Wolfgang von Goethe",
+  category: "action",
+  backgroundGradient: "from-orange-500 via-amber-500 to-yellow-500"
+},
+{
+  id: 125,
+  text: "The best way to predict the future is to invent it.",
+  author: "Alan Kay",
+  category: "innovation",
+  backgroundGradient: "from-blue-600 via-indigo-600 to-purple-700"
+},
+{
+  id: 126,
+  text: "Our greatest glory is not in never falling, but in rising every time we fall.",
+  author: "Confucius",
+  category: "resilience",
+  backgroundGradient: "from-red-500 via-pink-500 to-rose-500"
+},
+{
+  id: 127,
+  text: "The only thing we have to fear is fear itself.",
+  author: "Franklin D. Roosevelt",
+  category: "courage",
+  backgroundGradient: "from-blue-400 via-indigo-500 to-violet-600"
+},
+{
+  id: 128,
+  text: "You can never cross the ocean until you have the courage to lose sight of the shore.",
+  author: "Christopher Columbus",
+  category: "adventure",
+  backgroundGradient: "from-cyan-400 via-sky-500 to-blue-600"
+},
+{
+  id: 129,
+  text: "The secret of getting ahead is getting started.",
+  author: "Mark Twain",
+  category: "action",
+  backgroundGradient: "from-amber-400 via-orange-500 to-red-500"
+},
+{
+  id: 130,
+  text: "Well done is better than well said.",
+  author: "Benjamin Franklin",
+  category: "action",
+  backgroundGradient: "from-yellow-400 via-amber-500 to-orange-500"
+},
+{
+  id: 131,
+  text: "The best revenge is massive success.",
+  author: "Frank Sinatra",
+  category: "success",
+  backgroundGradient: "from-purple-600 via-pink-600 to-red-600"
+},
+{
+  id: 132,
+  text: "Life is 10% what happens to me and 90% how I react to it.",
+  author: "Charles R. Swindoll",
+  category: "mindset",
+  backgroundGradient: "from-lime-400 via-green-500 to-emerald-600"
+},
+{
+  id: 133,
+  text: "A person who never made a mistake never tried anything new.",
+  author: "Albert Einstein",
+  category: "growth",
+  backgroundGradient: "from-cyan-500 via-blue-500 to-indigo-600"
+},
+{
+  id: 134,
+  text: "The mind is everything. What you think you become.",
+  author: "Buddha",
+  category: "mindset",
+  backgroundGradient: "from-teal-400 via-cyan-500 to-blue-600"
+},
+{
+  id: 135,
+  text: "Eighty percent of success is showing up.",
+  author: "Woody Allen",
+  category: "persistence",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 136,
+  text: "Your time is limited, so don't waste it living someone else's life.",
+  author: "Steve Jobs",
+  category: "authenticity",
+  backgroundGradient: "from-violet-600 via-purple-600 to-indigo-700"
+},
+{
+  id: 137,
+  text: "Winning isn't everything, but wanting to win is.",
+  author: "Vince Lombardi",
+  category: "determination",
+  backgroundGradient: "from-red-500 via-rose-500 to-pink-600"
+},
+{
+  id: 138,
+  text: "I am not a product of my circumstances. I am a product of my decisions.",
+  author: "Stephen Covey",
+  category: "responsibility",
+  backgroundGradient: "from-slate-600 via-gray-600 to-zinc-700"
+},
+{
+  id: 139,
+  text: "Every child is an artist. The problem is how to remain an artist once we grow up.",
+  author: "Pablo Picasso",
+  category: "creativity",
+  backgroundGradient: "from-orange-400 via-pink-500 to-red-600"
+},
+{
+  id: 140,
+  text: "You can't use up creativity. The more you use, the more you have.",
+  author: "Maya Angelou",
+  category: "creativity",
+  backgroundGradient: "from-teal-300 via-green-400 to-emerald-500"
+},
+{
+  id: 141,
+  text: "Simplicity is the ultimate sophistication.",
+  author: "Leonardo da Vinci",
+  category: "wisdom",
+  backgroundGradient: "from-gray-400 via-slate-500 to-gray-600"
+},
+{
+  id: 142,
+  text: "The two most important days in your life are the day you are born and the day you find out why.",
+  author: "Mark Twain",
+  category: "purpose",
+  backgroundGradient: "from-amber-500 via-orange-500 to-red-600"
+},
+{
+  id: 143,
+  text: "There is no substitute for hard work.",
+  author: "Thomas Edison",
+  category: "work ethic",
+  backgroundGradient: "from-yellow-500 via-amber-500 to-orange-600"
+},
+{
+  id: 144,
+  text: "If you can dream it, you can do it.",
+  author: "Walt Disney",
+  category: "dreams",
+  backgroundGradient: "from-blue-400 via-indigo-500 to-purple-600"
+},
+{
+  id: 145,
+  text: "The best time to plant a tree was 20 years ago. The second best time is now.",
+  author: "Chinese Proverb",
+  category: "action",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 146,
+  text: "An unexamined life is not worth living.",
+  author: "Socrates",
+  category: "wisdom",
+  backgroundGradient: "from-gray-700 via-slate-800 to-gray-900"
+},
+{
+  id: 147,
+  text: "Efficiency is doing things right; effectiveness is doing the right things.",
+  author: "Peter Drucker",
+  category: "productivity",
+  backgroundGradient: "from-cyan-500 via-blue-500 to-indigo-600"
+},
+{
+  id: 148,
+  text: "Life shrinks or expands in proportion to one's courage.",
+  author: "Anaïs Nin",
+  category: "courage",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 149,
+  text: "People begin to become successful the minute they decide to be.",
+  author: "Harvey Mackay",
+  category: "success",
+  backgroundGradient: "from-purple-500 via-indigo-500 to-blue-600"
+},
+{
+  id: 150,
+  text: "The only limit to our realization of tomorrow is our doubts of today.",
+  author: "Franklin D. Roosevelt",
+  category: "confidence",
+  backgroundGradient: "from-blue-500 via-indigo-600 to-purple-700"
+},
+{
+  id: 151,
+  text: "You miss 100% of the shots you don't take.",
+  author: "Wayne Gretzky",
+  category: "opportunity",
+  backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
+},
+{
+  id: 152,
+  text: "I have not failed. I've just found 10,000 ways that won't work.",
+  author: "Thomas Edison",
+  category: "persistence",
+  backgroundGradient: "from-yellow-500 via-amber-600 to-orange-600"
+},
+{
+  id: 153,
+  text: "A leader is one who knows the way, goes the way, and shows the way.",
+  author: "John C. Maxwell",
+  category: "leadership",
+  backgroundGradient: "from-indigo-500 via-purple-500 to-violet-600"
+},
+{
+  id: 154,
+  text: "The successful warrior is the average man, with laser-like focus.",
+  author: "Bruce Lee",
+  category: "focus",
+  backgroundGradient: "from-red-500 via-rose-500 to-pink-600"
+},
+{
+  id: 155,
+  text: "The only place where success comes before work is in the dictionary.",
+  author: "Vidal Sassoon",
+  category: "work ethic",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 156,
+  text: "Don't be afraid to give up the good to go for the great.",
+  author: "John D. Rockefeller",
+  category: "ambition",
+  backgroundGradient: "from-purple-600 via-indigo-700 to-blue-800"
+},
+{
+  id: 157,
+  text: "I find that the harder I work, the more luck I seem to have.",
+  author: "Thomas Jefferson",
+  category: "success",
+  backgroundGradient: "from-yellow-400 via-amber-500 to-orange-600"
+},
+{
+  id: 158,
+  text: "The difference between ordinary and extraordinary is that little extra.",
+  author: "Jimmy Johnson",
+  category: "excellence",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 159,
+  text: "The way to get started is to quit talking and begin doing.",
+  author: "Walt Disney",
+  category: "action",
+  backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
+},
+{
+  id: 160,
+  text: "Success seems to be connected with action. Successful people keep moving.",
+  author: "Conrad Hilton",
+  category: "action",
+  backgroundGradient: "from-blue-500 via-indigo-500 to-purple-600"
+},
+{
+  id: 161,
+  text: "The only person you are destined to become is the person you decide to be.",
+  author: "Ralph Waldo Emerson",
+  category: "potential",
+  backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
+},
+{
+  id: 162,
+  text: "What you do speaks so loudly that I cannot hear what you say.",
+  author: "Ralph Waldo Emerson",
+  category: "integrity",
+  backgroundGradient: "from-teal-400 via-cyan-500 to-blue-600"
+},
+{
+  id: 163,
+  text: "The best preparation for tomorrow is doing your best today.",
+  author: "H. Jackson Brown Jr.",
+  category: "preparation",
+  backgroundGradient: "from-green-400 via-emerald-500 to-teal-600"
+},
+{
+  id: 164,
+  text: "You must be the change you wish to see in the world.",
+  author: "Mahatma Gandhi",
+  category: "change",
+  backgroundGradient: "from-sky-400 via-blue-500 to-indigo-600"
+},
+{
+  id: 165,
+  text: "It always seems impossible until it's done.",
+  author: "Nelson Mandela",
+  category: "determination",
+  backgroundGradient: "from-purple-700 via-indigo-700 to-blue-700"
+},
+{
+  id: 166,
+  text: "Don't count the days, make the days count.",
+  author: "Muhammad Ali",
+  category: "motivation",
+  backgroundGradient: "from-orange-500 via-yellow-500 to-lime-500"
+},
+{
+  id: 167,
+  text: "The future belongs to those who believe in the beauty of their dreams.",
+  author: "Eleanor Roosevelt",
+  category: "dreams",
+  backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
+},
+{
+  id: 168,
+  text: "Act as if what you do makes a difference. It does.",
+  author: "William James",
+  category: "impact",
+  backgroundGradient: "from-green-500 via-lime-500 to-yellow-400"
+},
+{
+  id: 169,
+  text: "What we think, we become.",
+  author: "Buddha",
+  category: "mindset",
+  backgroundGradient: "from-teal-300 via-cyan-400 to-blue-500"
+},
+{
+  id: 170,
+  text: "The man who moves a mountain begins by carrying away small stones.",
+  author: "Confucius",
+  category: "persistence",
+  backgroundGradient: "from-stone-500 via-gray-600 to-slate-700"
+},
 ];
