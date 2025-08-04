@@ -707,5 +707,145 @@ export const motivationalQuotes: Quote[] = [
     author: "Nelson Mandela",
     category: "perseverance",
     backgroundGradient: "from-purple-700 via-indigo-700 to-blue-700",
-  }
+  },
+  {
+  id: 101,
+  text: "Success is getting what you want. Happiness is wanting what you get.",
+  author: "W. P. Kinsella",
+  category: "success",
+  backgroundGradient: "linear-gradient(to right, #00b09b, #96c93d)"
+},
+{
+  id: 102,
+  text: "Don’t count the days, make the days count.",
+  author: "Muhammad Ali",
+  category: "motivation",
+  backgroundGradient: "linear-gradient(to right, #f7971e, #ffd200)"
+},
+{
+  id: 103,
+  text: "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+  author: "Ralph Waldo Emerson",
+  category: "inspiration",
+  backgroundGradient: "linear-gradient(to right, #00c6ff, #0072ff)"
+},
+{
+  id: 104,
+  text: "Keep your face always toward the sunshine—and shadows will fall behind you.",
+  author: "Walt Whitman",
+  category: "positivity",
+  backgroundGradient: "linear-gradient(to right, #f953c6, #b91d73)"
+},
+{
+  id: 105,
+  text: "The only limit to our realization of tomorrow is our doubts of today.",
+  author: "Franklin D. Roosevelt",
+  category: "confidence",
+  backgroundGradient: "linear-gradient(to right, #4facfe, #00f2fe)"
+},
+{
+  id: 106,
+  text: "Start where you are. Use what you have. Do what you can.",
+  author: "Arthur Ashe",
+  category: "perseverance",
+  backgroundGradient: "linear-gradient(to right, #fc4a1a, #f7b733)"
+},
+{
+  id: 107,
+  text: "Don’t wait. The time will never be just right.",
+  author: "Napoleon Hill",
+  category: "motivation",
+  backgroundGradient: "linear-gradient(to right, #43cea2, #185a9d)"
+},
+{
+  id: 108,
+  text: "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+  author: "Ralph Waldo Emerson",
+  category: "self-worth",
+  backgroundGradient: "linear-gradient(to right, #00b4db, #0083b0)"
+},
+{
+  id: 109,
+  text: "Go confidently in the direction of your dreams. Live the life you have imagined.",
+  author: "Henry David Thoreau",
+  category: "dreams",
+  backgroundGradient: "linear-gradient(to right, #ff9966, #ff5e62)"
+},
+{
+  id: 110,
+  text: "Everything has beauty, but not everyone sees it.",
+  author: "Confucius",
+  category: "wisdom",
+  backgroundGradient: "linear-gradient(to right, #7F00FF, #E100FF)"
+},
+{
+  id: 111,
+  text: "Act as if what you do makes a difference. It does.",
+  author: "William James",
+  category: "action",
+  backgroundGradient: "linear-gradient(to right, #00f260, #0575e6)"
+},
+{
+  id: 112,
+  text: "Try not to become a man of success, but rather become a man of value.",
+  author: "Albert Einstein",
+  category: "character",
+  backgroundGradient: "linear-gradient(to right, #2193b0, #6dd5ed)"
+},
+{
+  id: 113,
+  text: "I am not a product of my circumstances. I am a product of my decisions.",
+  author: "Stephen Covey",
+  category: "decision",
+  backgroundGradient: "linear-gradient(to right, #fc5c7d, #6a82fb)"
+},
+{
+  id: 114,
+  text: "Everything you’ve ever wanted is on the other side of fear.",
+  author: "George Addair",
+  category: "fear",
+  backgroundGradient: "linear-gradient(to right, #ff7e5f, #feb47b)"
+},
+{
+  id: 115,
+  text: "Doubt kills more dreams than failure ever will.",
+  author: "Suzy Kassem",
+  category: "dreams",
+  backgroundGradient: "linear-gradient(to right, #8e2de2, #4a00e0)"
+},
+{
+  id: 116,
+  text: "An unexamined life is not worth living.",
+  author: "Socrates",
+  category: "philosophy",
+  backgroundGradient: "linear-gradient(to right, #134e5e, #71b280)"
+},
+{
+  id: 117,
+  text: "Turn your wounds into wisdom.",
+  author: "Oprah Winfrey",
+  category: "growth",
+  backgroundGradient: "linear-gradient(to right, #f2709c, #ff9472)"
+},
+{
+  id: 118,
+  text: "You are never too old to set another goal or to dream a new dream.",
+  author: "C.S. Lewis",
+  category: "goals",
+  backgroundGradient: "linear-gradient(to right, #00c9ff, #92fe9d)"
+},
+{
+  id: 119,
+  text: "Believe you can and you're halfway there.",
+  author: "Theodore Roosevelt",
+  category: "confidence",
+  backgroundGradient: "linear-gradient(to right, #c31432, #240b36)"
+},
+{
+  id: 120,
+  text: "You miss 100% of the shots you don’t take.",
+  author: "Wayne Gretzky",
+  category: "risk",
+  backgroundGradient: "linear-gradient(to right, #ff6a00, #ee0979)"
+},
 ];
