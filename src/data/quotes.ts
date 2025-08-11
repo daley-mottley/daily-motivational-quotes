@@ -1198,4 +1198,214 @@ export const motivationalQuotes: Quote[] = [
   category: "persistence",
   backgroundGradient: "from-stone-500 via-gray-600 to-slate-700"
 },
+{
+  id: 171,
+  text: "The only way to achieve the impossible is to believe it is possible.",
+  author: "Charles Kingsleigh",
+  category: "belief",
+  backgroundGradient: "from-blue-500 via-indigo-600 to-purple-700"
+},
+{
+  id: 172,
+  text: "Success is not just about making money. It's about making a difference.",
+  author: "Unknown",
+  category: "impact",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 173,
+  text: "The secret to getting ahead is getting started.",
+  author: "Mark Twain",
+  category: "action",
+  backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
+},
+{
+  id: 174,
+  text: "Your life does not get better by chance, it gets better by change.",
+  author: "Jim Rohn",
+  category: "change",
+  backgroundGradient: "from-sky-500 via-blue-500 to-indigo-600"
+},
+{
+  id: 175,
+  text: "The only thing standing between you and your goal is the story you keep telling yourself.",
+  author: "Jordan Belfort",
+  category: "mindset",
+  backgroundGradient: "from-purple-500 via-indigo-500 to-blue-600"
+},
+{
+  id: 176,
+  text: "Dream big, start small, act now.",
+  author: "Robin Sharma",
+  category: "action",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 177,
+  text: "The best way to predict your future is to create it.",
+  author: "Peter Drucker",
+  category: "future",
+  backgroundGradient: "from-cyan-500 via-blue-500 to-indigo-600"
+},
+{
+  id: 178,
+  text: "Don't let the fear of losing be greater than the excitement of winning.",
+  author: "Robert Kiyosaki",
+  category: "courage",
+  backgroundGradient: "from-yellow-500 via-amber-500 to-orange-600"
+},
+{
+  id: 179,
+  text: "The only limit to our realization of tomorrow is our doubts of today.",
+  author: "Franklin D. Roosevelt",
+  category: "confidence",
+  backgroundGradient: "from-blue-500 via-indigo-600 to-purple-700"
+},
+{
+  id: 180,
+  text: "The only place where success comes before work is in the dictionary.",
+  author: "Vidal Sassoon",
+  category: "work ethic",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 181,
+  text: "The difference between ordinary and extraordinary is that little extra.",
+  author: "Jimmy Johnson",
+  category: "excellence",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 182,
+  text: "The future depends on what you do today.",
+  author: "Mahatma Gandhi",
+  category: "future",
+  backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
+},
+{
+  id: 183,
+  text: "What you get by achieving your goals is not as important as what you become.",
+  author: "Zig Ziglar",
+  category: "growth",
+  backgroundGradient: "from-pink-600 via-rose-600 to-red-600"
+},
+{
+  id: 184,
+  text: "The only person you are destined to become is the person you decide to be.",
+  author: "Ralph Waldo Emerson",
+  category: "potential",
+  backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
+},
+{
+  id: 185,
+  text: "Don't watch the clock; do what it does. Keep going.",
+  author: "Sam Levenson",
+  category: "perseverance",
+  backgroundGradient: "from-yellow-500 via-amber-500 to-orange-600"
+},
+{
+  id: 186,
+  text: "The best revenge is massive success.",
+  author: "Frank Sinatra",
+  category: "success",
+  backgroundGradient: "from-purple-600 via-pink-600 to-red-600"
+},
+{
+  id: 187,
+  text: "The only true wisdom is in knowing you know nothing.",
+  author: "Socrates",
+  category: "wisdom",
+  backgroundGradient: "from-gray-600 via-slate-700 to-gray-800"
+},
+{
+  id: 188,
+  text: "The journey of a thousand miles begins with one step.",
+  author: "Lao Tzu",
+  category: "beginnings",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+  id: 189,
+  text: "The best way to predict the future is to invent it.",
+  author: "Alan Kay",
+  category: "innovation",
+  backgroundGradient: "from-blue-600 via-indigo-600 to-purple-700"
+},
+{
+  id: 190,
+  text: "The only thing we have to fear is fear itself.",
+  author: "Franklin D. Roosevelt",
+  category: "courage",
+  backgroundGradient: "from-blue-400 via-indigo-500 to-violet-600"
+},
+{
+  id: 191,
+  text: "The secret of getting ahead is getting started.",
+  author: "Mark Twain",
+  category: "action",
+  backgroundGradient: "from-amber-400 via-orange-500 to-red-500"
+},
+{
+  id: 192,
+  text: "The best preparation for tomorrow is doing your best today.",
+  author: "H. Jackson Brown Jr.",
+  category: "preparation",
+  backgroundGradient: "from-green-400 via-emerald-500 to-teal-600"
+},
+{
+  id: 193,
+  text: "The man who moves a mountain begins by carrying away small stones.",
+  author: "Confucius",
+  category: "persistence",
+  backgroundGradient: "from-stone-500 via-gray-600 to-slate-700"
+},
+{
+  id: 194,
+  text: "The only limit to our realization of tomorrow is our doubts of today.",
+  author: "Franklin D. Roosevelt",
+  category: "confidence",
+  backgroundGradient: "from-blue-500 via-indigo-600 to-purple-700"
+},
+{
+  id: 195,
+  text: "The difference between ordinary and extraordinary is that little extra.",
+  author: "Jimmy Johnson",
+  category: "excellence",
+  backgroundGradient: "from-pink-500 via-rose-500 to-red-600"
+},
+{
+  id: 196,
+  text: "The future depends on what you do today.",
+  author: "Mahatma Gandhi",
+  category: "future",
+  backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
+},
+{
+  id: 197,
+  text: "The only person you are destined to become is the person you decide to be.",
+  author: "Ralph Waldo Emerson",
+  category: "potential",
+  backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
+},
+{
+  id: 198,
+  text: "The best revenge is massive success.",
+  author: "Frank Sinatra",
+  category: "success",
+  backgroundGradient: "from-purple-600 via-pink-600 to-red-600"
+},
+{
+  id: 199,
+  text: "The only true wisdom is in knowing you know nothing.",
+  author: "Socrates",
+  category: "wisdom",
+  backgroundGradient: "from-gray-600 via-slate-700 to-gray-800"
+},
+{
+  id: 200,
+  text: "The journey of a thousand miles begins with one step.",
+  author: "Lao Tzu",
+  category: "beginnings",
+  backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+}
 ];
