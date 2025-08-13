@@ -1,8 +1,10 @@
 
 import { useState, useEffect } from 'react';
-import { Quote, motivationalQuotes } from '../data/quotes';
+import { Quote } from '../data/quotes';
+import { useLocalizedQuotes } from './useLocalizedQuotes';
 
 export const useQuotes = () => {
+  const localizedQuotes = useLocalizedQuotes();
   const [currentQuote, setCurrentQuote] = useState<Quote | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -10,20 +12,20 @@ export const useQuotes = () => {
   const getDailyQuote = (): Quote => {
     const today = new Date();
     const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
-    const quoteIndex = dayOfYear % motivationalQuotes.length;
-    return motivationalQuotes[quoteIndex];
+    const quoteIndex = dayOfYear % localizedQuotes.length;
+    return localizedQuotes[quoteIndex];
   };
 
   // Get quote by category
   const getQuotesByCategory = (category: string): Quote[] => {
-    if (category === 'all') return motivationalQuotes;
-    return motivationalQuotes.filter(quote => quote.category === category);
+    if (category === 'all') return localizedQuotes;
+    return localizedQuotes.filter(quote => quote.category === category);
   };
 
   // Get random quote
   const getRandomQuote = (): Quote => {
-    const randomIndex = Math.floor(Math.random() * motivationalQuotes.length);
-    return motivationalQuotes[randomIndex];
+    const randomIndex = Math.floor(Math.random() * localizedQuotes.length);
+    return localizedQuotes[randomIndex];
   };
 
   useEffect(() => {
@@ -43,6 +45,6 @@ export const useQuotes = () => {
     getQuotesByCategory,
     getRandomQuote,
     setCurrentQuote,
-    allQuotes: motivationalQuotes
+    allQuotes: localizedQuotes
   };
 };

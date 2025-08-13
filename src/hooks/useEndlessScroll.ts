@@ -1,7 +1,8 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Quote, motivationalQuotes } from '../data/quotes';
+import { Quote } from '../data/quotes';
 import { throttle } from '../lib/utils';
+import { useLocalizedQuotes } from './useLocalizedQuotes';
 
 // Fisher-Yates (Knuth) Shuffle Algorithm
 const shuffleArray = (array: Quote[]) => {
@@ -23,6 +24,7 @@ const shuffleArray = (array: Quote[]) => {
 }
 
 export const useEndlessScroll = () => {
+  const localizedQuotes = useLocalizedQuotes();
   const [quotes, setQuotes] = useState<Quote[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -45,8 +47,10 @@ export const useEndlessScroll = () => {
 
   // Shuffle quotes on initial load and refresh
   useEffect(() => {
-    setShuffledQuotes(shuffleArray([...motivationalQuotes]));
-  }, []); // Empty dependency array means this runs once on mount
+    if (localizedQuotes.length > 0) {
+      setShuffledQuotes(shuffleArray([...localizedQuotes]));
+    }
+  }, [localizedQuotes]); // Re-shuffle when language changes
 
   const loadMoreQuotes = useCallback(() => {
     if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
@@ -94,7 +98,7 @@ export const useEndlessScroll = () => {
     setPage(0);
     setHasMore(true);
     setLoading(false);
-    setShuffledQuotes(shuffleArray([...motivationalQuotes])); // Reshuffle on refresh
+    setShuffledQuotes(shuffleArray([...localizedQuotes])); // Reshuffle on refresh
   };
 
   return {
