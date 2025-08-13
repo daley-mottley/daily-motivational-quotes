@@ -1,6 +1,7 @@
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Quote, motivationalQuotes } from '../data/quotes';
+import { throttle } from '../lib/utils';
 
 // Fisher-Yates (Knuth) Shuffle Algorithm
 const shuffleArray = (array: Quote[]) => {
@@ -30,19 +31,31 @@ export const useEndlessScroll = () => {
 
   const QUOTES_PER_PAGE = 5;
 
+  // Use refs to store state values that are used in callbacks, to avoid dependencies
+  const loadingRef = useRef(loading);
+  const hasMoreRef = useRef(hasMore);
+  const pageRef = useRef(page);
+
+  useEffect(() => {
+    loadingRef.current = loading;
+    hasMoreRef.current = hasMore;
+    pageRef.current = page;
+  }, [loading, hasMore, page]);
+
+
   // Shuffle quotes on initial load and refresh
   useEffect(() => {
     setShuffledQuotes(shuffleArray([...motivationalQuotes]));
   }, []); // Empty dependency array means this runs once on mount
 
   const loadMoreQuotes = useCallback(() => {
-    if (loading || !hasMore || shuffledQuotes.length === 0) return;
+    if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
 
     setLoading(true);
     
     // Simulate API delay for better UX
     setTimeout(() => {
-      const startIndex = page * QUOTES_PER_PAGE;
+      const startIndex = pageRef.current * QUOTES_PER_PAGE;
       const endIndex = startIndex + QUOTES_PER_PAGE;
       const newQuotes = shuffledQuotes.slice(startIndex, endIndex);
       
@@ -55,7 +68,7 @@ export const useEndlessScroll = () => {
       
       setLoading(false);
     }, 800);
-  }, [page, loading, hasMore, shuffledQuotes]);
+  }, [shuffledQuotes]);
 
   // Load initial quotes
   useEffect(() => {
@@ -66,11 +79,11 @@ export const useEndlessScroll = () => {
 
   // Scroll event listener
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 1000) {
         loadMoreQuotes();
       }
-    };
+    }, 200);
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
