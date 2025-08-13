@@ -1407,5 +1407,355 @@ export const motivationalQuotes: Quote[] = [
   author: "Lao Tzu",
   category: "beginnings",
   backgroundGradient: "from-green-500 via-emerald-600 to-teal-700"
+},
+{
+    id: 201,
+    text: "It is better to fail in originality than to succeed in imitation.",
+    author: "Herman Melville",
+    category: "creativity",
+    backgroundGradient: "from-purple-600 via-pink-600 to-blue-600"
+},
+{
+    id: 202,
+    text: "The road to success and the road to failure are almost exactly the same.",
+    author: "Colin R. Davis",
+    category: "success",
+    backgroundGradient: "from-cyan-500 via-blue-500 to-purple-600"
+},
+{
+    id: 203,
+    text: "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.",
+    author: "Dale Carnegie",
+    category: "resilience",
+    backgroundGradient: "from-green-400 via-blue-500 to-purple-600"
+},
+{
+    id: 204,
+    text: "There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.",
+    author: "Mister Rogers",
+    category: "kindness",
+    backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
+},
+{
+    id: 205,
+    text: "I never dreamed about success. I worked for it.",
+    author: "Estée Lauder",
+    category: "work ethic",
+    backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
+},
+{
+    id: 206,
+    text: "You can’t be that kid standing at the top of the waterslide, overthinking it. You have to go down the chute.",
+    author: "Tina Fey",
+    category: "action",
+    backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
+},
+{
+    id: 207,
+    text: "The standard you walk past is the standard you accept.",
+    author: "David Hurley",
+    category: "integrity",
+    backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
+},
+{
+    id: 208,
+    text: "Keep your eyes on the stars and your feet on the ground.",
+    author: "Theodore Roosevelt",
+    category: "ambition",
+    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
+},
+{
+    id: 209,
+    text: "Perfection is not attainable. But if we chase perfection we can catch excellence.",
+    author: "Vince Lombardi",
+    category: "excellence",
+    backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
+},
+{
+    id: 210,
+    text: "Get a good idea and stay with it. Dog it, and work at it until it’s done right.",
+    author: "Walt Disney",
+    category: "persistence",
+    backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
+},
+{
+    id: 211,
+    text: "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
+    author: "Helen Keller",
+    category: "positivity",
+    backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
+},
+{
+    id: 212,
+    text: "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    author: "Winston Churchill",
+    category: "mindset",
+    backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
+},
+{
+    id: 213,
+    text: "Experience is a hard teacher because she gives the test first, the lesson afterward.",
+    author: "Vernon Sanders Law",
+    category: "wisdom",
+    backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
+},
+{
+    id: 214,
+    text: "To know how much there is to know is the beginning of learning to live.",
+    author: "Dorothy West",
+    category: "learning",
+    backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
+},
+{
+    id: 215,
+    text: "We must be willing to get rid of the life we’ve planned, so as to have the life that is waiting for us.",
+    author: "Joseph Campbell",
+    category: "change",
+    backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
+},
+{
+    id: 216,
+    text: "Concentrate all your thoughts upon the work in hand. The sun’s rays do not burn until brought to a focus.",
+    author: "Alexander Graham Bell",
+    category: "focus",
+    backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
+},
+{
+    id: 217,
+    text: "When we strive to become better than we are, everything around us becomes better too.",
+    author: "Paulo Coelho",
+    category: "growth",
+    backgroundGradient: "from-purple-800 via-violet-900 to-purple-800"
+},
+{
+    id: 218,
+    text: "Setting goals is the first step in turning the invisible into the visible.",
+    author: "Tony Robbins",
+    category: "goals",
+    backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
+},
+{
+    id: 219,
+    text: "Women challenge the status quo because we are never it.",
+    author: "Cindy Gallop",
+    category: "leadership",
+    backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
+},
+{
+    id: 220,
+    text: "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.",
+    author: "Oprah Winfrey",
+    category: "confidence",
+    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
+},
+{
+    id: 221,
+    text: "If they don’t give you a seat at the table, bring a folding chair.",
+    author: "Shirley Chisholm",
+    category: "empowerment",
+    backgroundGradient: "from-red-500 via-pink-500 to-purple-500"
+},
+{
+    id: 222,
+    text: "We need women at all levels, including the top, to change the dynamic, reshape the conversation, to make sure women’s voices are heard and heeded, not overlooked and ignored.",
+    author: "Sheryl Sandberg",
+    category: "leadership",
+    backgroundGradient: "from-indigo-600 via-blue-500 to-green-500"
+},
+{
+    id: 223,
+    text: "It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent.",
+    author: "Madeleine Albright",
+    category: "courage",
+    backgroundGradient: "from-teal-500 via-cyan-500 to-sky-500"
+},
+{
+    id: 224,
+    text: "He who conquers himself is the mightiest warrior.",
+    author: "Confucius",
+    category: "self-control",
+    backgroundGradient: "from-yellow-400 via-orange-500 to-red-500"
+},
+{
+    id: 225,
+    text: "One man with courage makes a majority.",
+    author: "Andrew Jackson",
+    category: "courage",
+    backgroundGradient: "from-green-500 via-lime-500 to-yellow-400"
+},
+{
+    id: 226,
+    text: "A successful man is one who can lay a firm foundation with the bricks others have thrown at him.",
+    author: "David Brinkley",
+    category: "resilience",
+    backgroundGradient: "from-rose-500 via-pink-500 to-red-600"
+},
+{
+    id: 227,
+    text: "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.",
+    author: "Epictetus",
+    category: "gratitude",
+    backgroundGradient: "from-sky-400 via-blue-500 to-indigo-600"
+},
+{
+    id: 228,
+    text: "You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction.",
+    author: "George Lorimer",
+    category: "determination",
+    backgroundGradient: "from-purple-500 via-fuchsia-500 to-pink-600"
+},
+{
+    id: 229,
+    text: "The most difficult thing is the decision to act; the rest is merely tenacity.",
+    author: "Amelia Earhart",
+    category: "action",
+    backgroundGradient: "from-orange-500 via-yellow-500 to-lime-500"
+},
+{
+    id: 230,
+    text: "Take the attitude of a student: never be too big to ask questions, never know too much to learn something new.",
+    author: "Augustine Og Mandino",
+    category: "learning",
+    backgroundGradient: "from-lime-500 via-emerald-500 to-green-600"
+},
+{
+    id: 231,
+    text: "If you can’t yet do great things, do small things in a great way.",
+    author: "Napoleon Hill",
+    category: "excellence",
+    backgroundGradient: "from-pink-600 via-rose-600 to-red-600"
+},
+{
+    id: 232,
+    text: "Be sure you put your feet in the right place, then stand firm.",
+    author: "Abraham Lincoln",
+    category: "integrity",
+    backgroundGradient: "from-yellow-300 via-orange-400 to-red-400"
+},
+{
+    id: 233,
+    text: "Live out of your imagination, not your history.",
+    author: "Stephen Covey",
+    category: "imagination",
+    backgroundGradient: "from-purple-700 via-indigo-700 to-blue-700"
+},
+{
+    id: 234,
+    text: "The greater the difficulty, the more the glory in surmounting it.",
+    author: "Epicurus",
+    category: "perseverance",
+    backgroundGradient: "from-cyan-500 via-blue-400 to-indigo-500"
+},
+{
+    id: 235,
+    text: "Courage doesn’t always roar. Sometimes courage is a quiet voice at the end of the day saying, ‘I will try again tomorrow.’",
+    author: "Mary Anne Radmacher",
+    category: "courage",
+    backgroundGradient: "from-fuchsia-400 via-pink-400 to-red-400"
+},
+{
+    id: 236,
+    text: "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes.",
+    author: "William James",
+    category: "mindset",
+    backgroundGradient: "from-teal-600 via-cyan-600 to-blue-600"
+},
+{
+    id: 237,
+    text: "I’d rather regret the things I’ve done than regret the things I haven’t done.",
+    author: "Lucille Ball",
+    category: "action",
+    backgroundGradient: "from-lime-400 via-green-400 to-teal-400"
+},
+{
+    id: 238,
+    text: "When you arise in the morning, think of what a privilege it is to be alive, to think, to enjoy, to love.",
+    author: "Marcus Aurelius",
+    category: "gratitude",
+    backgroundGradient: "from-rose-400 via-fuchsia-500 to-purple-600"
+},
+{
+    id: 239,
+    text: "Be miserable. Or motivate yourself. Whatever has to be done, it’s always your choice.",
+    author: "Wayne Dyer",
+    category: "choice",
+    backgroundGradient: "from-indigo-500 via-blue-600 to-sky-500"
+},
+{
+    id: 240,
+    text: "Inspiration does exist, but it must find you working.",
+    author: "Pablo Picasso",
+    category: "inspiration",
+    backgroundGradient: "from-pink-300 via-red-400 to-orange-500"
+},
+{
+    id: 241,
+    text: "Show up, show up, show up, and after a while the muse shows up, too.",
+    author: "Isabel Allende",
+    category: "persistence",
+    backgroundGradient: "from-slate-600 via-gray-600 to-zinc-600"
+},
+{
+    id: 242,
+    text: "Don’t bunt. Aim out of the ballpark. Aim for the company of immortals.",
+    author: "David Ogilvy",
+    category: "ambition",
+    backgroundGradient: "from-cyan-600 via-blue-600 to-purple-700"
+},
+{
+    id: 243,
+    text: "I have stood on a mountain of no’s for one yes.",
+    author: "Barbara Elaine Smith",
+    category: "resilience",
+    backgroundGradient: "from-yellow-600 via-orange-600 to-red-700"
+},
+{
+    id: 244,
+    text: "You have power over your mind —not outside events. Realize this, and you will find strength.",
+    author: "Marcus Aurelius",
+    category: "self-control",
+    backgroundGradient: "from-teal-300 via-green-400 to-emerald-500"
+},
+{
+    id: 245,
+    text: "With great power comes great responsibility.",
+    author: "Stan Lee",
+    category: "responsibility",
+    backgroundGradient: "from-pink-700 via-rose-700 to-red-700"
+},
+{
+    id: 246,
+    text: "Learn as if you will live forever, live like you will die tomorrow.",
+    author: "Mahatma Gandhi",
+    category: "learning",
+    backgroundGradient: "from-gray-700 via-slate-800 to-zinc-900"
+},
+{
+    id: 247,
+    text: "When you give joy to other people, you get more joy in return. You should give a good thought to the happiness that you can give out.",
+    author: "Eleanor Roosevelt",
+    category: "kindness",
+    backgroundGradient: "from-yellow-500 via-amber-500 to-orange-600"
+},
+{
+    id: 248,
+    text: "The elevator to success is out of order. You’ll have to use the stairs, one step at a time.",
+    author: "Joe Girard",
+    category: "humor",
+    backgroundGradient: "from-blue-300 via-indigo-400 to-violet-500"
+},
+{
+    id: 249,
+    text: "I always wanted to be somebody, but now I realize I should have been more specific.",
+    author: "Lily Tomlin",
+    category: "humor",
+    backgroundGradient: "from-emerald-400 via-green-500 to-teal-600"
+},
+{
+    id: 250,
+    text: "Love your family, work super hard, live your passion.",
+    author: "Gary Vaynerchuk",
+    category: "passion",
+    backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
 }
 ];
