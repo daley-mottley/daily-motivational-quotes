@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Scintilla Quotidiana",
+    "tagline": "Ispira • Condividi • Cresci",
+    "description": "Ispirazione infinita a portata di mano. Scopri citazioni motivazionali e condividi positività con il mondo."
+  },
+  "buttons": {
+    "freshInspiration": "Nuova Ispirazione",
+    "refreshing": "Aggiornamento...",
+    "startOver": "Ricomincia",
+    "copyLink": "Copia Link",
+    "linkCopied": "Link copiato negli appunti!"
+  },
+  "share": {
+    "title": "Condividi questa citazione"
+  },
+  "loading": {
+    "inspiration": "Caricamento della tua ispirazione quotidiana...",
+    "moreInspiration": "Caricamento di più ispirazione..."
+  },
+  "endOfFeed": {
+    "title": "Hai raggiunto la fine! 🎉",
+    "description": "Hai visto tutte le nostre citazioni ispiratrici. Torna domani per nuova motivazione!"
+  },
+  "errors": {
+    "notFound": "Ops! Pagina non trovata",
+    "returnHome": "Torna alla Home"
+  }
+}

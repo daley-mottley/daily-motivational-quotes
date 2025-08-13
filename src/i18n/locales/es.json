@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Chispa Diaria",
+    "tagline": "Inspira • Comparte • Crece",
+    "description": "Inspiración infinita al alcance de tus dedos. Descubre citas motivacionales y comparte positividad con el mundo."
+  },
+  "buttons": {
+    "freshInspiration": "Nueva Inspiración",
+    "refreshing": "Actualizando...",
+    "startOver": "Empezar de Nuevo",
+    "copyLink": "Copiar Enlace",
+    "linkCopied": "¡Enlace copiado al portapapeles!"
+  },
+  "share": {
+    "title": "Comparte esta cita"
+  },
+  "loading": {
+    "inspiration": "Cargando tu inspiración diaria...",
+    "moreInspiration": "Cargando más inspiración..."
+  },
+  "endOfFeed": {
+    "title": "¡Has llegado al final! 🎉",
+    "description": "Has visto todas nuestras citas inspiradoras. ¡Vuelve mañana por más motivación!"
+  },
+  "errors": {
+    "notFound": "¡Ups! Página no encontrada",
+    "returnHome": "Volver al Inicio"
+  }
+}

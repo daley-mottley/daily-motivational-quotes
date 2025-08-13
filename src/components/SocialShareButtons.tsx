@@ -4,6 +4,7 @@ import { Quote } from '../data/quotes';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check } from 'lucide-react';
 import { Button } from './ui/button';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 interface SocialShareButtonsProps {
   quote: Quote;
@@ -13,6 +14,7 @@ interface SocialShareButtonsProps {
 export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, className }) => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
   
   const shareText = `"${quote.text}" - ${quote.author}`;
   const shareUrl = window.location.href;
@@ -23,8 +25,8 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, c
       await navigator.clipboard.writeText(`${shareText}\n\n#${hashtags.replace(/,/g, ' #')}`);
       setCopied(true);
       toast({
-        title: "Copied!",
-        description: "Quote copied to clipboard",
+        title: t('buttons.linkCopied'),
+        description: t('share.title'),
       });
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -94,7 +96,7 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, c
       {/* Share indicator */}
       <div className="flex items-center justify-center gap-2 text-gray-500">
         <Share2 className="h-4 w-4" />
-        <span className="text-sm font-medium">Share this inspiration</span>
+        <span className="text-sm font-medium">{t('share.title')}</span>
       </div>
     </div>
   );

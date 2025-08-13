@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Étincelle Quotidienne",
+    "tagline": "Inspire • Partage • Grandit",
+    "description": "Une inspiration infinie au bout de vos doigts. Découvrez des citations motivantes et partagez la positivité avec le monde."
+  },
+  "buttons": {
+    "freshInspiration": "Nouvelle Inspiration",
+    "refreshing": "Actualisation...",
+    "startOver": "Recommencer",
+    "copyLink": "Copier le Lien",
+    "linkCopied": "Lien copié dans le presse-papiers !"
+  },
+  "share": {
+    "title": "Partager cette citation"
+  },
+  "loading": {
+    "inspiration": "Chargement de votre inspiration quotidienne...",
+    "moreInspiration": "Chargement de plus d'inspiration..."
+  },
+  "endOfFeed": {
+    "title": "Vous avez atteint la fin ! 🎉",
+    "description": "Vous avez vu toutes nos citations inspirantes. Revenez demain pour une nouvelle motivation !"
+  },
+  "errors": {
+    "notFound": "Oups ! Page non trouvée",
+    "returnHome": "Retour à l'Accueil"
+  }
+}

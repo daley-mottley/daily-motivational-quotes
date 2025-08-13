@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Täglicher Funke",
+    "tagline": "Inspiriere • Teile • Wachse",
+    "description": "Endlose Inspiration auf Ihren Fingerspitzen. Entdecken Sie motivierende Zitate und teilen Sie Positivität mit der Welt."
+  },
+  "buttons": {
+    "freshInspiration": "Neue Inspiration",
+    "refreshing": "Aktualisieren...",
+    "startOver": "Neu Starten",
+    "copyLink": "Link Kopieren",
+    "linkCopied": "Link in die Zwischenablage kopiert!"
+  },
+  "share": {
+    "title": "Dieses Zitat teilen"
+  },
+  "loading": {
+    "inspiration": "Ihre tägliche Inspiration wird geladen...",
+    "moreInspiration": "Weitere Inspiration wird geladen..."
+  },
+  "endOfFeed": {
+    "title": "Sie haben das Ende erreicht! 🎉",
+    "description": "Sie haben alle unsere inspirierenden Zitate gesehen. Kommen Sie morgen für neue Motivation zurück!"
+  },
+  "errors": {
+    "notFound": "Ups! Seite nicht gefunden",
+    "returnHome": "Zurück zur Startseite"
+  }
+}

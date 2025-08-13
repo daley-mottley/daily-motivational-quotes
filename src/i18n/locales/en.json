@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Daily Spark",
+    "tagline": "Inspire • Share • Grow",
+    "description": "Endless inspiration at your fingertips. Discover motivational quotes and share positivity with the world."
+  },
+  "buttons": {
+    "freshInspiration": "Fresh Inspiration",
+    "refreshing": "Refreshing...",
+    "startOver": "Start Over",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied to clipboard!"
+  },
+  "share": {
+    "title": "Share this quote"
+  },
+  "loading": {
+    "inspiration": "Loading your daily inspiration...",
+    "moreInspiration": "Loading more inspiration..."
+  },
+  "endOfFeed": {
+    "title": "You've reached the end! 🎉",
+    "description": "You've seen all our inspirational quotes. Come back tomorrow for fresh motivation!"
+  },
+  "errors": {
+    "notFound": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  }
+}

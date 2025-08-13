@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "Faísca Diária",
+    "tagline": "Inspire • Compartilhe • Cresça",
+    "description": "Inspiração infinita na ponta dos seus dedos. Descubra citações motivacionais e compartilhe positividade com o mundo."
+  },
+  "buttons": {
+    "freshInspiration": "Nova Inspiração",
+    "refreshing": "Atualizando...",
+    "startOver": "Recomeçar",
+    "copyLink": "Copiar Link",
+    "linkCopied": "Link copiado para a área de transferência!"
+  },
+  "share": {
+    "title": "Compartilhar esta citação"
+  },
+  "loading": {
+    "inspiration": "Carregando sua inspiração diária...",
+    "moreInspiration": "Carregando mais inspiração..."
+  },
+  "endOfFeed": {
+    "title": "Você chegou ao fim! 🎉",
+    "description": "Você viu todas as nossas citações inspiradoras. Volte amanhã para nova motivação!"
+  },
+  "errors": {
+    "notFound": "Ops! Página não encontrada",
+    "returnHome": "Voltar ao Início"
+  }
+}
