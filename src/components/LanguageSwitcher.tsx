@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -22,11 +23,12 @@ const languages = [
 
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (languageCode: string) => {
-    i18n.changeLanguage(languageCode);
+    navigate(`/${languageCode}`);
   };
 
   return (
