@@ -68,7 +68,10 @@
 - 🔴 **User accounts**
 - 🔴 **Custom quote submissions**
 - 🔴 **Analytics integration**
-- 🔴 **Multi-language support**
+- 🟡 **Multi-language support** - *In Progress*
+  - 🟢 **Implement language-based routing**
+  - 🟢 **Add hreflang tags for SEO**
+  - 🟢 **Update language switcher**
 
 ---
 
