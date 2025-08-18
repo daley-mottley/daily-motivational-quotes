@@ -1,5 +1,7 @@
 # Daily Motivational App 📱✨
 
+![Daily Motivational Quotes Screenshot](https://res.cloudinary.com/dzpafdvkm/image/upload/v1726858049/Portfolio/customer-support-bot-screenshot.png)
+
 A beautiful, mobile-friendly website that delivers daily inspiration through carefully curated motivational quotes.
 
 ## 🌟 Features
