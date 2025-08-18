@@ -2,6 +2,8 @@
 
 ![Daily Motivational Quotes Screenshot](https://res.cloudinary.com/dzpafdvkm/image/upload/v1755551239/Portfolio/daily-motivational-quotes-app-daley-mottley-ai-consultant-full-stack-web-developer.png)
 
+<p align="center"><a href="https://daily-motivational-quotes.daleymottley.com" target="_blank">[Live Demo]</a></p>
+
 A beautiful, mobile-friendly website that delivers daily inspiration through carefully curated motivational quotes.
 
 ## 🌟 Features
