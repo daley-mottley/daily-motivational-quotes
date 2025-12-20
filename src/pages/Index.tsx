@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { QuoteCard } from '../components/QuoteCard';
+import { QuoteCardAnimator } from '../components/QuoteCardAnimator';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
 import { Header } from '../components/Header';
@@ -39,7 +39,7 @@ const Index = () => {
             <article key={`${quote.id}-${index}`} className="w-full">
               {/* Quote Card */}
               <div className="mb-6">
-                <QuoteCard quote={quote} />
+                <QuoteCardAnimator quote={quote} />
               </div>
               
               {/* Social Share - Enhanced Design */}
