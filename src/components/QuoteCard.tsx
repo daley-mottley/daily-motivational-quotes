@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
@@ -11,9 +11,37 @@ interface QuoteCardProps {
 
 export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    const node = cardRef.current;
+    if (node) {
+      observer.observe(node);
+    }
+
+    return () => {
+      if (node) {
+        observer.unobserve(node);
+      }
+    };
+  }, []);
 
   return (
     <div 
+      ref={cardRef}
       className={cn(
         "relative overflow-hidden rounded-3xl p-8 md:p-12 text-white min-h-[400px] md:min-h-[450px] flex flex-col justify-center items-center text-center shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98]",
         className
@@ -49,11 +77,19 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
         {/* Quote marks */}
         <div className="text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none">"</div>
         
-        <blockquote className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl">
+        <blockquote className={cn(
+          "text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl",
+          "transition-all duration-700 ease-out",
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+        )}>
           {quote.text}
         </blockquote>
         
-        <cite className="text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6">
+        <cite className={cn(
+          "text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6",
+          "transition-all duration-700 ease-out delay-200",
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+        )}>
           — {quote.author}
         </cite>
         
