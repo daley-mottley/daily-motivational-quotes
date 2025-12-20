@@ -87,7 +87,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
                 "inline-block transition-opacity duration-300 ease-in",
                 isVisible ? "opacity-100" : "opacity-0"
               )}
-              style={{ transitionDelay: `${index * 75}ms` }}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {word}
             </span>
@@ -99,7 +99,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
           "transition-opacity duration-500 ease-out",
           isVisible ? "opacity-100" : "opacity-0"
         )}
-        style={{ transitionDelay: `${quote.text.split(' ').length * 75 + 200}ms` }}
+        style={{ transitionDelay: `${quote.text.split(' ').length * 150 + 200}ms` }}
         >
           — {quote.author}
         </cite>
