@@ -39,7 +39,7 @@ const Index = () => {
             <article key={`${quote.id}-${index}`} className="w-full">
               {/* Quote Card */}
               <div className="mb-6">
-                <QuoteCard quote={quote} />
+                <QuoteCard quote={quote} className="quote-card" />
               </div>
               
               {/* Social Share - Enhanced Design */}

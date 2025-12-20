@@ -78,18 +78,29 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
         <div className="text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none">"</div>
         
         <blockquote className={cn(
-          "text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl",
-          "transition-all duration-700 ease-out",
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          "text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl"
         )}>
-          {quote.text}
+          {quote.text.split(' ').map((word, index) => (
+            <span
+              key={index}
+              className={cn(
+                "inline-block transition-opacity duration-300 ease-in",
+                isVisible ? "opacity-100" : "opacity-0"
+              )}
+              style={{ transitionDelay: `${index * 75}ms` }}
+            >
+              {word}
+            </span>
+          )).reduce((prev, curr) => <>{prev} {curr}</>)}
         </blockquote>
         
         <cite className={cn(
           "text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6",
-          "transition-all duration-700 ease-out delay-200",
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-        )}>
+          "transition-opacity duration-500 ease-out",
+          isVisible ? "opacity-100" : "opacity-0"
+        )}
+        style={{ transitionDelay: `${quote.text.split(' ').length * 75 + 200}ms` }}
+        >
           — {quote.author}
         </cite>
         
