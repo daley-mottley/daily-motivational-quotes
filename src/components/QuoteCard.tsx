@@ -9,7 +9,11 @@ interface QuoteCardProps {
   className?: string;
 }
 
-export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
+// PERFORMANCE OPTIMIZATION:
+// Wrapped QuoteCard with React.memo to prevent unnecessary re-renders when its props
+// have not changed. This is crucial for performance, especially if the parent component
+// re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
+export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -124,4 +128,4 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({ quote, className }) => {
       
     </div>
   );
-};
+});
