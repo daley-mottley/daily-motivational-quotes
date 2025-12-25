@@ -12,7 +12,12 @@
     "linkCopied": "Link copied to clipboard!"
   },
   "share": {
-    "title": "Share this quote"
+    "title": "Share this quote",
+    "onTwitter": "Share on Twitter",
+    "onFacebook": "Share on Facebook",
+    "onLinkedIn": "Share on LinkedIn",
+    "copy": "Copy link",
+    "copied": "Link copied!"
   },
   "loading": {
     "inspiration": "Loading your daily inspiration...",
