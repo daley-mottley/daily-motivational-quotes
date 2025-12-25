@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Quote } from '../data/quotes';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check } from 'lucide-react';
 import { Button } from './ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
 
@@ -71,29 +72,44 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, c
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
       {/* Share buttons */}
-      <div className="flex justify-center gap-3"> {/* Increased gap slightly */}
-        {shareOptions.map((option) => (
-          <Button
-            key={option.name}
-            onClick={option.action}
-            aria-label={`Share on ${option.name}`}
-            className={`${option.color} text-white border-0 px-4 py-2 rounded-full font-medium transition-all duration-200 flex items-center justify-center min-w-[48px] h-[48px] shadow-lg hover:shadow-xl active:scale-95`} // Slightly larger buttons
-            size="icon" // Use icon size for consistent dimensions
-          >
-            <option.icon className="h-5 w-5" />
-          </Button>
-        ))}
-        
-        {/* Copy button */}
-        <Button
-          onClick={handleCopyToClipboard}
-          aria-label={copied ? 'Copied to clipboard' : 'Copy quote to clipboard'}
-          className="bg-gray-600 hover:bg-gray-700 text-white border-0 px-4 py-2 rounded-full font-medium transition-all duration-200 flex items-center justify-center min-w-[48px] h-[48px] shadow-lg hover:shadow-xl active:scale-95" // Match size and styling
-          size="icon" // Use icon size
-        >
-          {copied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
-        </Button>
-      </div>
+      <TooltipProvider>
+        <div className="flex justify-center gap-3"> {/* Increased gap slightly */}
+          {shareOptions.map((option) => (
+            <Tooltip key={option.name}>
+              <TooltipTrigger asChild>
+                <Button
+                  onClick={option.action}
+                  aria-label={`Share on ${option.name}`}
+                  className={`${option.color} text-white border-0 px-4 py-2 rounded-full font-medium transition-all duration-200 flex items-center justify-center min-w-[48px] h-[48px] shadow-lg hover:shadow-xl active:scale-95`} // Slightly larger buttons
+                  size="icon" // Use icon size for consistent dimensions
+                >
+                  <option.icon className="h-5 w-5" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{t(`share.on${option.name}`)}</p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
+
+          {/* Copy button */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                onClick={handleCopyToClipboard}
+                aria-label={copied ? 'Copied to clipboard' : 'Copy quote to clipboard'}
+                className="bg-gray-600 hover:bg-gray-700 text-white border-0 px-4 py-2 rounded-full font-medium transition-all duration-200 flex items-center justify-center min-w-[48px] h-[48px] shadow-lg hover:shadow-xl active:scale-95" // Match size and styling
+                size="icon" // Use icon size
+              >
+                {copied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{copied ? t('share.copied') : t('share.copy')}</p>
+            </TooltipContent>
+          </Tooltip>
+        </div>
+      </TooltipProvider>
 
       {/* Share indicator */}
       <div className="flex items-center justify-center gap-2 text-gray-500">
