@@ -47,6 +47,20 @@ export interface ImageData {
 class ImageService {
   private imageCache = new Map<string, ImageData>();
 
+  constructor() {
+    this.preloadFallbackImages();
+  }
+
+  // Preload fallback images for instant access
+  private preloadFallbackImages(): void {
+    if (typeof window !== 'undefined') {
+      FALLBACK_IMAGES.forEach(id => {
+        const img = new Image();
+        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80`;
+      });
+    }
+  }
+
   // Generate a cache key based on quote content and category
   private generateCacheKey(text: string, category: string): string {
     return `${category}-${text.slice(0, 20).replace(/\s+/g, '-').toLowerCase()}`;
