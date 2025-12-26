@@ -30,7 +30,7 @@ export const useImageBackground = (quote: Quote | null) => {
     };
 
     fetchImage();
-  }, [quote]);
+  }, [quote?.id, quote?.text, quote?.category]);
 
   return { imageData, loading };
 };

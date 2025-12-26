@@ -56,7 +56,7 @@ class ImageService {
     if (typeof window !== 'undefined') {
       FALLBACK_IMAGES.forEach(id => {
         const img = new Image();
-        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80`;
+        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`;
       });
     }
   }
@@ -91,7 +91,7 @@ class ImageService {
   private getFallbackImage(): ImageData {
     const randomId = FALLBACK_IMAGES[Math.floor(Math.random() * FALLBACK_IMAGES.length)];
     return {
-      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80`,
+      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`,
       photographer: 'Unsplash',
       source: 'fallback',
       id: randomId
