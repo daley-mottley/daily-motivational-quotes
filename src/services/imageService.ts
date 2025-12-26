@@ -121,6 +121,14 @@ class ImageService {
     return imageData;
   }
 
+  // Preload a single image by creating an Image object in memory
+  preloadImage(url: string): void {
+    if (typeof window !== 'undefined') {
+      const img = new Image();
+      img.src = url;
+    }
+  }
+
   // Clear cache (useful for testing)
   clearCache(): void {
     this.imageCache.clear();
