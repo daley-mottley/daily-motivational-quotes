@@ -12,7 +12,11 @@ interface SocialShareButtonsProps {
   className?: string;
 }
 
-export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, className }) => {
+// PERFORMANCE OPTIMIZATION:
+// Wrapped SocialShareButtons with React.memo to prevent unnecessary re-renders when its props
+// have not changed. This is crucial for performance in a list, as it avoids re-rendering
+// every share button component when new items are added to the list.
+export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(({ quote, className }) => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
   const { t } = useTranslation();
@@ -118,4 +122,4 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({ quote, c
       </div>
     </div>
   );
-};
+});
