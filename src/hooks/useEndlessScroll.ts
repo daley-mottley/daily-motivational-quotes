@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { throttle } from '../lib/utils';
 import { useLocalizedQuotes } from './useLocalizedQuotes';
+import { imageService } from '../services/imageService';
 
 // Fisher-Yates (Knuth) Shuffle Algorithm
 const shuffleArray = (array: Quote[]) => {
@@ -80,6 +81,16 @@ export const useEndlessScroll = () => {
       loadMoreQuotes();
     }
   }, [loadMoreQuotes, quotes.length, shuffledQuotes.length]);
+
+  // Preload the next quote's image
+  useEffect(() => {
+    if (shuffledQuotes.length > quotes.length) {
+      const nextQuote = shuffledQuotes[quotes.length];
+      imageService.getImageForQuote(nextQuote.text, nextQuote.category).then(imageData => {
+        imageService.preloadImage(imageData.url);
+      });
+    }
+  }, [quotes, shuffledQuotes]);
 
   // Scroll event listener
   useEffect(() => {

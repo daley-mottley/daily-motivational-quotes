@@ -47,6 +47,20 @@ export interface ImageData {
 class ImageService {
   private imageCache = new Map<string, ImageData>();
 
+  constructor() {
+    this.preloadFallbackImages();
+  }
+
+  // Preload fallback images for instant access
+  private preloadFallbackImages(): void {
+    if (typeof window !== 'undefined') {
+      FALLBACK_IMAGES.forEach(id => {
+        const img = new Image();
+        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`;
+      });
+    }
+  }
+
   // Generate a cache key based on quote content and category
   private generateCacheKey(text: string, category: string): string {
     return `${category}-${text.slice(0, 20).replace(/\s+/g, '-').toLowerCase()}`;
@@ -77,7 +91,7 @@ class ImageService {
   private getFallbackImage(): ImageData {
     const randomId = FALLBACK_IMAGES[Math.floor(Math.random() * FALLBACK_IMAGES.length)];
     return {
-      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80`,
+      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`,
       photographer: 'Unsplash',
       source: 'fallback',
       id: randomId
@@ -105,6 +119,14 @@ class ImageService {
     // Cache the result
     this.imageCache.set(cacheKey, imageData);
     return imageData;
+  }
+
+  // Preload a single image by creating an Image object in memory
+  preloadImage(url: string): void {
+    if (typeof window !== 'undefined') {
+      const img = new Image();
+      img.src = url;
+    }
   }
 
   // Clear cache (useful for testing)
