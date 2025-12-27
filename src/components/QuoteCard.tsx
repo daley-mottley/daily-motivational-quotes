@@ -125,10 +125,16 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
       </div>
       
       {/* Decorative corner elements */}
-      <div className="absolute top-6 left-6 text-6xl md:text-8xl text-white/10 font-serif drop-shadow-sm hidden md:block">
+      <div
+        aria-hidden="true"
+        className="absolute top-6 left-6 text-6xl md:text-8xl text-white/10 font-serif drop-shadow-sm hidden md:block"
+      >
         "
       </div>
-      <div className="absolute bottom-6 right-6 text-6xl md:text-8xl text-white/10 font-serif rotate-180 drop-shadow-sm hidden md:block">
+      <div
+        aria-hidden="true"
+        className="absolute bottom-6 right-6 text-6xl md:text-8xl text-white/10 font-serif rotate-180 drop-shadow-sm hidden md:block"
+      >
         "
       </div>
       
