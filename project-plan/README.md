@@ -1,4 +1,3 @@
-
 # Daily Motivational Quotes & Images Web App - Project Plan
 
 ## Overview
@@ -20,6 +19,8 @@ To create a digital sanctuary where users can find daily inspiration through the
 4. **Quote Categories** - Different themes (success, happiness, resilience, etc.)
 5. **Sharing Preparation** - Foundation for social media sharing
 6. **Favorites System** - Save meaningful quotes locally
+7. **Endless Scrolling** - A continuous stream of quotes for an uninterrupted user experience.
+8. **Multi-language Support** - The application is available in multiple languages to reach a global audience.
 
 ## Future Enhancements
 - User accounts and cloud sync

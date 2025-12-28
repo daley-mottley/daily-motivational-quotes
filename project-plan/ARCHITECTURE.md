@@ -1,4 +1,3 @@
-
 # Technical Architecture
 
 ## System Overview
@@ -32,16 +31,17 @@ App
 │   ├── ShareButton
 │   └── FavoriteButton
 └── Hooks
-    ├── useQuotes
-    ├── useFavorites
-    └── useLocalStorage
+    ├── useEndlessScroll
+    ├── useLocalizedQuotes
+    └── useFavorites (via LocalStorage)
 ```
 
 ## Data Flow
-1. User opens app → Load daily quote from curated collection
-2. Quote displays with background image → Rendered in QuoteCard
-3. User interactions → Save favorites, navigate categories
-4. Data persistence → LocalStorage for offline access
+1. User opens app → Initial batch of quotes is fetched, shuffled, and displayed.
+2. User scrolls → Additional quotes are loaded on demand (endless scroll).
+3. Image preloading → The next quote's background image is preloaded to ensure a smooth user experience.
+4. User interactions → Save favorites to LocalStorage, navigate categories.
+5. Multi-language support → Quotes are displayed in the user's selected language.
 
 ## File Structure
 ```
@@ -52,8 +52,11 @@ src/
 │   └── features/
 ├── hooks/
 ├── data/
-│   ├── quotes.ts
-│   └── images.ts
+│   ├── quotes-en.ts
+│   ├── quotes-es.ts
+│   └── (etc.)
+├── i18n/
+├── services/
 ├── types/
 ├── utils/
 └── styles/
