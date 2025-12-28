@@ -35,8 +35,15 @@ const Index = () => {
 
         {/* Quotes Feed */}
         <div className="space-y-8">
-          {quotes.map((quote, index) => (
-            <article key={`${quote.id}-${index}`} className="w-full">
+          {/*
+            PERFORMANCE OPTIMIZATION:
+            Using the stable and unique `quote.id` as the key is crucial for React's reconciliation process.
+            Previously, using the array index could lead to unnecessary re-renders of the entire list
+            when new quotes are loaded, as React wouldn't be able to identify which elements are stable.
+            This change ensures that only new components are rendered, improving scroll performance.
+          */}
+          {quotes.map((quote) => (
+            <article key={quote.id} className="w-full">
               {/* Quote Card */}
               <div className="mb-6">
                 <QuoteCard quote={quote} className="quote-card" />
