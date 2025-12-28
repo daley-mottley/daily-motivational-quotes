@@ -30,6 +30,12 @@ export const useImageBackground = (quote: Quote | null) => {
     };
 
     fetchImage();
+  // PERFORMANCE OPTIMIZATION:
+  // This dependency array is intentionally structured to only re-run the effect
+  // when the *content* of the quote changes, not the object reference.
+  // The 'quote' object is re-created on each render cycle of the parent,
+  // so including 'quote' itself would cause unnecessary image fetches.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quote?.id, quote?.text, quote?.category]);
 
   return { imageData, loading };
