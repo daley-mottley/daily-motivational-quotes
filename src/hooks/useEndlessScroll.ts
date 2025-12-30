@@ -48,10 +48,15 @@ export const useEndlessScroll = () => {
 
   // Shuffle quotes on initial load and refresh
   useEffect(() => {
+    // When the language changes (and thus localizedQuotes changes), reset everything
+    // to ensure a fresh start with the new set of quotes.
     if (localizedQuotes.length > 0) {
+      setQuotes([]);
+      setPage(0);
+      setHasMore(true);
       setShuffledQuotes(shuffleArray([...localizedQuotes]));
     }
-  }, [localizedQuotes]); // Re-shuffle when language changes
+  }, [localizedQuotes]);
 
   const loadMoreQuotes = useCallback(() => {
     if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
