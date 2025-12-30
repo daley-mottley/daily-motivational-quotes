@@ -9,6 +9,10 @@ import it from './locales/it.json';
 import pt from './locales/pt.json';
 import zh from './locales/zh.json';
 import ja from './locales/ja.json';
+import { supportedLanguages } from './supportedLanguages';
+
+const langFromPath = window.location.pathname.split('/')[1];
+const currentLang = supportedLanguages.includes(langFromPath) ? langFromPath : 'en';
 
 i18n
   .use(initReactI18next)
@@ -23,6 +27,7 @@ i18n
       zh: { translation: zh },
       ja: { translation: ja },
     },
+    lng: currentLang,
     fallbackLng: 'en',
     debug: false,
     interpolation: {

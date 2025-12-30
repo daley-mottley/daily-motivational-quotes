@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Outlet, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-
-const supportedLanguages = ['en', 'es', 'fr', 'de', 'it', 'pt', 'zh', 'ja'];
+import { supportedLanguages } from '../i18n/supportedLanguages';
 
 const LanguageHandler = () => {
   const { lang } = useParams();
