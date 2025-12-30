@@ -23,7 +23,7 @@ const LanguageHandler = () => {
     <HelmetProvider>
       <Helmet>
         {supportedLanguages.map((l) => (
-          <link key={l} rel="alternate" hrefLang={l} href={`https://example.com/${l}`} />
+          <link key={l} rel="alternate" hrefLang={l} href={`${window.location.origin}/${l}`} />
         ))}
       </Helmet>
       <Outlet />
