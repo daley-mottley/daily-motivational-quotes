@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Outlet, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-
-const supportedLanguages = ['en', 'es', 'fr', 'de', 'it', 'pt', 'zh', 'ja'];
+import { supportedLanguages } from '../i18n/supportedLanguages';
 
 const LanguageHandler = () => {
   const { lang } = useParams();
@@ -23,7 +22,7 @@ const LanguageHandler = () => {
     <HelmetProvider>
       <Helmet>
         {supportedLanguages.map((l) => (
-          <link key={l} rel="alternate" hrefLang={l} href={`https://example.com/${l}`} />
+          <link key={l} rel="alternate" hrefLang={l} href={`${window.location.origin}/${l}`} />
         ))}
       </Helmet>
       <Outlet />
