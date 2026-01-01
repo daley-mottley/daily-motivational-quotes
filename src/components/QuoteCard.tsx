@@ -7,13 +7,14 @@ import { useImageBackground } from '../hooks/useImageBackground';
 interface QuoteCardProps {
   quote: Quote;
   className?: string;
+  index: number;
 }
 
 // PERFORMANCE OPTIMIZATION:
 // Wrapped QuoteCard with React.memo to prevent unnecessary re-renders when its props
 // have not changed. This is crucial for performance, especially if the parent component
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
-export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
+export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className, index }) => {
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -48,9 +49,11 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
       ref={cardRef}
       className={cn(
         'relative overflow-hidden rounded-3xl p-8 md:p-12 text-white min-h-[400px] md:min-h-[450px] flex flex-col justify-center items-center text-center shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98]',
-        className
+        className,
+        isVisible ? 'opacity-100' : 'opacity-0'
       )}
       style={{
+        transitionDelay: `${index * 150}ms`,
         backgroundImage: imageData ? `url(${imageData.url})` : undefined,
         backgroundSize: 'cover',
         backgroundPosition: 'center',

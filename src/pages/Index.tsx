@@ -42,11 +42,11 @@ const Index = () => {
             when new quotes are loaded, as React wouldn't be able to identify which elements are stable.
             This change ensures that only new components are rendered, improving scroll performance.
           */}
-          {quotes.map((quote) => (
+          {quotes.map((quote, index) => (
             <article key={quote.id} className="w-full">
               {/* Quote Card */}
               <div className="mb-6">
-                <QuoteCard quote={quote} className="quote-card" />
+                <QuoteCard quote={quote} className="quote-card" index={index} />
               </div>
               
               {/* Social Share - Enhanced Design */}
