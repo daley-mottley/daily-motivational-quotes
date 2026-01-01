@@ -78,11 +78,6 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
       {/* Content with improved typography */}
       <div className="relative z-10 max-w-full mx-auto px-4">
-        {/* Quote marks */}
-        <div className="text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none">
-          "
-        </div>
-
         <blockquote
           className={cn(
             'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl'
@@ -123,21 +118,6 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
           </span>
         </div>
       </div>
-      
-      {/* Decorative corner elements */}
-      <div
-        aria-hidden="true"
-        className="absolute top-6 left-6 text-6xl md:text-8xl text-white/10 font-serif drop-shadow-sm hidden md:block"
-      >
-        "
-      </div>
-      <div
-        aria-hidden="true"
-        className="absolute bottom-6 right-6 text-6xl md:text-8xl text-white/10 font-serif rotate-180 drop-shadow-sm hidden md:block"
-      >
-        "
-      </div>
-      
       
     </figure>
   );
