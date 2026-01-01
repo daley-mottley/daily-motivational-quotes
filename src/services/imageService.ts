@@ -129,6 +129,13 @@ class ImageService {
     }
   }
 
+  // Preload multiple images concurrently
+  preloadImages(urls: string[]): void {
+    if (typeof window !== 'undefined') {
+      urls.forEach(url => this.preloadImage(url));
+    }
+  }
+
   // Clear cache (useful for testing)
   clearCache(): void {
     this.imageCache.clear();

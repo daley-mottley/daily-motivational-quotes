@@ -87,13 +87,21 @@ export const useEndlessScroll = () => {
     }
   }, [loadMoreQuotes, quotes.length, shuffledQuotes.length]);
 
-  // Preload the next quote's image
+  // Preload the next batch of images for a smoother scrolling experience
   useEffect(() => {
     if (shuffledQuotes.length > quotes.length) {
-      const nextQuote = shuffledQuotes[quotes.length];
-      imageService.getImageForQuote(nextQuote.text, nextQuote.category).then(imageData => {
-        imageService.preloadImage(imageData.url);
-      });
+      const nextBatchStartIndex = quotes.length;
+      const nextBatchEndIndex = nextBatchStartIndex + QUOTES_PER_PAGE;
+      const nextBatch = shuffledQuotes.slice(nextBatchStartIndex, nextBatchEndIndex);
+
+      if (nextBatch.length > 0) {
+        Promise.all(
+          nextBatch.map(quote => imageService.getImageForQuote(quote.text, quote.category))
+        ).then(imageDataArray => {
+          const urls = imageDataArray.map(data => data.url);
+          imageService.preloadImages(urls);
+        });
+      }
     }
   }, [quotes, shuffledQuotes]);
 
