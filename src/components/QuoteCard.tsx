@@ -78,6 +78,11 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
       {/* Content with improved typography */}
       <div className="relative z-10 max-w-full mx-auto px-4">
+        {/* Quote marks */}
+        <div className="text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none">
+          "
+        </div>
+
         <blockquote
           className={cn(
             'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl'
@@ -119,6 +124,8 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
+
+
     </figure>
   );
 });
