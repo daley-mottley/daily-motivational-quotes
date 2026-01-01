@@ -116,7 +116,10 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </figcaption>
 
         {/* Enhanced category badge */}
-        <div className="flex justify-center">
+        <div
+          className="flex justify-center"
+          style={{ display: 'none' }}
+        >
           <span className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium capitalize border border-white/30 shadow-lg">
             <div className="w-2 h-2 bg-white rounded-full mr-2 opacity-80"></div>
             {quote.category}
@@ -124,21 +127,8 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-      {/* Decorative corner elements */}
-      <div
-        aria-hidden="true"
-        className="absolute top-6 left-6 text-6xl md:text-8xl text-white/10 font-serif drop-shadow-sm hidden md:block"
-      >
-        "
-      </div>
-      <div
-        aria-hidden="true"
-        className="absolute bottom-6 right-6 text-6xl md:text-8xl text-white/10 font-serif rotate-180 drop-shadow-sm hidden md:block"
-      >
-        "
-      </div>
-      
-      
+
+
     </figure>
   );
 });
