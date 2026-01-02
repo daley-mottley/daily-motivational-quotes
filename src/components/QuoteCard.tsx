@@ -7,14 +7,14 @@ import { useImageBackground } from '../hooks/useImageBackground';
 interface QuoteCardProps {
   quote: Quote;
   className?: string;
-  index: number;
+  animationDelay?: number;
 }
 
 // PERFORMANCE OPTIMIZATION:
 // Wrapped QuoteCard with React.memo to prevent unnecessary re-renders when its props
 // have not changed. This is crucial for performance, especially if the parent component
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
-export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className, index }) => {
+export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className, animationDelay = 0 }) => {
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -86,13 +86,21 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
         <blockquote
           className={cn(
-            'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl',
-            'transition-opacity duration-500',
-            isVisible ? 'opacity-100' : 'opacity-0'
+            'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl'
           )}
-          style={{ transitionDelay: `${index * 150}ms` }}
         >
-          {quote.text}
+          {quote.text.split(' ').map((word, index) => (
+            <span
+              key={index}
+              className={cn(
+                'inline-block transition-opacity duration-300 ease-in',
+                isVisible ? 'opacity-100' : 'opacity-0'
+              )}
+              style={{ transitionDelay: `${animationDelay + index * 150}ms` }}
+            >
+              {word}
+            </span>
+          )).reduce((prev, curr) => <>{prev} {curr}</>)}
         </blockquote>
 
         <figcaption
@@ -102,7 +110,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             isVisible ? 'opacity-100' : 'opacity-0'
           )}
           style={{
-            transitionDelay: `${index * 150 + 200}ms`,
+            transitionDelay: `${animationDelay + quote.text.split(' ').length * 150 + 200}ms`,
           }}
         >
           — {quote.author}

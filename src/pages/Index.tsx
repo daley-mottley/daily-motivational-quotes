@@ -42,19 +42,31 @@ const Index = () => {
             when new quotes are loaded, as React wouldn't be able to identify which elements are stable.
             This change ensures that only new components are rendered, improving scroll performance.
           */}
-          {quotes.map((quote, index) => (
-            <article key={quote.id} className="w-full">
-              {/* Quote Card */}
-              <div className="mb-6">
-                <QuoteCard quote={quote} className="quote-card" index={index} />
-              </div>
-              
-              {/* Social Share - Enhanced Design */}
-              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300">
-                <SocialShareButtons quote={quote} />
-              </div>
-            </article>
-          ))}
+          {quotes.map((quote, index) => {
+            const previousQuotes = quotes.slice(0, index);
+            const animationDelay = previousQuotes.reduce((delay, prevQuote) => {
+              const quoteDuration = prevQuote.text.split(' ').length * 150 + 200;
+              return delay + quoteDuration;
+            }, 0);
+
+            return (
+              <article key={quote.id} className="w-full">
+                {/* Quote Card */}
+                <div className="mb-6">
+                  <QuoteCard
+                    quote={quote}
+                    className="quote-card"
+                    animationDelay={animationDelay}
+                  />
+                </div>
+
+                {/* Social Share - Enhanced Design */}
+                <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300">
+                  <SocialShareButtons quote={quote} />
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         {/* Loading Indicator */}
