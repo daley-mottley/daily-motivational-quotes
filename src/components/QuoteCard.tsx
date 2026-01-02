@@ -7,28 +7,31 @@ import { useImageBackground } from '../hooks/useImageBackground';
 interface QuoteCardProps {
   quote: Quote;
   className?: string;
-  animationDelay?: number;
+  animationIndex: number;
 }
 
 // PERFORMANCE OPTIMIZATION:
 // Wrapped QuoteCard with React.memo to prevent unnecessary re-renders when its props
 // have not changed. This is crucial for performance, especially if the parent component
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
-export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className, animationDelay = 0 }) => {
+export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className, animationIndex }) => {
   const { imageData, loading } = useImageBackground(quote);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
+          // Stagger the animation start based on the card's index
+          setTimeout(() => {
+            setIsAnimating(true);
+            observer.disconnect();
+          }, animationIndex * 200); // 200ms delay between each card
         }
       },
       {
-        threshold: 0.1,
+        threshold: 0.1, // Trigger when 10% of the card is visible
       }
     );
 
@@ -94,9 +97,9 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
               key={index}
               className={cn(
                 'inline-block transition-opacity duration-300 ease-in',
-                isVisible ? 'opacity-100' : 'opacity-0'
+                isAnimating ? 'opacity-100' : 'opacity-0'
               )}
-              style={{ transitionDelay: `${animationDelay + index * 150}ms` }}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {word}
             </span>
@@ -107,10 +110,10 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
           className={cn(
             'text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6',
             'transition-opacity duration-500 ease-out',
-            isVisible ? 'opacity-100' : 'opacity-0'
+            isAnimating ? 'opacity-100' : 'opacity-0'
           )}
           style={{
-            transitionDelay: `${animationDelay + quote.text.split(' ').length * 150 + 200}ms`,
+            transitionDelay: `${quote.text.split(' ').length * 150 + 200}ms`,
           }}
         >
           — {quote.author}
