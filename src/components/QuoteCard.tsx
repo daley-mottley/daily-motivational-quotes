@@ -49,11 +49,9 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
       ref={cardRef}
       className={cn(
         'relative overflow-hidden rounded-3xl p-8 md:p-12 text-white min-h-[400px] md:min-h-[450px] flex flex-col justify-center items-center text-center shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98]',
-        className,
-        isVisible ? 'opacity-100' : 'opacity-0'
+        className
       )}
       style={{
-        transitionDelay: `${index * 150}ms`,
         backgroundImage: imageData ? `url(${imageData.url})` : undefined,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -88,21 +86,13 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
         <blockquote
           className={cn(
-            'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl'
+            'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl',
+            'transition-opacity duration-500',
+            isVisible ? 'opacity-100' : 'opacity-0'
           )}
+          style={{ transitionDelay: `${index * 150}ms` }}
         >
-          {quote.text.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={cn(
-                'inline-block transition-opacity duration-300 ease-in',
-                isVisible ? 'opacity-100' : 'opacity-0'
-              )}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              {word}
-            </span>
-          )).reduce((prev, curr) => <>{prev} {curr}</>)}
+          {quote.text}
         </blockquote>
 
         <figcaption
@@ -112,7 +102,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             isVisible ? 'opacity-100' : 'opacity-0'
           )}
           style={{
-            transitionDelay: `${quote.text.split(' ').length * 150 + 200}ms`,
+            transitionDelay: `${index * 150 + 200}ms`,
           }}
         >
           — {quote.author}
