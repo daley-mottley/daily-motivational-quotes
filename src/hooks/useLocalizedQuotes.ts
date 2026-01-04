@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Quote } from '../data/quotes';
 import { quotesEn } from '../data/quotes-en';
@@ -24,6 +25,10 @@ export const useLocalizedQuotes = (): Quote[] => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language as keyof typeof quotesMap;
   
-  // Return quotes for current language, fallback to English if not found
-  return quotesMap[currentLanguage] || quotesMap.en;
+  // Memoize the result to ensure a stable reference is returned unless the language changes.
+  const quotes = useMemo(() => {
+    return quotesMap[currentLanguage] || quotesMap.en;
+  }, [currentLanguage]);
+
+  return quotes;
 };
