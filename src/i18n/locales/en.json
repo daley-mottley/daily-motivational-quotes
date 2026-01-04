@@ -30,5 +30,8 @@
   "errors": {
     "notFound": "Oops! Page not found",
     "returnHome": "Return to Home"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "Change language"
   }
 }

@@ -25,5 +25,8 @@
   "errors": {
     "notFound": "おっと！ページが見つかりません",
     "returnHome": "ホームに戻る"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "言語を変更"
   }
 }
