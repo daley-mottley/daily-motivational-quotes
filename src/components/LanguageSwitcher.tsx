@@ -22,7 +22,7 @@ const languages = [
 ];
 
 export const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
@@ -34,7 +34,12 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="gap-2 text-gray-600 hover:text-gray-800">
+        <Button
+          variant="ghost"
+          size="sm"
+          className="gap-2 text-gray-600 hover:text-gray-800"
+          aria-label={t('languageSwitcher.changeLanguage')}
+        >
           <span className="text-lg">{currentLanguage.flag}</span>
           <Languages size={16} />
         </Button>

@@ -25,5 +25,8 @@
   "errors": {
     "notFound": "哎呀！页面未找到",
     "returnHome": "返回首页"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "切换语言"
   }
 }

@@ -25,5 +25,8 @@
   "errors": {
     "notFound": "Ups! Seite nicht gefunden",
     "returnHome": "Zurück zur Startseite"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "Sprache ändern"
   }
 }
