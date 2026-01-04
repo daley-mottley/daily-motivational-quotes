@@ -109,7 +109,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             isVisible ? 'opacity-100' : 'opacity-0'
           )}
           style={{
-            transitionDelay: `${quote.text.split(' ').length * 150 + 200}ms`,
+            transitionDelay: `${quote.text.split(' ').length * 150 + 500}ms`,
           }}
         >
           — {quote.author}
