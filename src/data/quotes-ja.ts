@@ -120,371 +120,369 @@ export const quotesJa: Quote[] = [
     author: "中国のことわざ",
     category: "行動",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  }
-  // Untranslated quotes
-  ,
+  },
   {
     id: 19,
-    text: "There is nothing impossible to they who will try.",
-    author: "Alexander the Great",
-    category: "possibility",
+    text: "挑戦する者に不可能はない。",
+    author: "アレクサンダー大王",
+    category: "可能性",
     backgroundGradient: "from-blue-500 via-teal-500 to-green-500"
   },
   {
     id: 20,
-    text: "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    author: "Walt Whitman",
-    category: "positivity",
+    text: "常に顔を太陽に向けなさい、そうすれば影はあなたの後ろに落ちます。",
+    author: "ウォルト・ホイットマン",
+    category: "ポジティブ",
     backgroundGradient: "from-yellow-400 via-orange-500 to-red-500"
   },
   {
     id: 21,
-    text: "Champions keep playing until they get it right.",
-    author: "Billie Jean King",
-    category: "perseverance",
+    text: "チャンピオンは正しくできるまでプレーし続けます。",
+    author: "ビリー・ジーン・キング",
+    category: "忍耐",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 22,
-    text: "You are your best thing.",
-    author: "Toni Morrison",
-    category: "self-worth",
+    text: "あなたはあなたの最高のものです。",
+    author: "トニ・モリスン",
+    category: "自己価値",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 23,
-    text: "It is better to fail in originality than to succeed in imitation.",
-    author: "Herman Melville",
-    category: "originality",
+    text: "模倣で成功するより、独創性で失敗する方が良い。",
+    author: "ハーマン・メルヴィル",
+    category: "独創性",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 24,
-    text: "You are never too old to set another goal or to dream a new dream.",
-    author: "C.S. Lewis",
-    category: "dreams",
+    text: "新しい目標を設定したり、新しい夢を見るのに年を取りすぎることはありません。",
+    author: "C.S.ルイス",
+    category: "夢",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 25,
-    text: "A champion is defined not by their wins but by how they can recover when they fall.",
-    author: "Serena Williams",
-    category: "resilience",
+    text: "チャンピオンは勝利によってではなく、倒れたときにどのように回復できるかによって定義されます。",
+    author: "セリーナ・ウィリアムズ",
+    category: "回復力",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 26,
-    text: "Go confidently in the direction of your dreams. Live the life you have imagined.",
-    author: "Henry David Thoreau",
-    category: "dreams",
+    text: "自信を持って夢の方向へ進みなさい。想像した人生を生きなさい。",
+    author: "ヘンリー・デイヴィッド・ソロー",
+    category: "夢",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 27,
-    text: "The only limit to our realization of tomorrow will be our doubts of today.",
-    author: "Franklin D. Roosevelt",
-    category: "mindset",
+    text: "私たちの明日の実現に対する唯一の制限は、今日の私たちの疑いです。",
+    author: "フランクリン・D・ルーズベルト",
+    category: "考え方",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 28,
-    text: "Nothing is impossible. The word itself says, 'I'm possible!'",
-    author: "Audrey Hepburn",
-    category: "possibility",
+    text: "不可能は何もない。その言葉自体が「私は可能だ！」と言っています。",
+    author: "オードリー・ヘプバーン",
+    category: "可能性",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 29,
-    text: "A person who never made a mistake never tried anything new.",
-    author: "Albert Einstein",
-    category: "learning",
+    text: "間違いを犯したことのない人は、新しいことを試したことがない人です。",
+    author: "アルベルト・アインシュタイン",
+    category: "学習",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 30,
-    text: "Love yourself first and everything else falls into line.",
-    author: "Lucille Ball",
-    category: "self-love",
+    text: "まず自分を愛しなさい、そうすれば他のすべてがうまくいくでしょう。",
+    author: "ルシル・ボール",
+    category: "自己愛",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 31,
-    text: "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.",
-    author: "Ralph Waldo Emerson",
-    category: "inner strength",
+    text: "あなたの後ろにあるものと前にあるものは、あなたの中にあるものと比べれば、色あせて見える。",
+    author: "ラルフ・ワルド・エマーソン",
+    category: "内なる力",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 32,
-    text: "The most difficult thing is the decision to act; the rest is merely tenacity.",
-    author: "Amelia Earhart",
-    category: "action",
+    text: "最も難しいのは行動を決意することであり、残りは粘り強さだけだ。",
+    author: "アメリア・イアハート",
+    category: "行動",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 33,
-    text: "Real change, enduring change, happens one step at a time.",
-    author: "Ruth Bader Ginsburg",
-    category: "change",
+    text: "本当の変化、永続的な変化は、一歩ずつ起こります。",
+    author: "ルース・ベイダー・ギンズバーグ",
+    category: "変化",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 34,
-    text: "Life isn't about finding yourself. Life is about creating yourself.",
-    author: "George Bernard Shaw",
-    category: "self-creation",
+    text: "人生とは自分を見つけることではない。人生とは自分を創造することだ。",
+    author: "ジョージ・バーナード・ショー",
+    category: "自己創造",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 35,
-    text: "Above all, be the heroine of your life, not the victim.",
-    author: "Nora Ephron",
-    category: "empowerment",
+    text: "何よりもまず、自分の人生のヒロインになりなさい、犠牲者ではなく。",
+    author: "ノーラ・エフロン",
+    category: "エンパワーメント",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 36,
-    text: "We will fail when we fail to try.",
-    author: "Rosa Parks",
-    category: "courage",
+    text: "挑戦しなかったときに失敗する。",
+    author: "ローザ・パークス",
+    category: "勇気",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 37,
-    text: "Vitality shows not only in the ability to persist but in the ability to start over.",
-    author: "F. Scott Fitzgerald",
-    category: "resilience",
+    text: "活力は、持続する能力だけでなく、やり直す能力にも現れる。",
+    author: "F・スコット・フィッツジェラルド",
+    category: "回復力",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 38,
-    text: "Perfection is not attainable, but if we chase perfection we can catch excellence.",
-    author: "Vince Lombardi",
-    category: "excellence",
+    text: "完璧は達成できないが、完璧を追い求めれば卓越性を捉えることができる。",
+    author: "ヴィンス・ロンバルディ",
+    category: "卓越性",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 39,
-    text: "The people who are crazy enough to think they can change the world are the ones who do.",
-    author: "Steve Jobs",
-    category: "change",
+    text: "世界を変えられると思うほどクレイジーな人々が、実際に世界を変える人々だ。",
+    author: "スティーブ・ジョブズ",
+    category: "変化",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 40,
-    text: "Be a first-rate version of yourself, instead of a second-rate version of somebody else.",
-    author: "Judy Garland",
-    category: "authenticity",
+    text: "誰かの二流のバージョンになるのではなく、自分の一流のバージョンになりなさい。",
+    author: "ジュディ・ガーランド",
+    category: "真正性",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 41,
-    text: "Once you face your fear, nothing is ever as hard as you think.",
-    author: "Olivia Newton John",
-    category: "courage",
+    text: "一度恐怖に立ち向かえば、何も思ったほど難しくはない。",
+    author: "オリビア・ニュートン＝ジョン",
+    category: "勇気",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 42,
-    text: "If my mind can conceive it, if my heart can believe it, then I can achieve it.",
-    author: "Muhammad Ali",
-    category: "belief",
+    text: "私の心がそれを構想でき、私の心がそれを信じることができるなら、私はそれを達成できる。",
+    author: "モハメド・アリ",
+    category: "信念",
     backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
   },
   {
     id: 43,
-    text: "All our dreams can come true — if we have the courage to pursue them.",
-    author: "Walt Disney",
-    category: "dreams",
+    text: "私たちのすべての夢は、私たちがそれらを追求する勇気を持っているなら、実現することができます。",
+    author: "ウォルト・ディズニー",
+    category: "夢",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
   },
   {
     id: 44,
-    text: "Embrace the glorious mess that you are.",
-    author: "Elizabeth Gilbert",
-    category: "self-acceptance",
+    text: "あなたであるという栄光ある混乱を受け入れなさい。",
+    author: "エリザベス・ギルバート",
+    category: "自己受容",
     backgroundGradient: "from-purple-600 via-pink-600 to-blue-600"
   },
   {
     id: 45,
-    text: "Attitude is the 'little' thing that makes a big difference.",
-    author: "Winston Churchill",
-    category: "attitude",
+    text: "態度は、大きな違いを生む「小さな」ものです。",
+    author: "ウィンストン・チャーチル",
+    category: "態度",
     backgroundGradient: "from-cyan-500 via-blue-500 to-purple-600"
   },
   {
     id: 46,
-    text: "If you don't like the road you're walking, start paving another one!",
-    author: "Dolly Parton",
-    category: "empowerment",
+    text: "歩いている道が気に入らないなら、別の道を舗装し始めなさい！",
+    author: "ドリー・パートン",
+    category: "エンパワーメント",
     backgroundGradient: "from-green-400 via-blue-500 to-purple-600"
   },
   {
     id: 47,
-    text: "You’re braver than you believe, stronger than you seem, and smarter than you think.",
-    author: "A.A. Milne",
-    category: "self-belief",
+    text: "あなたは信じている以上に勇敢で、見た目以上に強く、考えている以上に賢い。",
+    author: "A.A.ミルン",
+    category: "自己信念",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 48,
-    text: "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
-    author: "Queen Elizabeth II",
-    category: "progress",
+    text: "最も永続的な変化をもたらすのは、巨大な飛躍ではなく、しばしば小さな一歩です。",
+    author: "エリザベス2世女王",
+    category: "進歩",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 49,
-    text: "If I cannot do great things, I can do small things in a great way.",
-    author: "Martin Luther King, Jr.",
-    category: "excellence",
+    text: "偉大なことはできなくても、小さなことを偉大な方法で行うことはできる。",
+    author: "マーティン・ルーサー・キング・ジュニア",
+    category: "卓越性",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 50,
-    text: "It is never too late to be what you might have been.",
-    author: "George Eliot",
-    category: "potential",
+    text: "かつてあったかもしれない自分になるのに、遅すぎることはない。",
+    author: "ジョージ・エリオット",
+    category: "可能性",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 51,
-    text: "The secret of getting ahead is getting started.",
-    author: "Mark Twain",
-    category: "action",
+    text: "前に進む秘訣は、始めることです。",
+    author: "マーク・トウェイン",
+    category: "行動",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 52,
-    text: "Life shrinks or expands in proportion to one's courage.",
-    author: "Anais Nin",
-    category: "courage",
+    text: "人生は勇気に比例して縮小したり拡大したりする。",
+    author: "アナイス・ニン",
+    category: "勇気",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 53,
-    text: "Before anything else, preparation is the key to success.",
-    author: "Alexander Graham Bell",
-    category: "preparation",
+    text: "何よりもまず、準備が成功の鍵です。",
+    author: "アレクサンダー・グラハム・ベル",
+    category: "準備",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 54,
-    text: "The mind is everything. What you think you become.",
-    author: "Buddha",
-    category: "mindset",
+    text: "心はすべてです。あなたが考えるものが、あなたになります。",
+    author: "ブッダ",
+    category: "考え方",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 55,
-    text: "Do one thing every day that scares you.",
-    author: "Eleanor Roosevelt",
-    category: "courage",
+    text: "毎日、あなたを怖がらせることを一つしなさい。",
+    author: "エレノア・ルーズベルト",
+    category: "勇気",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 56,
-    text: "Light tomorrow with today.",
-    author: "Elizabeth Barrett Browning",
-    category: "action",
+    text: "今日で明日を照らしなさい。",
+    author: "エリザベス・バレット・ブラウニング",
+    category: "行動",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 57,
-    text: "Great things are done by a series of small things brought together.",
-    author: "Vincent Van Gogh",
-    category: "progress",
+    text: "偉大なことは、一連の小さなことが集まって行われます。",
+    author: "フィンセント・ファン・ゴッホ",
+    category: "進歩",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 58,
-    text: "Only when we're drowning do we understand how fierce our feet can kick.",
-    author: "Amanda Gorman",
-    category: "resilience",
+    text: "溺れているときだけ、足がどれほど激しく蹴ることができるかを理解します。",
+    author: "アマンダ・ゴーマン",
+    category: "回復力",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 59,
-    text: "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
-    author: "Marie Curie",
-    category: "purpose",
+    text: "私たちは何かの才能があると信じなければならず、その何かは、どんな犠牲を払っても達成されなければならない。",
+    author: "マリー・キュリー",
+    category: "目的",
     backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
   },
   {
     id: 60,
-    text: "It takes courage to grow up and become who you really are.",
-    author: "e.e. cummings",
-    category: "authenticity",
+    text: "成長して本当の自分になるには勇気がいる。",
+    author: "e.e.カミングス",
+    category: "真正性",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
   },
   {
     id: 61,
-    text: "You become what you believe.",
-    author: "Oprah Winfrey",
-    category: "belief",
+    text: "あなたは信じるものになります。",
+    author: "オプラ・ウィンフリー",
+    category: "信念",
     backgroundGradient: "from-purple-600 via-pink-600 to-blue-600"
   },
   {
     id: 62,
-    text: "Some people want it to happen, some wish it would happen, others make it happen.",
-    author: "Michael Jordan",
-    category: "action",
+    text: "それを望む人もいれば、それを願う人もいれば、それを実現させる人もいる。",
+    author: "マイケル・ジョーダン",
+    category: "行動",
     backgroundGradient: "from-cyan-500 via-blue-500 to-purple-600"
   },
   {
     id: 63,
-    text: "It does not matter how slowly you go as long as you do not stop.",
-    author: "Confucius",
-    category: "perseverance",
+    text: "止まらない限り、どれだけゆっくり進んでも問題ではない。",
+    author: "孔子",
+    category: "忍耐",
     backgroundGradient: "from-green-400 via-blue-500 to-purple-600"
   },
   {
     id: 64,
-    text: "In order to be irreplaceable, one must always be different.",
-    author: "Coco Chanel",
-    category: "originality",
+    text: "かけがえのない存在になるためには、常に違っていなければならない。",
+    author: "ココ・シャネル",
+    category: "独創性",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 65,
-    text: "The most courageous act is still to think for yourself. Aloud.",
-    author: "Coco Chanel",
-    category: "courage",
+    text: "最も勇気のある行為は、まだ自分で考えることです。声に出して。",
+    author: "ココ・シャネル",
+    category: "勇気",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 66,
-    text: "The journey of a thousand miles begins with a single step.",
-    author: "Lao Tzu",
-    category: "action",
+    text: "千里の道も一歩から。",
+    author: "老子",
+    category: "行動",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 67,
-    text: "Either you run the day, or the day runs you.",
-    author: "Jim Rohn",
-    category: "action",
+    text: "一日を動かすか、一日に動かされるか。",
+    author: "ジム・ローン",
+    category: "行動",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 68,
-    text: "Your time is limited, don't waste it living someone else's life.",
-    author: "Steve Jobs",
-    category: "authenticity",
+    text: "あなたの時間は限られています、他人の人生を生きて無駄にしないでください。",
+    author: "スティーブ・ジョブズ",
+    category: "真正性",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 69,
-    text: "You can't use up creativity. The more you use, the more you have.",
-    author: "Maya Angelou",
-    category: "creativity",
+    text: "創造性を使い果たすことはできません。使えば使うほど、増えていきます。",
+    author: "マヤ・アンジェロウ",
+    category: "創造性",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 70,
-    text: "The best revenge is massive success.",
-    author: "Frank Sinatra",
-    category: "success",
+    text: "最高の復讐は、圧倒的な成功です。",
+    author: "フランク・シナトラ",
+    category: "成功",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   }
 ];
