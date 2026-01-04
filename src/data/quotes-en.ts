@@ -52,13 +52,6 @@ export const quotesEn: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "You learn more from failure than from success. Don't let it stop you. Failure builds character.",
-    author: "Unknown",
-    category: "resilience",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "If you are working on something that you really care about, you don't have to be pushed. The vision pulls you.",
     author: "Steve Jobs",
@@ -127,19 +120,5 @@ export const quotesEn: Quote[] = [
     author: "Chinese Proverb",
     category: "action",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "Your limitation—it's only your imagination.",
-    author: "Unknown",
-    category: "potential",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "Great things never come from comfort zones.",
-    author: "Unknown",
-    category: "growth",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];

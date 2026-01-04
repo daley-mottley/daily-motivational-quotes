@@ -52,13 +52,6 @@ export const quotesZh: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "你从失败中学到的比从成功中学到的更多。不要让它阻止你。失败塑造品格。",
-    author: "未知",
-    category: "韧性",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "如果你正在做你真正关心的事情，你不需要被推动。愿景会拉着你。",
     author: "史蒂夫·乔布斯",
@@ -127,19 +120,5 @@ export const quotesZh: Quote[] = [
     author: "中国谚语",
     category: "行动",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "你的限制只是你的想象力。",
-    author: "未知",
-    category: "潜力",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "伟大的事情从不来自舒适区。",
-    author: "未知",
-    category: "成长",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];

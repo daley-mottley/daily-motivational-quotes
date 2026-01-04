@@ -52,13 +52,6 @@ export const quotesIt: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "Impari di più dal fallimento che dal successo. Non lasciare che ti fermi. Il fallimento forgia il carattere.",
-    author: "Sconosciuto",
-    category: "resilienza",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "Se stai lavorando su qualcosa che ti sta veramente a cuore, non devi essere spinto. La visione ti attrae.",
     author: "Steve Jobs",
@@ -127,19 +120,5 @@ export const quotesIt: Quote[] = [
     author: "Proverbio Cinese",
     category: "azione",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "La tua limitazione è solo la tua immaginazione.",
-    author: "Sconosciuto",
-    category: "potenziale",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "Le grandi cose non vengono mai dalle zone di comfort.",
-    author: "Sconosciuto",
-    category: "crescita",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];

@@ -52,13 +52,6 @@ export const quotesFr: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "Vous apprenez plus de l'échec que du succès. Ne laissez pas cela vous arrêter. L'échec forge le caractère.",
-    author: "Inconnu",
-    category: "résilience",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "Si vous travaillez sur quelque chose qui vous tient vraiment à cœur, vous n'avez pas besoin d'être poussé. La vision vous attire.",
     author: "Steve Jobs",
@@ -127,19 +120,5 @@ export const quotesFr: Quote[] = [
     author: "Proverbe Chinois",
     category: "action",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "Votre limitation, c'est seulement votre imagination.",
-    author: "Inconnu",
-    category: "potentiel",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "Les grandes choses ne viennent jamais des zones de confort.",
-    author: "Inconnu",
-    category: "croissance",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];

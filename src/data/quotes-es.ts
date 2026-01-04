@@ -52,13 +52,6 @@ export const quotesEs: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "Aprendes más del fracaso que del éxito. No dejes que te detenga. El fracaso forja el carácter.",
-    author: "Desconocido",
-    category: "resistencia",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "Si trabajas en algo que realmente te importa, no tienes que ser empujado. La visión te atrae.",
     author: "Steve Jobs",
@@ -127,19 +120,5 @@ export const quotesEs: Quote[] = [
     author: "Proverbio Chino",
     category: "acción",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "Tu limitación, es solo tu imaginación.",
-    author: "Desconocido",
-    category: "potencial",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "Las grandes cosas nunca vienen de las zonas de confort.",
-    author: "Desconocido",
-    category: "crecimiento",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];
