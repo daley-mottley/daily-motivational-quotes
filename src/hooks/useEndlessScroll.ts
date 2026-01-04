@@ -56,7 +56,7 @@ export const useEndlessScroll = () => {
       setHasMore(true);
       setShuffledQuotes(shuffleArray([...localizedQuotes]));
     }
-  }, [localizedQuotes]);
+  }, [localizedQuotes.length]);
 
   const loadMoreQuotes = useCallback(() => {
     if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
