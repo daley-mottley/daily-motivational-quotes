@@ -120,371 +120,369 @@ export const quotesPt: Quote[] = [
     author: "Provérbio Chinês",
     category: "ação",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  }
-  // Untranslated quotes
-  ,
+  },
   {
     id: 19,
-    text: "There is nothing impossible to they who will try.",
-    author: "Alexander the Great",
-    category: "possibility",
+    text: "Não há nada impossível para quem tenta.",
+    author: "Alexandre, o Grande",
+    category: "possibilidade",
     backgroundGradient: "from-blue-500 via-teal-500 to-green-500"
   },
   {
     id: 20,
-    text: "Keep your face always toward the sunshine, and shadows will fall behind you.",
+    text: "Mantenha o rosto sempre voltado para o sol, e as sombras ficarão para trás.",
     author: "Walt Whitman",
-    category: "positivity",
+    category: "positividade",
     backgroundGradient: "from-yellow-400 via-orange-500 to-red-500"
   },
   {
     id: 21,
-    text: "Champions keep playing until they get it right.",
+    text: "Os campeões continuam jogando até acertar.",
     author: "Billie Jean King",
-    category: "perseverance",
+    category: "perseverança",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 22,
-    text: "You are your best thing.",
+    text: "Você é a sua melhor coisa.",
     author: "Toni Morrison",
-    category: "self-worth",
+    category: "autoestima",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 23,
-    text: "It is better to fail in originality than to succeed in imitation.",
+    text: "É melhor falhar na originalidade do que ter sucesso na imitação.",
     author: "Herman Melville",
-    category: "originality",
+    category: "originalidade",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 24,
-    text: "You are never too old to set another goal or to dream a new dream.",
+    text: "Você nunca é velho demais para definir outra meta ou sonhar um novo sonho.",
     author: "C.S. Lewis",
-    category: "dreams",
+    category: "sonhos",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 25,
-    text: "A champion is defined not by their wins but by how they can recover when they fall.",
+    text: "Um campeão é definido não por suas vitórias, mas por como ele consegue se recuperar quando cai.",
     author: "Serena Williams",
-    category: "resilience",
+    category: "resiliência",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 26,
-    text: "Go confidently in the direction of your dreams. Live the life you have imagined.",
+    text: "Vá com confiança na direção dos seus sonhos. Viva a vida que você imaginou.",
     author: "Henry David Thoreau",
-    category: "dreams",
+    category: "sonhos",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 27,
-    text: "The only limit to our realization of tomorrow will be our doubts of today.",
+    text: "O único limite para a nossa realização de amanhã serão as nossas dúvidas de hoje.",
     author: "Franklin D. Roosevelt",
-    category: "mindset",
+    category: "mentalidade",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 28,
-    text: "Nothing is impossible. The word itself says, 'I'm possible!'",
+    text: "Nada é impossível. A própria palavra diz: 'Eu sou possível!'",
     author: "Audrey Hepburn",
-    category: "possibility",
+    category: "possibilidade",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 29,
-    text: "A person who never made a mistake never tried anything new.",
+    text: "Uma pessoa que nunca cometeu um erro nunca tentou nada novo.",
     author: "Albert Einstein",
-    category: "learning",
+    category: "aprendizagem",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 30,
-    text: "Love yourself first and everything else falls into line.",
+    text: "Ame-se primeiro e tudo o mais se encaixa.",
     author: "Lucille Ball",
-    category: "self-love",
+    category: "amor-próprio",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 31,
-    text: "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.",
+    text: "O que está por trás de você e o que está à sua frente, empalidece em comparação com o que está dentro de você.",
     author: "Ralph Waldo Emerson",
-    category: "inner strength",
+    category: "força interior",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 32,
-    text: "The most difficult thing is the decision to act; the rest is merely tenacity.",
+    text: "A coisa mais difícil é a decisão de agir; o resto é meramente tenacidade.",
     author: "Amelia Earhart",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 33,
-    text: "Real change, enduring change, happens one step at a time.",
+    text: "A mudança real e duradoura acontece um passo de cada vez.",
     author: "Ruth Bader Ginsburg",
-    category: "change",
+    category: "mudança",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 34,
-    text: "Life isn't about finding yourself. Life is about creating yourself.",
+    text: "A vida não é sobre se encontrar. A vida é sobre se criar.",
     author: "George Bernard Shaw",
-    category: "self-creation",
+    category: "autocriação",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 35,
-    text: "Above all, be the heroine of your life, not the victim.",
+    text: "Acima de tudo, seja a heroína da sua vida, não a vítima.",
     author: "Nora Ephron",
-    category: "empowerment",
+    category: "empoderamento",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 36,
-    text: "We will fail when we fail to try.",
+    text: "Nós falharemos quando deixarmos de tentar.",
     author: "Rosa Parks",
-    category: "courage",
+    category: "coragem",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 37,
-    text: "Vitality shows not only in the ability to persist but in the ability to start over.",
+    text: "A vitalidade não se manifesta apenas na capacidade de persistir, mas na capacidade de recomeçar.",
     author: "F. Scott Fitzgerald",
-    category: "resilience",
+    category: "resiliência",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 38,
-    text: "Perfection is not attainable, but if we chase perfection we can catch excellence.",
+    text: "A perfeição não é alcançável, mas se perseguirmos a perfeição, podemos alcançar a excelência.",
     author: "Vince Lombardi",
-    category: "excellence",
+    category: "excelência",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 39,
-    text: "The people who are crazy enough to think they can change the world are the ones who do.",
+    text: "As pessoas que são loucas o suficiente para pensar que podem mudar o mundo são as que o fazem.",
     author: "Steve Jobs",
-    category: "change",
+    category: "mudança",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 40,
-    text: "Be a first-rate version of yourself, instead of a second-rate version of somebody else.",
+    text: "Seja uma versão de primeira classe de si mesmo, em vez de uma versão de segunda classe de outra pessoa.",
     author: "Judy Garland",
-    category: "authenticity",
+    category: "autenticidade",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 41,
-    text: "Once you face your fear, nothing is ever as hard as you think.",
+    text: "Depois que você enfrenta o seu medo, nada é tão difícil quanto você pensa.",
     author: "Olivia Newton John",
-    category: "courage",
+    category: "coragem",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 42,
-    text: "If my mind can conceive it, if my heart can believe it, then I can achieve it.",
+    text: "Se a minha mente pode conceber, se o meu coração pode acreditar, então eu posso alcançar.",
     author: "Muhammad Ali",
-    category: "belief",
+    category: "crença",
     backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
   },
   {
     id: 43,
-    text: "All our dreams can come true — if we have the courage to pursue them.",
+    text: "Todos os nossos sonhos podem se tornar realidade — se tivermos a coragem de persegui-los.",
     author: "Walt Disney",
-    category: "dreams",
+    category: "sonhos",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
   },
   {
     id: 44,
-    text: "Embrace the glorious mess that you are.",
+    text: "Abrace a bagunça gloriosa que você é.",
     author: "Elizabeth Gilbert",
-    category: "self-acceptance",
+    category: "autoaceitação",
     backgroundGradient: "from-purple-600 via-pink-600 to-blue-600"
   },
   {
     id: 45,
-    text: "Attitude is the 'little' thing that makes a big difference.",
+    text: "A atitude é a 'pequena' coisa que faz uma grande diferença.",
     author: "Winston Churchill",
-    category: "attitude",
+    category: "atitude",
     backgroundGradient: "from-cyan-500 via-blue-500 to-purple-600"
   },
   {
     id: 46,
-    text: "If you don't like the road you're walking, start paving another one!",
+    text: "Se você não gosta da estrada em que está andando, comece a pavimentar outra!",
     author: "Dolly Parton",
-    category: "empowerment",
+    category: "empoderamento",
     backgroundGradient: "from-green-400 via-blue-500 to-purple-600"
   },
   {
     id: 47,
-    text: "You’re braver than you believe, stronger than you seem, and smarter than you think.",
+    text: "Você é mais corajoso do que acredita, mais forte do que parece e mais inteligente do que pensa.",
     author: "A.A. Milne",
-    category: "self-belief",
+    category: "autoconfiança",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 48,
-    text: "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
-    author: "Queen Elizabeth II",
-    category: "progress",
+    text: "Muitas vezes, são os pequenos passos, não os saltos gigantes, que provocam a mudança mais duradoura.",
+    author: "Rainha Elizabeth II",
+    category: "progresso",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 49,
-    text: "If I cannot do great things, I can do small things in a great way.",
+    text: "Se não posso fazer grandes coisas, posso fazer pequenas coisas de uma maneira excelente.",
     author: "Martin Luther King, Jr.",
-    category: "excellence",
+    category: "excelência",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 50,
-    text: "It is never too late to be what you might have been.",
+    text: "Nunca é tarde demais para ser o que você poderia ter sido.",
     author: "George Eliot",
-    category: "potential",
+    category: "potencial",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 51,
-    text: "The secret of getting ahead is getting started.",
+    text: "O segredo para progredir é começar.",
     author: "Mark Twain",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 52,
-    text: "Life shrinks or expands in proportion to one's courage.",
+    text: "A vida encolhe ou expande na proporção da nossa coragem.",
     author: "Anais Nin",
-    category: "courage",
+    category: "coragem",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 53,
-    text: "Before anything else, preparation is the key to success.",
+    text: "Antes de qualquer outra coisa, a preparação é a chave para o sucesso.",
     author: "Alexander Graham Bell",
-    category: "preparation",
+    category: "preparação",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   },
   {
     id: 54,
-    text: "The mind is everything. What you think you become.",
-    author: "Buddha",
-    category: "mindset",
+    text: "A mente é tudo. O que você pensa, você se torna.",
+    author: "Buda",
+    category: "mentalidade",
     backgroundGradient: "from-slate-900 via-purple-900 to-slate-900"
   },
   {
     id: 55,
-    text: "Do one thing every day that scares you.",
+    text: "Faça uma coisa todos os dias que te assusta.",
     author: "Eleanor Roosevelt",
-    category: "courage",
+    category: "coragem",
     backgroundGradient: "from-amber-500 via-orange-500 to-red-500"
   },
   {
     id: 56,
-    text: "Light tomorrow with today.",
+    text: "Ilumine o amanhã com o hoje.",
     author: "Elizabeth Barrett Browning",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-teal-400 via-blue-500 to-purple-600"
   },
   {
     id: 57,
-    text: "Great things are done by a series of small things brought together.",
+    text: "Grandes coisas são feitas por uma série de pequenas coisas reunidas.",
     author: "Vincent Van Gogh",
-    category: "progress",
+    category: "progresso",
     backgroundGradient: "from-rose-400 via-pink-500 to-purple-600"
   },
   {
     id: 58,
-    text: "Only when we're drowning do we understand how fierce our feet can kick.",
+    text: "Só quando estamos nos afogando entendemos a força com que nossos pés podem chutar.",
     author: "Amanda Gorman",
-    category: "resilience",
+    category: "resiliência",
     backgroundGradient: "from-cyan-400 via-blue-500 to-indigo-600"
   },
   {
     id: 59,
-    text: "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
+    text: "Devemos acreditar que somos talentosos para algo, e que essa coisa, a qualquer custo, deve ser alcançada.",
     author: "Marie Curie",
-    category: "purpose",
+    category: "propósito",
     backgroundGradient: "from-blue-600 via-purple-600 to-blue-800"
   },
   {
     id: 60,
-    text: "It takes courage to grow up and become who you really are.",
+    text: "É preciso coragem para crescer e se tornar quem você realmente é.",
     author: "e.e. cummings",
-    category: "authenticity",
+    category: "autenticidade",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
   },
   {
     id: 61,
-    text: "You become what you believe.",
+    text: "Você se torna o que você acredita.",
     author: "Oprah Winfrey",
-    category: "belief",
+    category: "crença",
     backgroundGradient: "from-purple-600 via-pink-600 to-blue-600"
   },
   {
     id: 62,
-    text: "Some people want it to happen, some wish it would happen, others make it happen.",
+    text: "Algumas pessoas querem que aconteça, algumas desejam que aconteça, outras fazem acontecer.",
     author: "Michael Jordan",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-cyan-500 via-blue-500 to-purple-600"
   },
   {
     id: 63,
-    text: "It does not matter how slowly you go as long as you do not stop.",
-    author: "Confucius",
-    category: "perseverance",
+    text: "Não importa o quão devagar você vá, desde que não pare.",
+    author: "Confúcio",
+    category: "perseverança",
     backgroundGradient: "from-green-400 via-blue-500 to-purple-600"
   },
   {
     id: 64,
-    text: "In order to be irreplaceable, one must always be different.",
+    text: "Para ser insubstituível, é preciso ser sempre diferente.",
     author: "Coco Chanel",
-    category: "originality",
+    category: "originalidade",
     backgroundGradient: "from-pink-500 via-red-500 to-yellow-500"
   },
   {
     id: 65,
-    text: "The most courageous act is still to think for yourself. Aloud.",
+    text: "O ato mais corajoso ainda é pensar por si mesmo. Em voz alta.",
     author: "Coco Chanel",
-    category: "courage",
+    category: "coragem",
     backgroundGradient: "from-gray-900 via-purple-900 to-violet-800"
   },
   {
     id: 66,
-    text: "The journey of a thousand miles begins with a single step.",
+    text: "A jornada de mil milhas começa com um único passo.",
     author: "Lao Tzu",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-orange-400 via-pink-500 to-red-500"
   },
   {
     id: 67,
-    text: "Either you run the day, or the day runs you.",
+    text: "Ou você comanda o dia, ou o dia comanda você.",
     author: "Jim Rohn",
-    category: "action",
+    category: "ação",
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
     id: 68,
-    text: "Your time is limited, don't waste it living someone else's life.",
+    text: "Seu tempo é limitado, não o desperdice vivendo a vida de outra pessoa.",
     author: "Steve Jobs",
-    category: "authenticity",
+    category: "autenticidade",
     backgroundGradient: "from-violet-600 via-purple-600 to-blue-600"
   },
   {
     id: 69,
-    text: "You can't use up creativity. The more you use, the more you have.",
+    text: "Você não pode esgotar a criatividade. Quanto mais você usa, mais você tem.",
     author: "Maya Angelou",
-    category: "creativity",
+    category: "criatividade",
     backgroundGradient: "from-yellow-400 via-red-500 to-pink-500"
   },
   {
     id: 70,
-    text: "The best revenge is massive success.",
+    text: "A melhor vingança é um sucesso maciço.",
     author: "Frank Sinatra",
-    category: "success",
+    category: "sucesso",
     backgroundGradient: "from-indigo-500 via-purple-500 to-pink-500"
   }
 ];
