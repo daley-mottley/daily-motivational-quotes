@@ -52,13 +52,6 @@ export const quotesDe: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "Du lernst mehr aus dem Scheitern als aus dem Erfolg. Lass dich nicht davon aufhalten. Scheitern bildet den Charakter.",
-    author: "Unbekannt",
-    category: "widerstandsfähigkeit",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "Wenn du an etwas arbeitest, das dir wirklich wichtig ist, musst du nicht gedrängt werden. Die Vision zieht dich an.",
     author: "Steve Jobs",
@@ -127,19 +120,5 @@ export const quotesDe: Quote[] = [
     author: "Chinesisches Sprichwort",
     category: "handlung",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "Deine Begrenzung ist nur deine Vorstellungskraft.",
-    author: "Unbekannt",
-    category: "potenzial",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "Große Dinge kommen niemals aus Komfortzonen.",
-    author: "Unbekannt",
-    category: "wachstum",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];

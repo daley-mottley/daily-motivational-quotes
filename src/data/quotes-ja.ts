@@ -52,13 +52,6 @@ export const quotesJa: Quote[] = [
     backgroundGradient: "from-blue-400 via-purple-500 to-pink-500"
   },
   {
-    id: 8,
-    text: "失敗から成功よりも多くを学びます。それがあなたを止めることを許してはいけません。失敗は人格を形成します。",
-    author: "不明",
-    category: "回復力",
-    backgroundGradient: "from-emerald-500 via-teal-500 to-cyan-500"
-  },
-  {
     id: 9,
     text: "本当に大切に思っていることに取り組んでいる場合、押される必要はありません。ビジョンがあなたを引っ張ります。",
     author: "スティーブ・ジョブズ",
@@ -127,19 +120,5 @@ export const quotesJa: Quote[] = [
     author: "中国のことわざ",
     category: "行動",
     backgroundGradient: "from-green-600 via-emerald-600 to-teal-600"
-  },
-  {
-    id: 19,
-    text: "あなたの制限は、あなたの想像力だけです。",
-    author: "不明",
-    category: "可能性",
-    backgroundGradient: "from-fuchsia-500 via-purple-600 to-pink-600"
-  },
-  {
-    id: 20,
-    text: "偉大なことは決してコンフォートゾーンからは生まれません。",
-    author: "不明",
-    category: "成長",
-    backgroundGradient: "from-pink-600 via-purple-600 to-indigo-700"
   }
 ];
