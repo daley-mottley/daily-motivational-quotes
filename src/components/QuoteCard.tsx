@@ -78,32 +78,8 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
       {/* Content with improved typography */}
       <div className="relative z-10 max-w-full mx-auto px-4">
-        {/* Enhanced category badge */}
-        <div
-          className={cn(
-            'flex justify-center transition-opacity duration-500 ease-out mb-4',
-            isVisible ? 'opacity-100' : 'opacity-0'
-          )}
-          style={{
-            transitionDelay: `300ms`,
-          }}
-        >
-          <span className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium capitalize border border-white/30 shadow-lg">
-            <div className="w-2 h-2 bg-white rounded-full mr-2 opacity-80"></div>
-            {quote.category}
-          </span>
-        </div>
-
         {/* Quote marks */}
-        <div
-          className={cn(
-            'text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none transition-opacity duration-500 ease-out',
-            isVisible ? 'opacity-100' : 'opacity-0'
-          )}
-          style={{
-            transitionDelay: `500ms`,
-          }}
-        >
+        <div className="text-6xl md:text-8xl text-white/20 font-serif mb-4 leading-none">
           "
         </div>
 
@@ -119,7 +95,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
                 'inline-block transition-opacity duration-300 ease-in',
                 isVisible ? 'opacity-100' : 'opacity-0'
               )}
-              style={{ transitionDelay: `${700 + index * 150}ms` }}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {word}
             </span>
@@ -133,11 +109,22 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             isVisible ? 'opacity-100' : 'opacity-0'
           )}
           style={{
-            transitionDelay: `${700 + quote.text.split(' ').length * 150 + 200}ms`,
+            transitionDelay: `${quote.text.split(' ').length * 150 + 700}ms`,
           }}
         >
           — {quote.author}
         </figcaption>
+
+        {/* Enhanced category badge */}
+        <div
+          className="flex justify-center"
+          style={{ display: 'none' }}
+        >
+          <span className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium capitalize border border-white/30 shadow-lg">
+            <div className="w-2 h-2 bg-white rounded-full mr-2 opacity-80"></div>
+            {quote.category}
+          </span>
+        </div>
       </div>
       
 
