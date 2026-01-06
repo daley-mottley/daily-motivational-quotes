@@ -12,7 +12,15 @@
     "linkCopied": "Link in die Zwischenablage kopiert!"
   },
   "share": {
-    "title": "Dieses Zitat teilen"
+    "title": "Dieses Zitat teilen",
+    "onTwitter": "Auf Twitter teilen",
+    "onFacebook": "Auf Facebook teilen",
+    "onLinkedIn": "Auf LinkedIn teilen",
+    "copy": "Link kopieren",
+    "copied": "Link kopiert!",
+    "ariaLabel": "Auf {{platform}} teilen",
+    "ariaLabelCopy": "Zitat in die Zwischenablage kopieren",
+    "ariaLabelCopied": "In die Zwischenablage kopiert"
   },
   "loading": {
     "inspiration": "Ihre tägliche Inspiration wird geladen...",

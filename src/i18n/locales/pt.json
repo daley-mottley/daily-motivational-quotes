@@ -12,7 +12,15 @@
     "linkCopied": "Link copiado para a área de transferência!"
   },
   "share": {
-    "title": "Compartilhar esta citação"
+    "title": "Compartilhar esta citação",
+    "onTwitter": "Compartilhar no Twitter",
+    "onFacebook": "Compartilhar no Facebook",
+    "onLinkedIn": "Compartilhar no LinkedIn",
+    "copy": "Copiar link",
+    "copied": "Link copiado!",
+    "ariaLabel": "Compartilhar no {{platform}}",
+    "ariaLabelCopy": "Copiar citação para a área de transferência",
+    "ariaLabelCopied": "Copiado para a área de transferência"
   },
   "loading": {
     "inspiration": "Carregando sua inspiração diária...",
