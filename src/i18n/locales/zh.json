@@ -12,7 +12,15 @@
     "linkCopied": "链接已复制到剪贴板！"
   },
   "share": {
-    "title": "分享这句名言"
+    "title": "分享这句名言",
+    "onTwitter": "在Twitter上分享",
+    "onFacebook": "在Facebook上分享",
+    "onLinkedIn": "在LinkedIn上分享",
+    "copy": "复制链接",
+    "copied": "链接已复制！",
+    "ariaLabel": "在{{platform}}上分享",
+    "ariaLabelCopy": "将名言复制到剪贴板",
+    "ariaLabelCopied": "已复制到剪贴板"
   },
   "loading": {
     "inspiration": "正在加载您的每日灵感...",

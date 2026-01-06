@@ -12,7 +12,15 @@
     "linkCopied": "リンクをクリップボードにコピーしました！"
   },
   "share": {
-    "title": "この引用をシェア"
+    "title": "この引用をシェア",
+    "onTwitter": "Twitterでシェア",
+    "onFacebook": "Facebookでシェア",
+    "onLinkedIn": "LinkedInでシェア",
+    "copy": "リンクをコピー",
+    "copied": "リンクをコピーしました！",
+    "ariaLabel": "{{platform}}でシェア",
+    "ariaLabelCopy": "引用をクリップボードにコピー",
+    "ariaLabelCopied": "クリップボードにコピーしました"
   },
   "loading": {
     "inspiration": "デイリーインスピレーションを読み込み中...",
