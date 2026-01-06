@@ -207,6 +207,9 @@ importers:
       lovable-tagger:
         specifier: ^1.1.7
         version: 1.1.13(vite@5.4.21(@types/node@22.19.3))
+      playwright:
+        specifier: ^1.57.0
+        version: 1.57.0
       postcss:
         specifier: ^8.4.47
         version: 8.5.6
