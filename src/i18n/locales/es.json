@@ -12,7 +12,15 @@
     "linkCopied": "¡Enlace copiado al portapapeles!"
   },
   "share": {
-    "title": "Comparte esta cita"
+    "title": "Comparte esta cita",
+    "onTwitter": "Compartir en Twitter",
+    "onFacebook": "Compartir en Facebook",
+    "onLinkedIn": "Compartir en LinkedIn",
+    "copy": "Copiar enlace",
+    "copied": "¡Enlace copiado!",
+    "ariaLabel": "Compartir en {{platform}}",
+    "ariaLabelCopy": "Copiar cita al portapapeles",
+    "ariaLabelCopied": "Copiado al portapapeles"
   },
   "loading": {
     "inspiration": "Cargando tu inspiración diaria...",

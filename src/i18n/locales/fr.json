@@ -12,7 +12,15 @@
     "linkCopied": "Lien copié dans le presse-papiers !"
   },
   "share": {
-    "title": "Partager cette citation"
+    "title": "Partager cette citation",
+    "onTwitter": "Partager sur Twitter",
+    "onFacebook": "Partager sur Facebook",
+    "onLinkedIn": "Partager sur LinkedIn",
+    "copy": "Copier le lien",
+    "copied": "Lien copié !",
+    "ariaLabel": "Partager sur {{platform}}",
+    "ariaLabelCopy": "Copier la citation dans le presse-papiers",
+    "ariaLabelCopied": "Copié dans le presse-papiers"
   },
   "loading": {
     "inspiration": "Chargement de votre inspiration quotidienne...",
