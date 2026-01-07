@@ -36,11 +36,5 @@
   },
   "languageSwitcher": {
     "changeLanguage": "Change language"
-  },
-  "favorites": {
-    "ariaLabelAdd": "Add to favorites",
-    "ariaLabelRemove": "Remove from favorites",
-    "tooltipAdd": "Add to favorites",
-    "tooltipRemove": "Remove from favorites"
   }
 }
