@@ -45,7 +45,10 @@
 ### User Experience
 - 🟢 **Enhance UI/UX design** - *2024-07-19 - Removed unnecessary buttons, updated background gradient, and enhanced share button visuals*
 - 🟢 **Endless Scrolling** - *2024-07-19 - Implemented endless scrolling for a continuous user experience.*
-- 🔴 **Add Favorites page** - *Priority: High*
+- 🔴 **User Authentication** - *Priority: High*
+- 🔴 **User Profiles Page** - *Priority: High*
+- 🔴 **Favorites Page** - *Priority: High*
+- 🔵 **Favorites functionality** - *Priority: High - Blocked by User Authentication*
 - 🔴 **Category filtering** - *Priority: High*
 - 🔴 **Quote search functionality** - *Priority: Medium*
 - 🔴 **Copy to clipboard** - *Priority: Medium*

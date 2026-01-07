@@ -63,6 +63,12 @@
 - **Animations**: Smooth transitions (200-300ms)
 - **Touch Targets**: Minimum 44px for mobile accessibility
 
+### Favorite Button Specifics
+- **Location**: The button should be placed on the bottom right corner of the `QuoteCard` component.
+- **Initial State**: It should appear as a light grey, outlined heart icon.
+- **Clicked State**: When clicked, the heart's outline should turn red.
+- **Animation**: After the author's name on the quote card has finished its fade-in animation, and if the quote is marked as a favorite, the heart icon should animate to a filled red state.
+
 ## Responsive Breakpoints
 - **Mobile**: 0px - 768px
 - **Tablet**: 768px - 1024px  
