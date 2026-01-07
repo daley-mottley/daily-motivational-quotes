@@ -5,12 +5,14 @@ import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
 import { Header } from '../components/Header';
 import { useEndlessScroll } from '../hooks/useEndlessScroll';
+import { useFavorites } from '../hooks/useFavorites';
 import { RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Index = () => {
   const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll();
   const { t } = useTranslation();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600">
@@ -51,7 +53,11 @@ const Index = () => {
               
               {/* Social Share - Enhanced Design */}
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300">
-                <SocialShareButtons quote={quote} />
+                <SocialShareButtons
+                  quote={quote}
+                  isFavorite={isFavorite(quote.id.toString())}
+                  onToggleFavorite={() => toggleFavorite(quote)}
+                />
               </div>
             </article>
           ))}

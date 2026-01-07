@@ -4,19 +4,22 @@ import { Quote } from '../data/quotes';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check } from 'lucide-react';
 import { Button } from './ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
+import { FavoriteButton } from './FavoriteButton';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
 
 interface SocialShareButtonsProps {
   quote: Quote;
   className?: string;
+  isFavorite: boolean;
+  onToggleFavorite: () => void;
 }
 
 // PERFORMANCE OPTIMIZATION:
 // Wrapped SocialShareButtons with React.memo to prevent unnecessary re-renders when its props
 // have not changed. This is crucial for performance in a list, as it avoids re-rendering
 // every share button component when new items are added to the list.
-export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(({ quote, className }) => {
+export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(({ quote, className, isFavorite, onToggleFavorite }) => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
   const { t } = useTranslation();
@@ -95,6 +98,9 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
               </TooltipContent>
             </Tooltip>
           ))}
+
+          {/* Favorite Button */}
+          <FavoriteButton isFavorite={isFavorite} onClick={onToggleFavorite} />
 
           {/* Copy button */}
           <Tooltip>
