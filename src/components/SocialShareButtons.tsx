@@ -75,6 +75,10 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
 
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
+      {/* Visually hidden container for screen reader announcements */}
+      <div className="sr-only" aria-live="polite">
+        {copied ? t('share.copied') : ''}
+      </div>
       {/* Share buttons */}
       <TooltipProvider>
         <div className="flex justify-center gap-3"> {/* Increased gap slightly */}
