@@ -1,11 +1,26 @@
 
-import React from 'react';
-import { Sparkles, Heart } from 'lucide-react';
+import React, { useContext } from 'react';
+import { Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { UserContext } from '../context/UserContext';
+import { getAuth, signOut } from 'firebase/auth';
+import { app } from '../lib/firebase';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const { t } = useTranslation();
+  const userContext = useContext(UserContext);
+  const auth = getAuth(app);
+
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      userContext?.setUser(null);
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
@@ -22,7 +37,18 @@ export const Header = () => {
               <p className="text-xs text-gray-500 font-medium">{t('app.tagline')}</p>
             </div>
           </div>
-          <LanguageSwitcher />
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            {userContext?.user ? (
+              <button onClick={handleSignOut} className="text-sm font-medium text-gray-600 hover:text-gray-900">
+                Sign Out
+              </button>
+            ) : (
+              <Link to="/signin" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+                Sign In
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </header>
