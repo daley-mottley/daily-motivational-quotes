@@ -1,6 +1,4 @@
-import { Quote } from '../data/quotes';
-
-export const data: Quote[] = [
+[
   {
     "id": 1,
     "text": "Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.",
@@ -4985,4 +4983,4 @@ export const data: Quote[] = [
     "category": "psalm",
     "backgroundGradient": "from-amber-500 via-orange-500 to-red-500"
   }
-];
+]

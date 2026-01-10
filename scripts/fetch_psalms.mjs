@@ -16,52 +16,62 @@ const backgroundGradients = [
   "from-amber-500 via-orange-500 to-red-500",
 ];
 
+const verseRegex = /^19:(\d{3}):(\d{3}) (.*)$/;
+
 try {
   const data = fs.readFileSync(inputFile, 'utf8');
   const lines = data.split(/\r?\n/);
+
   const psalms = [];
   let idCounter = 1;
-  let currentPsalmLines = [];
+  let currentVerseLines = [];
+  let currentPsalmNum = null;
+  let currentVerseNum = null;
+  let isParsing = false;
 
-  const processPsalm = () => {
-    if (currentPsalmLines.length > 0) {
-      const firstLine = currentPsalmLines[0];
-      const match = firstLine.match(/^19:(\d{3}):(\d{3})\s(.+)/);
-      if (match) {
-        const psalmNum = parseInt(match[1], 10);
-        const verseNum = parseInt(match[2], 10);
-
-        let text = currentPsalmLines.map(line => {
-          return line.replace(/^19:\d{3}:\d{3}\s/, '').trim();
-        }).join(' ');
-
-        if (text) {
-          psalms.push({
-            id: idCounter++,
-            text: text,
-            author: `Psalm ${psalmNum}:${verseNum}`,
-            category: 'psalm',
-            backgroundGradient: backgroundGradients[(idCounter - 2) % backgroundGradients.length],
-          });
-        }
-      }
+  const flushVerse = () => {
+    if (currentVerseLines.length > 0 && currentPsalmNum !== null && currentVerseNum !== null) {
+      const text = currentVerseLines.join(' ').trim().replace(/\s+/g, ' ');
+      psalms.push({
+        id: idCounter++,
+        text: text,
+        author: `Psalm ${currentPsalmNum}:${currentVerseNum}`,
+        category: 'psalm',
+        backgroundGradient: backgroundGradients[(idCounter - 2) % backgroundGradients.length],
+      });
     }
+    currentVerseLines = [];
   };
 
   for (const line of lines) {
+    if (line.includes('*** START OF THE PROJECT GUTENBERG EBOOK')) {
+      isParsing = true;
+      continue;
+    }
     if (line.includes('*** END OF THE PROJECT GUTENBERG EBOOK')) {
+      isParsing = false;
       break;
     }
-    if (line.match(/^19:\d{3}:\d{3}\s/) && currentPsalmLines.length > 0) {
-      processPsalm();
-      currentPsalmLines = [line];
-    } else if (line.trim() !== '') {
-      currentPsalmLines.push(line);
+
+    if (!isParsing || !line.trim()) continue;
+
+    const match = line.match(verseRegex);
+
+    if (match) {
+      flushVerse(); // Save the previous verse's content
+      currentPsalmNum = parseInt(match[1], 10);
+      currentVerseNum = parseInt(match[2], 10);
+      currentVerseLines.push(match[3].trim());
+    } else if (currentVerseLines.length > 0) {
+      // This is a continuation of the current verse
+      const trimmedLine = line.trim();
+      if (trimmedLine) {
+        currentVerseLines.push(trimmedLine);
+      }
     }
   }
 
-  // Process the last psalm
-  processPsalm();
+  flushVerse(); // Save the last verse
 
   fs.writeFileSync(outputFile, JSON.stringify(psalms, null, 2));
   console.log(`Successfully created ${outputFile} with ${psalms.length} entries.`);

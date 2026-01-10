@@ -17,10 +17,12 @@ Release date: April 1, 2005 [eBook #8019]
 
 Language: English
 
-Credits: This eBook was produced by David Widger with the help of Derek Andrew's text from January 1992 and the work of Bryan Taylor in November 2002
+Credits: This eBook was produced by David Widger with the help of Derek Andrew's
+ text from January 1992 and the work of Bryan Taylor in November 2002
 
 
-*** START OF THE PROJECT GUTENBERG EBOOK THE BIBLE, KING JAMES VERSION, BOOK 19: PSALMS ***
+*** START OF THE PROJECT GUTENBERG EBOOK THE BIBLE, KING JAMES VERSION, BOOK 19:
+ PSALMS ***
 
 
 
@@ -1623,365 +1625,627 @@ Book 19        Psalms
 19:037:002 For they shall soon be cut down like the grass, and wither as
            the green herb.
 
-1- ...
-... (content of psalms.txt) ...
-- ...
+19:037:003 Trust in the LORD, and do good; so shalt thou dwell in the
+           land, and verily thou shalt be fed.
 
-19:150:006 Let every thing that hath breath praise the LORD. Praise ye
-           the LORD.
+19:037:004 Delight thyself also in the LORD: and he shall give thee the
+           desires of thine heart.
 
+19:037:005 Commit thy way unto the LORD; trust also in him; and he shall
+           bring it to pass.
 
+19:037:006 And he shall bring forth thy righteousness as the light, and
+           thy judgment as the noonday.
 
+19:037:007 Rest in the LORD, and wait patiently for him: fret not thyself
+           because of him who prospereth in his way, because of the man
+           who bringeth wicked devices to pass.
 
+19:037:008 Cease from anger, and forsake wrath: fret not thyself in any
+           wise to do evil.
 
+19:037:009 For evildoers shall be cut off: but those that wait upon the
+           LORD, they shall inherit the earth.
 
+19:037:010 For yet a little while, and the wicked shall not be: yea, thou
+           shalt diligently consider his place, and it shall not be.
 
-*** END OF THE PROJECT GUTENBERG EBOOK THE BIBLE, KING JAMES VERSION, BOOK 19: PSALMS ***
+19:037:011 But the meek shall inherit the earth; and shall delight
+           themselves in the abundance of peace.
 
+19:037:012 The wicked plotteth against the just, and gnasheth upon him
+           with his teeth.
 
+19:037:013 The LORD shall laugh at him: for he seeth that his day is
+           coming.
 
+19:037:014 The wicked have drawn out the sword, and have bent their bow,
+           to cast down the poor and needy, and to slay such as be of
+           upright conversation.
 
-Updated editions will replace the previous one—the old editions will
-be renamed.
+19:037:015 Their sword shall enter into their own heart, and their bows
+           shall be broken.
 
-Creating the works from print editions not protected by U.S. copyright
-law means that no one owns a United States copyright in these works,
-so the Foundation (and you!) can copy and distribute it in the United
-States without permission and without paying copyright
-royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
-Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
-concept and trademark. Project Gutenberg is a registered trademark,
-and may not be used if you charge for an eBook, except by following
-the terms of the trademark license, including paying royalties for use
-of the Project Gutenberg trademark. If you do not charge anything for
-copies of this eBook, complying with the trademark license is very
-easy. You may use this eBook for nearly any purpose such as creation
-of derivative works, reports, performances and research. Project
-Gutenberg eBooks may be modified and printed and given away—you may
-do practically ANYTHING in the United States with eBooks not protected
-by U.S. copyright law. Redistribution is subject to the trademark
-license, especially commercial redistribution.
+19:037:016 A little that a righteous man hath is better than the riches
+           of many wicked.
 
+19:037:017 For the arms of the wicked shall be broken: but the LORD
+           upholdeth the righteous.
 
-START: FULL LICENSE
+19:037:018 The LORD knoweth the days of the upright: and their
+           inheritance shall be for ever.
 
-THE FULL PROJECT GUTENBERG LICENSE
+19:037:019 They shall not be ashamed in the evil time: and in the days of
+           famine they shall be satisfied.
 
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+19:037:020 But the wicked shall perish, and the enemies of the LORD shall
+           be as the fat of lambs: they shall consume; into smoke shall
+           they consume away.
 
-To protect the Project Gutenberg™ mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full
-Project Gutenberg™ License available with this file or online at
-www.gutenberg.org/license.
+19:037:021 The wicked borroweth, and payeth not again: but the righteous
+           sheweth mercy, and giveth.
 
-Section 1. General Terms of Use and Redistributing Project Gutenberg™
-electronic works
+19:037:022 For such as be blessed of him shall inherit the earth; and
+           they that be cursed of him shall be cut off.
 
-1.A. By reading or using any part of this Project Gutenberg™
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement. If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or
-destroy all copies of Project Gutenberg™ electronic works in your
-possession. If you paid a fee for obtaining a copy of or access to a
-Project Gutenberg™ electronic work and you do not agree to be bound
-by the terms of this agreement, you may obtain a refund from the person
-or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+19:037:023 The steps of a good man are ordered by the LORD: and he
+           delighteth in his way.
 
-1.B. “Project Gutenberg” is a registered trademark. It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement. There are a few
-things that you can do with most Project Gutenberg™ electronic works
-even without complying with the full terms of this agreement. See
-paragraph 1.C below. There are a lot of things you can do with Project
-Gutenberg™ electronic works if you follow the terms of this
-agreement and help preserve free future access to Project Gutenberg™
-electronic works. See paragraph 1.E below.
+19:037:024 Though he fall, he shall not be utterly cast down: for the
+           LORD upholdeth him with his hand.
 
-1.C. The Project Gutenberg Literary Archive Foundation (“the
-Foundation” or PGLAF), owns a compilation copyright in the collection
-of Project Gutenberg™ electronic works. Nearly all the individual
-works in the collection are in the public domain in the United
-States. If an individual work is unprotected by copyright law in the
-United States and you are located in the United States, we do not
-claim a right to prevent you from copying, distributing, performing,
-displaying or creating derivative works based on the work as long as
-all references to Project Gutenberg are removed. Of course, we hope
-that you will support the Project Gutenberg™ mission of promoting
-free access to electronic works by freely sharing Project Gutenberg™
-works in compliance with the terms of this agreement for keeping the
-Project Gutenberg™ name associated with the work. You can easily
-comply with the terms of this agreement by keeping this work in the
-same format with its attached full Project Gutenberg™ License when
-you share it without charge with others.
+19:037:025 I have been young, and now am old; yet have I not seen the
+           righteous forsaken, nor his seed begging bread.
 
-1.D. The copyright laws of the place where you are located also govern
-what you can do with this work. Copyright laws in most countries are
-in a constant state of change. If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg™ work. The Foundation makes no
-representations concerning the copyright status of any work in any
-country other than the United States.
+19:037:026 He is ever merciful, and lendeth; and his seed is blessed.
 
-1.E. Unless you have removed all references to Project Gutenberg:
+19:037:027 Depart from evil, and do good; and dwell for evermore.
 
-1.E.1. The following sentence, with active links to, or other
-immediate access to, the full Project Gutenberg™ License must appear
-prominently whenever any copy of a Project Gutenberg™ work (any work
-on which the phrase “Project Gutenberg” appears, or with which the
-phrase “Project Gutenberg” is associated) is accessed, displayed,
-performed, viewed, copied or distributed:
+19:037:028 For the LORD loveth judgment, and forsaketh not his saints;
+           they are preserved for ever: but the seed of the wicked shall
+           be cut off.
 
-    This eBook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms
-    of the Project Gutenberg License included with this eBook or online
-    at www.gutenberg.org. If you
-    are not located in the United States, you will have to check the laws
-    of the country where you are located before using this eBook.
+19:037:029 The righteous shall inherit the land, and dwell therein for
+           ever.
 
-1.E.2. If an individual Project Gutenberg™ electronic work is
-derived from texts not protected by U.S. copyright law (does not
-contain a notice indicating that it is posted with permission of the
-copyright holder), the work can be copied and distributed to anyone in
-the United States without paying any fees or charges. If you are
-redistributing or providing access to a work with the phrase “Project
-Gutenberg” associated with or appearing on the work, you must comply
-either with the requirements of paragraphs 1.E.1 through 1.E.7 or
-obtain permission for the use of the work and the Project Gutenberg™
-trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+19:037:030 The mouth of the righteous speaketh wisdom, and his tongue
+           talketh of judgment.
 
-1.E.3. If an individual Project Gutenberg™ electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any
-additional terms imposed by the copyright holder. Additional terms
-will be linked to the Project Gutenberg™ License for all works
-posted with the permission of the copyright holder found at the
-beginning of this work.
+19:037:031 The law of his God is in his heart; none of his steps shall
+           slide.
 
-1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg™.
+19:037:032 The wicked watcheth the righteous, and seeketh to slay him.
 
-1.E.5. Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg™ License.
+19:037:033 The LORD will not leave him in his hand, nor condemn him when
+           he is judged.
 
-1.E.6. You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including
-any word processing or hypertext form. However, if you provide access
-to or distribute copies of a Project Gutenberg™ work in a format
-other than “Plain Vanilla ASCII” or other format used in the official
-version posted on the official Project Gutenberg™ website
-(www.gutenberg.org), you must, at no additional cost, fee or expense
-to the user, provide a copy, a means of exporting a copy, or a means
-of obtaining a copy upon request, of the work in its original “Plain
-Vanilla ASCII” or other form. Any alternate format must include the
-full Project Gutenberg™ License as specified in paragraph 1.E.1.
+19:037:034 Wait on the LORD, and keep his way, and he shall exalt thee to
+           inherit the land: when the wicked are cut off, thou shalt see
+           it.
 
-1.E.7. Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg™ works
-unless you comply with paragraph 1.E.8 or 1.E.9.
+19:037:035 I have seen the wicked in great power, and spreading himself
+           like a green bay tree.
 
-1.E.8. You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg™ electronic works
-provided that:
+19:037:036 Yet he passed away, and, lo, he was not: yea, I sought him,
+           but he could not be found.
 
-    • You pay a royalty fee of 20% of the gross profits you derive from
-        the use of Project Gutenberg™ works calculated using the method
-        you already use to calculate your applicable taxes. The fee is owed
-        to the owner of the Project Gutenberg™ trademark, but he has
-        agreed to donate royalties under this paragraph to the Project
-        Gutenberg Literary Archive Foundation. Royalty payments must be paid
-        within 60 days following each date on which you prepare (or are
-        legally required to prepare) your periodic tax returns. Royalty
-        payments should be clearly marked as such and sent to the Project
-        Gutenberg Literary Archive Foundation at the address specified in
-        Section 4, “Information about donations to the Project Gutenberg
-        Literary Archive Foundation.”
+19:037:037 Mark the perfect man, and behold the upright: for the end of
+           that man is peace.
 
-    • You provide a full refund of any money paid by a user who notifies
-        you in writing (or by e-mail) within 30 days of receipt that s/he
-        does not agree to the terms of the full Project Gutenberg™
-        License. You must require such a user to return or destroy all
-        copies of the works possessed in a physical medium and discontinue
-        all use of and all access to other copies of Project Gutenberg™
-        works.
+19:037:038 But the transgressors shall be destroyed together: the end of
+           the wicked shall be cut off.
 
-    • You provide, in accordance with paragraph 1.F.3, a full refund of
-        any money paid for a work or a replacement copy, if a defect in the
-        electronic work is discovered and reported to you within 90 days of
-        receipt of the work.
+19:037:039 But the salvation of the righteous is of the LORD: he is their
+           strength in the time of trouble.
 
-    • You comply with all other terms of this agreement for free
-        distribution of Project Gutenberg™ works.
+19:037:040 And the LORD shall help them, and deliver them: he shall
+           deliver them from the wicked, and save them, because they
+           trust in him.
 
+19:038:001 O lord, rebuke me not in thy wrath: neither chasten me in thy
+           hot displeasure.
 
-1.E.9. If you wish to charge a fee or distribute a Project
-Gutenberg™ electronic work or group of works on different terms than
-are set forth in this agreement, you must obtain permission in writing
-from the Project Gutenberg Literary Archive Foundation, the manager of
-the Project Gutenberg™ trademark. Contact the Foundation as set
-forth in Section 3 below.
+19:038:002 For thine arrows stick fast in me, and thy hand presseth me
+           sore.
 
-1.F.
+19:038:003 There is no soundness in my flesh because of thine anger;
+           neither is there any rest in my bones because of my sin.
 
-1.F.1. Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-works not protected by U.S. copyright law in creating the Project
-Gutenberg™ collection. Despite these efforts, Project Gutenberg™
-electronic works, and the medium on which they may be stored, may
-contain “Defects,” such as, but not limited to, incomplete, inaccurate
-or corrupt data, transcription errors, a copyright or other
-intellectual property infringement, a defective or damaged disk or
-other medium, a computer virus, or computer codes that damage or
-cannot be read by your equipment.
+19:038:004 For mine iniquities are gone over mine head: as an heavy
+           burden they are too heavy for me.
 
-1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg™ trademark, and any other party distributing a Project
-Gutenberg™ electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
+19:038:005 My wounds stink and are corrupt because of my foolishness.
 
-1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from. If you
-received the work on a physical medium, you must return the medium
-with your written explanation. The person or entity that provided you
-with the defective work may elect to provide a replacement copy in
-lieu of a refund. If you received the work electronically, the person
-or entity providing it to you may choose to give you a second
-opportunity to receive the work electronically in lieu of a refund. If
-the second copy is also defective, you may demand a refund in writing
-without further opportunities to fix the problem.
+19:038:006 I am troubled; I am bowed down greatly; I go mourning all the
+           day long.
 
-1.F.4. Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
-OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+19:038:007 For my loins are filled with a loathsome disease: and there is
+           no soundness in my flesh.
 
-1.F.5. Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of
-damages. If any disclaimer or limitation set forth in this agreement
-violates the law of the state applicable to this agreement, the
-agreement shall be interpreted to make the maximum disclaimer or
-limitation permitted by the applicable state law. The invalidity or
-unenforceability of any provision of this agreement shall not void the
-remaining provisions.
+19:038:008 I am feeble and sore broken: I have roared by reason of the
+           disquietness of my heart.
 
-1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg™ electronic works in
-accordance with this agreement, and any volunteers associated with the
-production, promotion and distribution of Project Gutenberg™
-electronic works, harmless from all liability, costs and expenses,
-including legal fees, that arise directly or indirectly from any of
-the following which you do or cause to occur: (a) distribution of this
-or any Project Gutenberg™ work, (b) alteration, modification, or
-additions or deletions to any Project Gutenberg™ work, and (c) any
-Defect you cause.
+19:038:009 Lord, all my desire is before thee; and my groaning is not hid
+           from thee.
 
-Section 2. Information about the Mission of Project Gutenberg™
+19:038:010 My heart panteth, my strength faileth me: as for the light of
+           mine eyes, it also is gone from me.
 
-Project Gutenberg™ is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of
-computers including obsolete, old, middle-aged and new computers. It
-exists because of the efforts of hundreds of volunteers and donations
-from people in all walks of life.
+19:038:011 My lovers and my friends stand aloof from my sore; and my
+           kinsmen stand afar off.
 
-Volunteers and financial support to provide volunteers with the
-assistance they need are critical to reaching Project Gutenberg™’s
-goals and ensuring that the Project Gutenberg™ collection will
-remain freely available for generations to come. In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg™ and future
-generations. To learn more about the Project Gutenberg Literary
-Archive Foundation and how your efforts and donations can help, see
-Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+19:038:012 They also that seek after my life lay snares for me: and they
+           that seek my hurt speak mischievous things, and imagine
+           deceits all the day long.
 
-Section 3. Information about the Project Gutenberg Literary Archive Foundation
+19:038:013 But I, as a deaf man, heard not; and I was as a dumb man that
+           openeth not his mouth.
 
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation’s EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state’s laws.
+19:038:014 Thus I was as a man that heareth not, and in whose mouth are
+           no reproofs.
 
-The Foundation’s business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation’s website
-and official page at www.gutenberg.org/contact
+19:038:015 For in thee, O LORD, do I hope: thou wilt hear, O Lord my God.
 
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation
+19:038:016 For I said, Hear me, lest otherwise they should rejoice over
+           me: when my foot slippeth, they magnify themselves against me.
 
-Project Gutenberg™ depends upon and cannot survive without widespread
-public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine-readable form accessible by the widest
-array of equipment including outdated equipment. Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
+19:038:017 For I am ready to halt, and my sorrow is continually before
+           me.
 
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States. Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
-DONATIONS or determine the status of compliance for any particular state
-visit www.gutenberg.org/donate.
+19:038:018 For I will declare mine iniquity; I will be sorry for my sin.
 
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
+19:038:019 But mine enemies are lively, and they are strong: and they
+           that hate me wrongfully are multiplied.
 
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States. U.S. laws alone swamp our small staff.
+19:038:020 They also that render evil for good are mine adversaries;
+           because I follow the thing that good is.
 
-Please check the Project Gutenberg web pages for current donation
-methods and addresses. Donations are accepted in a number of other
-ways including checks, online payments and credit card donations. To
-donate, please visit: www.gutenberg.org/donate.
+19:038:021 Forsake me not, O LORD: O my God, be not far from me.
 
-Section 5. General Information About Project Gutenberg™ electronic works
+19:038:022 Make haste to help me, O Lord my salvation.
 
-Professor Michael S. Hart was the originator of the Project
-Gutenberg™ concept of a library of electronic works that could be
-freely shared with anyone. For forty years, he produced and
-distributed Project Gutenberg™ eBooks with only a loose network of
-volunteer support.
+19:039:001 I said, I will take heed to my ways, that I sin not with my
+           tongue: I will keep my mouth with a bridle, while the wicked
+           is before me.
 
-Project Gutenberg™ eBooks are often created from several printed
-editions, all of which are confirmed as not protected by copyright in
-the U.S. unless a copyright notice is included. Thus, we do not
-necessarily keep eBooks in compliance with any particular paper
-edition.
+19:039:002 I was dumb with silence, I held my peace, even from good; and
+           my sorrow was stirred.
 
-Most people start at our website which has the main PG search
-facility: www.gutenberg.org.
+19:039:003 My heart was hot within me, while I was musing the fire
+           burned: then spake I with my tongue,
 
-This website includes information about Project Gutenberg™,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
+19:039:004 LORD, make me to know mine end, and the measure of my days,
+           what it is: that I may know how frail I am.
+
+19:039:005 Behold, thou hast made my days as an handbreadth; and mine age
+           is as nothing before thee: verily every man at his best state
+           is altogether vanity. Selah.
+
+19:039:006 Surely every man walketh in a vain shew: surely they are
+           disquieted in vain: he heapeth up riches, and knoweth not who
+           shall gather them.
+
+19:039:007 And now, Lord, what wait I for? my hope is in thee.
+
+19:039:008 Deliver me from all my transgressions: make me not the
+           reproach of the foolish.
+
+19:039:009 I was dumb, I opened not my mouth; because thou didst it.
+
+19:039:010 Remove thy stroke away from me: I am consumed by the blow of
+           thine hand.
+
+19:039:011 When thou with rebukes dost correct man for iniquity, thou
+           makest his beauty to consume away like a moth: surely every
+           man is vanity. Selah.
+
+19:039:012 Hear my prayer, O LORD, and give ear unto my cry; hold not thy
+           peace at my tears: for I am a stranger with thee, and a
+           sojourner, as all my fathers were.
+
+19:039:013 O spare me, that I may recover strength, before I go hence,
+           and be no more.
+
+19:040:001 I waited patiently for the LORD; and he inclined unto me, and
+           heard my cry.
+
+19:040:002 He brought me up also out of an horrible pit, out of the miry
+           clay, and set my feet upon a rock, and established my goings.
+
+19:040:003 And he hath put a new song in my mouth, even praise unto our
+           God: many shall see it, and fear, and shall trust in the LORD.
+
+19:040:004 Blessed is that man that maketh the LORD his trust, and
+           respecteth not the proud, nor such as turn aside to lies.
+
+19:040:005 Many, O LORD my God, are thy wonderful works which thou hast
+           done, and thy thoughts which are to us-ward: they cannot be
+           reckoned up in order unto thee: if I would declare and speak
+           of them, they are more than can be numbered.
+
+19:040:006 Sacrifice and offering thou didst not desire; mine ears hast
+           thou opened: burnt offering and sin offering hast thou not
+           required.
+
+19:040:007 Then said I, Lo, I come: in the volume of the book it is
+           written of me,
+
+19:040:008 I delight to do thy will, O my God: yea, thy law is within my
+           heart.
+
+19:040:009 I have preached righteousness in the great congregation: lo, I
+           have not refrained my lips, O LORD, thou knowest.
+
+19:040:010 I have not hid thy righteousness within my heart; I have
+           declared thy faithfulness and thy salvation: I have not
+           concealed thy lovingkindness and thy truth from the great
+           congregation.
+
+19:040:011 Withhold not thou thy tender mercies from me, O LORD: let thy
+           lovingkindness and thy truth continually preserve me.
+
+19:040:012 For innumerable evils have compassed me about: mine iniquities
+           have taken hold upon me, so that I am not able to look up;
+           they are more than the hairs of mine head: therefore my heart
+           faileth me.
+
+19:040:013 Be pleased, O LORD, to deliver me: O LORD, make haste to help
+           me.
+
+19:040:014 Let them be ashamed and confounded together that seek after my
+           soul to destroy it; let them be driven backward and put to
+           shame that wish me evil.
+
+19:040:015 Let them be desolate for a reward of their shame that say unto
+           me, Aha, aha.
+
+19:040:016 Let all those that seek thee rejoice and be glad in thee: let
+           such as love thy salvation say continually, The LORD be
+           magnified.
+
+19:040:017 But I am poor and needy; yet the Lord thinketh upon me: thou
+           art my help and my deliverer; make no tarrying, O my God.
+
+19:041:001 Blessed is he that considereth the poor: the LORD will deliver
+           him in time of trouble.
+
+19:041:002 The LORD will preserve him, and keep him alive; and he shall
+           be blessed upon the earth: and thou wilt not deliver him unto
+           the will of his enemies.
+
+19:041:003 The LORD will strengthen him upon the bed of languishing: thou
+           wilt make all his bed in his sickness.
+
+19:041:004 I said, LORD, be merciful unto me: heal my soul; for I have
+           sinned against thee.
+
+19:041:005 Mine enemies speak evil of me, When shall he die, and his name
+           perish?
+
+19:041:006 And if he come to see me, he speaketh vanity: his heart
+           gathereth iniquity to itself; when he goeth abroad, he telleth
+           it.
+
+19:041:007 All that hate me whisper together against me: against me do
+           they devise my hurt.
+
+19:041:008 An evil disease, say they, cleaveth fast unto him: and now
+           that he lieth he shall rise up no more.
+
+19:041:009 Yea, mine own familiar friend, in whom I trusted, which did
+           eat of my bread, hath lifted up his heel against me.
+
+19:041:010 But thou, O LORD, be merciful unto me, and raise me up, that I
+           may requite them.
+
+19:041:011 By this I know that thou favourest me, because mine enemy doth
+           not triumph over me.
+
+19:041:012 And as for me, thou upholdest me in mine integrity, and
+           settest me before thy face for ever.
+
+19:041:013 Blessed be the LORD God of Israel from everlasting, and to
+           everlasting. Amen, and Amen.
+
+19:042:001 As the hart panteth after the water brooks, so panteth my soul
+           after thee, O God.
+
+19:042:002 My soul thirsteth for God, for the living God: when shall I
+           come and appear before God?
+
+19:042:003 My tears have been my meat day and night, while they
+           continually say unto me, Where is thy God?
+
+19:042:004 When I remember these things, I pour out my soul in me: for I
+           had gone with the multitude, I went with them to the house of
+           God, with the voice of joy and praise, with a multitude that
+           kept holyday.
+
+19:042:005 Why art thou cast down, O my soul? and why art thou disquieted
+           in me? hope thou in God: for I shall yet praise him for the
+           help of his countenance.
+
+19:042:006 O my God, my soul is cast down within me: therefore will I
+           remember thee from the land of Jordan, and of the Hermonites,
+           from the hill Mizar.
+
+19:042:007 Deep calleth unto deep at the noise of thy waterspouts: all
+           thy waves and thy billows are gone over me.
+
+19:042:008 Yet the LORD will command his lovingkindness in the day time,
+           and in the night his song shall be with me, and my prayer unto
+           the God of my life.
+
+19:042:009 I will say unto God my rock, Why hast thou forgotten me? why
+           go I mourning because of the oppression of the enemy?
+
+19:042:010 As with a sword in my bones, mine enemies reproach me; while
+           they say daily unto me, Where is thy God?
+
+19:042:011 Why art thou cast down, O my soul? and why art thou disquieted
+           within me? hope thou in God: for I shall yet praise him, who
+           is the health of my countenance, and my God.
+
+19:043:001 Judge me, O God, and plead my cause against an ungodly nation:
+           O deliver me from the deceitful and unjust man.
+
+19:043:002 For thou art the God of my strength: why dost thou cast me
+           off? why go I mourning because of the oppression of the enemy?
+
+19:043:003 O send out thy light and thy truth: let them lead me; let them
+           bring me unto thy holy hill, and to thy tabernacles.
+
+19:043:004 Then will I go unto the altar of God, unto God my exceeding
+           joy: yea, upon the harp will I praise thee, O God my God.
+
+19:043:005 Why art thou cast down, O my soul? and why art thou disquieted
+           within me? hope in God: for I shall yet praise him, who is the
+           health of my countenance, and my God.
+
+19:044:001 We have heard with our ears, O God, our fathers have told us,
+           what work thou didst in their days, in the times of old.
+
+19:044:002 How thou didst drive out the heathen with thy hand, and
+           plantedst them; how thou didst afflict the people, and cast
+           them out.
+
+19:044:003 For they got not the land in possession by their own sword,
+           neither did their own arm save them: but thy right hand, and
+           thine arm, and the light of thy countenance, because thou
+           hadst a favour unto them.
+
+19:044:004 Thou art my King, O God: command deliverances for Jacob.
+
+19:044:005 Through thee will we push down our enemies: through thy name
+           will we tread them under that rise up against us.
+
+19:044:006 For I will not trust in my bow, neither shall my sword save
+           me.
+
+19:044:007 But thou hast saved us from our enemies, and hast put them to
+           shame that hated us.
+
+19:044:008 In God we boast all the day long, and praise thy name for
+           ever. Selah.
+
+19:044:009 But thou hast cast off, and put us to shame; and goest not
+           forth with our armies.
+
+19:044:010 Thou makest us to turn back from the enemy: and they which
+           hate us spoil for themselves.
+
+19:044:011 Thou hast given us like sheep appointed for meat; and hast
+           scattered us among the heathen.
+
+19:044:012 Thou sellest thy people for nought, and dost not increase thy
+           wealth by their price.
+
+19:044:013 Thou makest us a reproach to our neighbours, a scorn and a
+           derision to them that are round about us.
+
+19:044:014 Thou makest us a byword among the heathen, a shaking of the
+           head among the people.
+
+19:044:015 My confusion is continually before me, and the shame of my
+           face hath covered me,
+
+19:044:016 For the voice of him that reproacheth and blasphemeth; by
+           reason of the enemy and avenger.
+
+19:044:017 All this is come upon us; yet have we not forgotten thee,
+           neither have we dealt falsely in thy covenant.
+
+19:044:018 Our heart is not turned back, neither have our steps declined
+           from thy way;
+
+19:044:019 Though thou hast sore broken us in the place of dragons, and
+           covered us with the shadow of death.
+
+19:044:020 If we have forgotten the name of our God, or stretched out our
+           hands to a strange god;
+
+19:044:021 Shall not God search this out? for he knoweth the secrets of
+           the heart.
+
+19:044:022 Yea, for thy sake are we killed all the day long; we are
+           counted as sheep for the slaughter.
+
+19:044:023 Awake, why sleepest thou, O Lord? arise, cast us not off for
+           ever.
+
+19:044:024 Wherefore hidest thou thy face, and forgettest our affliction
+           and our oppression?
+
+19:044:025 For our soul is bowed down to the dust: our belly cleaveth
+           unto the earth.
+
+19:044:026 Arise for our help, and redeem us for thy mercies' sake.
+
+19:045:001 My heart is inditing a good matter: I speak of the things
+           which I have made touching the king: my tongue is the pen of a
+           ready writer.
+
+19:045:002 Thou art fairer than the children of men: grace is poured into
+           thy lips: therefore God hath blessed thee for ever.
+
+19:045:003 Gird thy sword upon thy thigh, O most mighty, with thy glory
+           and thy majesty.
+
+19:045:004 And in thy majesty ride prosperously because of truth and
+           meekness and righteousness; and thy right hand shall teach
+           thee terrible things.
+
+19:045:005 Thine arrows are sharp in the heart of the king's enemies;
+           whereby the people fall under thee.
+
+19:045:006 Thy throne, O God, is for ever and ever: the sceptre of thy
+           kingdom is a right sceptre.
+
+19:045:007 Thou lovest righteousness, and hatest wickedness: therefore
+           God, thy God, hath anointed thee with the oil of gladness
+           above thy fellows.
+
+19:045:008 All thy garments smell of myrrh, and aloes, and cassia, out of
+           the ivory palaces, whereby they have made thee glad.
+
+19:045:009 Kings' daughters were among thy honourable women: upon thy
+           right hand did stand the queen in gold of Ophir.
+
+19:045:010 Hearken, O daughter, and consider, and incline thine ear;
+           forget also thine own people, and thy father's house;
+
+19:045:011 So shall the king greatly desire thy beauty: for he is thy
+           Lord; and worship thou him.
+
+19:045:012 And the daughter of Tyre shall be there with a gift; even the
+           rich among the people shall intreat thy favour.
+
+19:045:013 The king's daughter is all glorious within: her clothing is of
+           wrought gold.
+
+19:045:014 She shall be brought unto the king in raiment of needlework:
+           the virgins her companions that follow her shall be brought
+           unto thee.
+
+19:045:015 With gladness and rejoicing shall they be brought: they shall
+           enter into the king's palace.
+
+19:045:016 Instead of thy fathers shall be thy children, whom thou mayest
+           make princes in all the earth.
+
+19:045:017 I will make thy name to be remembered in all generations:
+           therefore shall the people praise thee for ever and ever.
+
+19:046:001 God is our refuge and strength, a very present help in
+           trouble.
+
+19:046:002 Therefore will not we fear, though the earth be removed, and
+           though the mountains be carried into the midst of the sea;
+
+19:046:003 Though the waters thereof roar and be troubled, though the
+           mountains shake with the swelling thereof. Selah.
+
+19:046:004 There is a river, the streams whereof shall make glad the city
+           of God, the holy place of the tabernacles of the most High.
+
+19:046:005 God is in the midst of her; she shall not be moved: God shall
+           help her, and that right early.
+
+19:046:006 The heathen raged, the kingdoms were moved: he uttered his
+           voice, the earth melted.
+
+19:046:007 The LORD of hosts is with us; the God of Jacob is our refuge.
+           Selah.
+
+19:046:008 Come, behold the works of the LORD, what desolations he hath
+           made in the earth.
+
+19:046:009 He maketh wars to cease unto the end of the earth; he breaketh
+           the bow, and cutteth the spear in sunder; he burneth the
+           chariot in the fire.
+
+19:046:010 Be still, and know that I am God: I will be exalted among the
+           heathen, I will be exalted in the earth.
+
+19:046:011 The LORD of hosts is with us; the God of Jacob is our refuge.
+           Selah.
+
+19:047:001 O clap your hands, all ye people; shout unto God with the
+           voice of triumph.
+
+19:047:002 For the LORD most high is terrible; he is a great King over
+           all the earth.
+
+19:047:003 He shall subdue the people under us, and the nations under our
+           feet.
+
+19:047:004 He shall choose our inheritance for us, the excellency of
+           Jacob whom he loved. Selah.
+
+19:047:005 God is gone up with a shout, the LORD with the sound of a
+           trumpet.
+
+19:047:006 Sing praises to God, sing praises: sing praises unto our King,
+           sing praises.
+
+19:047:007 For God is the King of all the earth: sing ye praises with
+           understanding.
+
+19:047:008 God reigneth over the heathen: God sitteth upon the throne of
+           his holiness.
+
+19:047:009 The princes of the people are gathered together, even the
+           people of the God of Abraham: for the shields of the earth
+           belong unto God: he is greatly exalted.
+
+19:048:001 Great is the LORD, and greatly to be praised in the city of
+           our God, in the mountain of his holiness.
+
+19:048:002 Beautiful for situation, the joy of the whole earth, is mount
+           Zion, on the sides of the north, the city of the great King.
+
+19:048:003 God is known in her palaces for a refuge.
+
+19:048:004 For, lo, the kings were assembled, they passed by together.
+
+19:048:005 They saw it, and so they marvelled; they were troubled, and
+           hasted away.
+
+19:048:006 Fear took hold upon them there, and pain, as of a woman in
+           travail.
+
+19:048:007 Thou breakest the ships of Tarshish with an east wind.
+
+19:048:008 As we have heard, so have we seen in the city of the LORD of
+           hosts, in the city of our God: God will establish it for ever.
+           Selah.
+
+19:048:009 We have thought of thy lovingkindness, O God, in the midst of
+           thy temple.
+
+19:048:010 According to thy name, O God, so is thy praise unto the ends
+           of the earth: thy right hand is full of righteousness.
+
+19:048:011 Let mount Zion rejoice, let the daughters of Judah be glad,
+           because of thy judgments.
+
+19:048:012 Walk about Zion, and go round about her: tell the towers
+           thereof.
+
+19:048:013 Mark ye well her bulwarks, consider her palaces; that ye may
+           tell it to the generation following.
+
+19:048:014 For this God is our God for ever and ever: he will be our
+           guide even unto death.
+
+19:049:001 Hear this, all ye people; give ear, all ye inhabitants of the
+           world:
+
+19:049:002 Both low and high, rich and poor, together.
+
+19:049:003 My mouth shall speak of wisdom; and the meditation of my heart
+           shall be of understanding.
+
+1...
+The rest of the file is truncated.
+...
