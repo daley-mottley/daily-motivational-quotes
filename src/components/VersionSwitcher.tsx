@@ -17,7 +17,7 @@ const versionIcons = {
 export const VersionSwitcher = ({ value, onChange }) => {
   return (
     <Select value={value} onValueChange={onChange}>
-      <SelectTrigger className="w-auto border-0 focus:ring-0 bg-transparent">
+      <SelectTrigger className="w-auto border-0 focus:ring-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0">
         {value ? versionIcons[value] : <SelectValue placeholder="Select version" />}
       </SelectTrigger>
       <SelectContent>
