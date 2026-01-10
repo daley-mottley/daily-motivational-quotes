@@ -1,7 +1,7 @@
 import { Quote } from '../data/quotes';
 
 // Chinese quotes
-export const quotesZh: Quote[] = [
+export const data: Quote[] = [
   {
     id: 1,
     text: "做好工作的唯一方法就是热爱你所做的事。",

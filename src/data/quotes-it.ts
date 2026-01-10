@@ -1,7 +1,7 @@
 import { Quote } from '../data/quotes';
 
 // Italian quotes
-export const quotesIt: Quote[] = [
+export const data: Quote[] = [
   {
     id: 1,
     text: "L'unico modo per fare un ottimo lavoro è amare quello che fai.",

@@ -1,7 +1,7 @@
 import { Quote } from '../data/quotes';
 
 // German quotes
-export const quotesDe: Quote[] = [
+export const data: Quote[] = [
   {
     id: 1,
     text: "Der einzige Weg, großartige Arbeit zu leisten, ist zu lieben, was du tust.",
