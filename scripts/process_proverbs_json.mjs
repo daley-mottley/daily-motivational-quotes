@@ -10,7 +10,7 @@ proverbsData.chapters.forEach(chapter => {
     allProverbs.push({
       id: `proverbs-${idCounter++}`,
       text: `Proverbs ${chapter.chapter}:${verse.verse} - ${verse.text}`,
-      author: 'Proverbs',
+      author: `Proverbs ${chapter.chapter}`,
       category: 'Proverbs',
     });
   });
