@@ -27,11 +27,14 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
 
   const handleCopyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(`${shareText}\n\n#${hashtags.replace(/,/g, ' #')}`);
+      await navigator.clipboard.writeText(`${shareText}\n\nhttps://daily-motivational-quotes.daleymottley.com`);
       setCopied(true);
+
+      const truncate = (str: string, num: number) =>
+        str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
+
       toast({
-        title: t('buttons.linkCopied'),
-        description: t('share.title'),
+        title: t('buttons.quoteCopied', { quote: truncate(quote.text, 30) }),
       });
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -113,7 +116,7 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
               </Button>
             </TooltipTrigger>
             <TooltipContent>
-              <p>{copied ? t('share.copied') : t('share.copy')}</p>
+              <p>{t('share.copy')}</p>
             </TooltipContent>
           </Tooltip>
         </div>

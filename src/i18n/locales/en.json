@@ -9,7 +9,8 @@
     "refreshing": "Refreshing...",
     "startOver": "Start Over",
     "copyLink": "Copy Link",
-    "linkCopied": "Link copied to clipboard!"
+    "linkCopied": "Link copied to clipboard!",
+    "quoteCopied": "\"{{quote}}\" copied!"
   },
   "share": {
     "title": "Share this quote",
