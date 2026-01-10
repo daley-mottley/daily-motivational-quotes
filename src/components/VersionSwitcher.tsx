@@ -7,11 +7,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Cross, Quote } from 'lucide-react';
+import { Book, Quote } from 'lucide-react';
 
 const versionIcons = {
   quotes: <Quote className="h-4 w-4 text-blue-500" />,
-  psalms: <Cross className="h-4 w-4 text-yellow-600" />,
+  psalms: <Book className="h-4 w-4 text-yellow-600" />,
 };
 
 export const VersionSwitcher = ({ value, onChange }) => {
