@@ -27,7 +27,7 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
 
   const handleCopyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(`${shareText}\n\n#${hashtags.replace(/,/g, ' #')}`);
+      await navigator.clipboard.writeText(`${shareText}\n\nhttps://daily-motivational-quotes.daleymottley.com`);
       setCopied(true);
 
       const truncate = (str: string, num: number) =>
