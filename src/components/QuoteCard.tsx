@@ -88,18 +88,37 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             'text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-white drop-shadow-lg max-w-2xl'
           )}
         >
-          {quote.text.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={cn(
-                'inline-block transition-opacity duration-300 ease-in',
-                isVisible ? 'opacity-100' : 'opacity-0'
-              )}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              {word}
-            </span>
-          )).reduce((prev, curr) => <>{prev} {curr}</>)}
+          {quote.category === 'Proverbs' ? (
+            <>
+              <span className="font-semibold">{quote.text.split(' - ')[0]}</span>
+              <span> - </span>
+              {quote.text.split(' - ')[1].split(' ').map((word, index) => (
+                <span
+                  key={index}
+                  className={cn(
+                    'inline-block transition-opacity duration-300 ease-in',
+                    isVisible ? 'opacity-100' : 'opacity-0'
+                  )}
+                  style={{ transitionDelay: `${index * 150}ms` }}
+                >
+                  {word}
+                </span>
+              )).reduce((prev, curr) => <>{prev} {curr}</>, <></>)}
+            </>
+          ) : (
+            quote.text.split(' ').map((word, index) => (
+              <span
+                key={index}
+                className={cn(
+                  'inline-block transition-opacity duration-300 ease-in',
+                  isVisible ? 'opacity-100' : 'opacity-0'
+                )}
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
+                {word}
+              </span>
+            )).reduce((prev, curr) => <>{prev} {curr}</>, <></>))
+          }
         </blockquote>
 
         <figcaption

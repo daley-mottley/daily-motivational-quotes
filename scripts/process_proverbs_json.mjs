@@ -9,7 +9,7 @@ proverbsData.chapters.forEach(chapter => {
   chapter.verses.forEach(verse => {
     allProverbs.push({
       id: `proverbs-${idCounter++}`,
-      text: verse.text,
+      text: `Proverbs ${chapter.chapter}:${verse.verse} - ${verse.text}`,
       author: 'Proverbs',
       category: 'Proverbs',
     });
@@ -18,7 +18,7 @@ proverbsData.chapters.forEach(chapter => {
 
 const content = `import { Quote } from './types';
 
-export const proverbs: Quote[] = ${JSON.stringify(allProverbs, null, 2)};
+export const data: Quote[] = ${JSON.stringify(allProverbs, null, 2)};
 `;
 
 fs.writeFileSync('src/data/proverbs-en.ts', content, 'utf8');

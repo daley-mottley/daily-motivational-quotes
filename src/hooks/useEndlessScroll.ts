@@ -30,69 +30,49 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(0);
-  const [shuffledQuotes, setShuffledQuotes] = useState<Quote[]>([]);
+  const allQuotes = useRef<Quote[]>([]);
 
   const QUOTES_PER_PAGE = 5;
 
-  // Use refs to store state values that are used in callbacks, to avoid dependencies
-  const loadingRef = useRef(loading);
-  const hasMoreRef = useRef(hasMore);
-  const pageRef = useRef(page);
-
   useEffect(() => {
-    loadingRef.current = loading;
-    hasMoreRef.current = hasMore;
-    pageRef.current = page;
-  }, [loading, hasMore, page]);
+    setQuotes([]);
+    setPage(0);
+    setHasMore(true);
 
+    const processedQuotes = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
+    allQuotes.current = processedQuotes;
 
-  // Shuffle quotes on initial load and refresh
-  useEffect(() => {
-    // When the language changes (and thus localizedQuotes changes), reset everything
-    // to ensure a fresh start with the new set of quotes.
-    if (localizedQuotes.length > 0) {
-      setQuotes([]);
-      setPage(0);
-      setHasMore(true);
-      setShuffledQuotes(shuffleArray([...localizedQuotes]));
+    if (processedQuotes.length > 0) {
+      loadMoreQuotes(true);
     }
-  }, [localizedQuotes]);
+  }, [version, localizedQuotes]);
 
-  const loadMoreQuotes = useCallback(() => {
-    if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
+  const loadMoreQuotes = useCallback((isInitialLoad = false) => {
+    if (loading && !isInitialLoad) return;
 
     setLoading(true);
-    
-    // Simulate API delay for better UX
+
     setTimeout(() => {
-      const startIndex = pageRef.current * QUOTES_PER_PAGE;
+      const startIndex = page * QUOTES_PER_PAGE;
       const endIndex = startIndex + QUOTES_PER_PAGE;
-      const newQuotes = shuffledQuotes.slice(startIndex, endIndex);
-      
+      const newQuotes = allQuotes.current.slice(startIndex, endIndex);
+
       if (newQuotes.length === 0) {
         setHasMore(false);
       } else {
-        setQuotes(prev => [...prev, ...newQuotes]);
+        setQuotes(prev => isInitialLoad ? newQuotes : [...prev, ...newQuotes]);
         setPage(prev => prev + 1);
       }
-      
       setLoading(false);
     }, 800);
-  }, [shuffledQuotes]);
-
-  // Load initial quotes
-  useEffect(() => {
-    if (quotes.length === 0 && shuffledQuotes.length > 0) {
-      loadMoreQuotes();
-    }
-  }, [loadMoreQuotes, quotes.length, shuffledQuotes.length]);
+  }, [loading, page]);
 
   // Preload the next batch of images for a smoother scrolling experience
   useEffect(() => {
-    if (shuffledQuotes.length > quotes.length) {
+    if (allQuotes.current.length > quotes.length) {
       const nextBatchStartIndex = quotes.length;
       const nextBatchEndIndex = nextBatchStartIndex + QUOTES_PER_PAGE;
-      const nextBatch = shuffledQuotes.slice(nextBatchStartIndex, nextBatchEndIndex);
+      const nextBatch = allQuotes.current.slice(nextBatchStartIndex, nextBatchEndIndex);
 
       if (nextBatch.length > 0) {
         Promise.all(
@@ -103,7 +83,7 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
         });
       }
     }
-  }, [quotes, shuffledQuotes]);
+  }, [quotes]);
 
   // Scroll event listener
   useEffect(() => {
@@ -122,7 +102,8 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
     setPage(0);
     setHasMore(true);
     setLoading(false);
-    setShuffledQuotes(shuffleArray([...localizedQuotes])); // Reshuffle on refresh
+    const quotesToSet = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
+    setShuffledQuotes(quotesToSet); // Reshuffle on refresh
   };
 
   return {

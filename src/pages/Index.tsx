@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { QuoteCard } from '../components/QuoteCard';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
@@ -36,13 +36,6 @@ const Index = () => {
 
         {/* Quotes Feed */}
         <div className="space-y-8">
-          {/*
-            PERFORMANCE OPTIMIZATION:
-            Using the stable and unique `quote.id` as the key is crucial for React's reconciliation process.
-            Previously, using the array index could lead to unnecessary re-renders of the entire list
-            when new quotes are loaded, as React wouldn't be able to identify which elements are stable.
-            This change ensures that only new components are rendered, improving scroll performance.
-          */}
           {quotes.map((quote) => (
             <article key={quote.id} className="w-full">
               {/* Quote Card */}
