@@ -30,12 +30,6 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
       await navigator.clipboard.writeText(`${shareText}\n\nhttps://daily-motivational-quotes.daleymottley.com`);
       setCopied(true);
 
-      const truncate = (str: string, num: number) =>
-        str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
-
-      toast({
-        title: t('buttons.quoteCopied', { quote: truncate(quote.text, 30) }),
-      });
 
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
