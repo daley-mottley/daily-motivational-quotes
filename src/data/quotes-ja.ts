@@ -1,7 +1,7 @@
 import { Quote } from '../data/quotes';
 
 // Japanese quotes
-export const quotesJa: Quote[] = [
+export const data: Quote[] = [
   {
     id: 1,
     text: "素晴らしい仕事をする唯一の方法は、あなたがすることを愛することです。",

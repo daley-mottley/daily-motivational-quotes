@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { QuoteCard } from '../components/QuoteCard';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
@@ -9,12 +9,13 @@ import { RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Index = () => {
-  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll();
+  const [version, setVersion] = useState('quotes');
+  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll(version as 'quotes' | 'psalms');
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600">
-      <Header />
+      <Header version={version} onVersionChange={setVersion} />
       
       <main className="max-w-lg mx-auto px-4 py-6">
         {/* Refresh Button */}

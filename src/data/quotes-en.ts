@@ -1,7 +1,7 @@
 import { Quote } from '../data/quotes';
 
 // English quotes (original)
-export const quotesEn: Quote[] = [
+export const data: Quote[] = [
   {
     id: 1,
     text: "The only way to do great work is to love what you do.",

@@ -3,8 +3,9 @@ import React from 'react';
 import { Sparkles, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { VersionSwitcher } from './VersionSwitcher';
 
-export const Header = () => {
+export const Header = ({ version, onVersionChange }) => {
   const { t } = useTranslation();
 
   return (
@@ -22,7 +23,10 @@ export const Header = () => {
               <p className="text-xs text-gray-500 font-medium">{t('app.tagline')}</p>
             </div>
           </div>
-          <LanguageSwitcher />
+          <div className="flex items-center">
+            <VersionSwitcher value={version} onChange={onVersionChange} />
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </header>
