@@ -4,7 +4,7 @@ import { Quote } from '../data/quotes';
 
 const modules = import.meta.glob('../data/*.ts');
 
-export const useLocalizedQuotes = (version: 'quotes' | 'psalms'): Quote[] => {
+export const useLocalizedQuotes = (version: 'quotes' | 'psalms' | 'proverbs'): Quote[] => {
   const { i18n } = useTranslation();
   const [quotes, setQuotes] = useState<Quote[]>([]);
   const currentLanguage = i18n.language;

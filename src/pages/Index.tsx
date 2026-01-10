@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const Index = () => {
   const [version, setVersion] = useState('quotes');
-  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll(version as 'quotes' | 'psalms');
+  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll(version as 'quotes' | 'psalms' | 'proverbs');
   const { t } = useTranslation();
 
   return (

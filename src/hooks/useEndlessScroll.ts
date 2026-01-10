@@ -24,7 +24,7 @@ const shuffleArray = (array: Quote[]) => {
   return array;
 }
 
-export const useEndlessScroll = (version: 'quotes' | 'psalms') => {
+export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
   const localizedQuotes = useLocalizedQuotes(version);
   const [quotes, setQuotes] = useState<Quote[]>([]);
   const [loading, setLoading] = useState(false);
