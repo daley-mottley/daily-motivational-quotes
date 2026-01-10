@@ -89,22 +89,18 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
           )}
         >
           {quote.category === 'Proverbs' ? (
-            <>
-              <span className="font-semibold">{quote.text.split(' - ')[0]}</span>
-              <span> - </span>
-              {quote.text.split(' - ')[1].split(' ').map((word, index) => (
-                <span
-                  key={index}
-                  className={cn(
-                    'inline-block transition-opacity duration-300 ease-in',
-                    isVisible ? 'opacity-100' : 'opacity-0'
-                  )}
-                  style={{ transitionDelay: `${index * 150}ms` }}
-                >
-                  {word}
-                </span>
-              )).reduce((prev, curr) => <>{prev} {curr}</>, <></>)}
-            </>
+            quote.text.split(' - ')[1].split(' ').map((word, index) => (
+              <span
+                key={index}
+                className={cn(
+                  'inline-block transition-opacity duration-300 ease-in',
+                  isVisible ? 'opacity-100' : 'opacity-0'
+                )}
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
+                {word}
+              </span>
+            )).reduce((prev, curr) => <>{prev} {curr}</>, <></>)
           ) : (
             quote.text.split(' ').map((word, index) => (
               <span
@@ -131,7 +127,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
             transitionDelay: `${quote.text.split(' ').length * 150 + 700}ms`,
           }}
         >
-          — {quote.author}
+          — {quote.category === 'Proverbs' ? quote.text.split(' - ')[0] : quote.author}
         </figcaption>
 
         {/* Enhanced category badge */}
