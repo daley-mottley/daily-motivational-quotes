@@ -10,8 +10,8 @@ import {
 import { Cross, Quote } from 'lucide-react';
 
 const versionIcons = {
-  quotes: <Quote className="h-4 w-4" />,
-  psalms: <Cross className="h-4 w-4" />,
+  quotes: <Quote className="h-4 w-4 text-blue-500" />,
+  psalms: <Cross className="h-4 w-4 text-yellow-600" />,
 };
 
 export const VersionSwitcher = ({ value, onChange }) => {

@@ -8,7 +8,8 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:data": "node scripts/fetch_psalms.mjs && node scripts/create_psalms_ts.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
