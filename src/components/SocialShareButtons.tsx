@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check } 
 import { Button } from './ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { useToast } from '@/hooks/use-toast';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface SocialShareButtonsProps {
   quote: Quote;
@@ -29,10 +29,14 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
     try {
       await navigator.clipboard.writeText(`${shareText}\n\n#${hashtags.replace(/,/g, ' #')}`);
       setCopied(true);
+
+      const truncate = (str: string, num: number) =>
+        str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
+
       toast({
-        title: t('buttons.linkCopied'),
-        description: t('share.title'),
+        title: t('buttons.quoteCopied', { quote: truncate(quote.text, 30) }),
       });
+
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       toast({
