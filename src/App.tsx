@@ -16,9 +16,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/en" />} />
+          <Route path="/" element={<Navigate to="/en/quotes" />} />
           <Route path="/:lang" element={<LanguageHandler />}>
-            <Route index element={<Index />} />
+            <Route path=":version?" element={<Index />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

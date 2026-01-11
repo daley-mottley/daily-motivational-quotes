@@ -12,12 +12,16 @@ import { Book, Quote } from 'lucide-react';
 const versionIcons = {
   quotes: <Quote className="h-4 w-4 text-blue-500" />,
   psalms: <Book className="h-4 w-4 text-yellow-600" />,
+  proverbs: <Book className="h-4 w-4 text-green-600" />,
 };
 
 export const VersionSwitcher = ({ value, onChange }) => {
   return (
     <Select value={value} onValueChange={onChange}>
-      <SelectTrigger className="w-auto border-0 focus:ring-0 bg-transparent">
+      <SelectTrigger
+        className="w-auto border-0 focus:ring-0 bg-transparent"
+        aria-label="Select a version"
+      >
         {value ? versionIcons[value] : <SelectValue placeholder="Select version" />}
       </SelectTrigger>
       <SelectContent>
@@ -31,6 +35,12 @@ export const VersionSwitcher = ({ value, onChange }) => {
           <div className="flex items-center gap-2">
             {versionIcons.psalms}
             <span>Psalms</span>
+          </div>
+        </SelectItem>
+        <SelectItem value="proverbs">
+          <div className="flex items-center gap-2">
+            {versionIcons.proverbs}
+            <span>Proverbs</span>
           </div>
         </SelectItem>
       </SelectContent>

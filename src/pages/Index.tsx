@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { QuoteCard } from '../components/QuoteCard';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { SocialShareButtons } from '../components/SocialShareButtons';
@@ -9,13 +10,18 @@ import { RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Index = () => {
-  const [version, setVersion] = useState('quotes');
-  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll(version as 'quotes' | 'psalms');
-  const { t } = useTranslation();
+  const { version: versionFromUrl = 'quotes' } = useParams();
+  const navigate = useNavigate();
+  const { quotes, loading, hasMore, refreshQuotes } = useEndlessScroll(versionFromUrl as 'quotes' | 'psalms' | 'proverbs');
+  const { t, i18n } = useTranslation();
+
+  const handleVersionChange = (newVersion: string) => {
+    navigate(`/${i18n.language}/${newVersion}`);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600">
-      <Header version={version} onVersionChange={setVersion} />
+      <Header version={versionFromUrl} onVersionChange={handleVersionChange} />
       
       <main className="max-w-lg mx-auto px-4 py-6">
         {/* Refresh Button */}
