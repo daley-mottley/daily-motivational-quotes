@@ -45,7 +45,7 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
     if (processedQuotes.length > 0) {
       loadMoreQuotes(true);
     }
-  }, [version, localizedQuotes]);
+  }, [version, localizedQuotes, loadMoreQuotes]);
 
   const loadMoreQuotes = useCallback((isInitialLoad = false) => {
     if (loading && !isInitialLoad) return;
@@ -98,12 +98,11 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
   }, [loadMoreQuotes]);
 
   const refreshQuotes = () => {
-    setQuotes([]);
     setPage(0);
+    setQuotes([]);
     setHasMore(true);
-    setLoading(false);
-    const quotesToSet = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
-    setShuffledQuotes(quotesToSet); // Reshuffle on refresh
+    allQuotes.current = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
+    loadMoreQuotes(true);
   };
 
   return {
