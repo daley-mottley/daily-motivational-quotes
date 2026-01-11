@@ -34,19 +34,6 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
 
   const QUOTES_PER_PAGE = 5;
 
-  useEffect(() => {
-    setQuotes([]);
-    setPage(0);
-    setHasMore(true);
-
-    const processedQuotes = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
-    allQuotes.current = processedQuotes;
-
-    if (processedQuotes.length > 0) {
-      loadMoreQuotes(true);
-    }
-  }, [version, localizedQuotes, loadMoreQuotes]);
-
   const loadMoreQuotes = useCallback((isInitialLoad = false) => {
     if (loading && !isInitialLoad) return;
 
@@ -66,6 +53,19 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms' | 'proverbs') => {
       setLoading(false);
     }, 800);
   }, [loading, page]);
+
+  useEffect(() => {
+    setQuotes([]);
+    setPage(0);
+    setHasMore(true);
+
+    const processedQuotes = version === 'proverbs' ? [...localizedQuotes] : shuffleArray([...localizedQuotes]);
+    allQuotes.current = processedQuotes;
+
+    if (processedQuotes.length > 0) {
+      loadMoreQuotes(true);
+    }
+  }, [version, localizedQuotes, loadMoreQuotes]);
 
   // Preload the next batch of images for a smoother scrolling experience
   useEffect(() => {
