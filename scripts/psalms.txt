@@ -2243,9 +2243,4 @@ Book 19        Psalms
 
 19:049:002 Both low and high, rich and poor, together.
 
-19:049:003 My mouth shall speak of wisdom; and the meditation of my heart
-           shall be of understanding.
-
-1...
-The rest of the file is truncated.
-...
+19:049:003 My mouth shall speak of wisdom; and the meditation of my heart shall be of understanding.
