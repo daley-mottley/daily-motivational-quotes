@@ -3,9 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
-import { Copy, Check } from 'lucide-react';
-import { Button } from './ui/button';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -19,14 +16,7 @@ interface QuoteCardProps {
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
-  const [isCopied, setIsCopied] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(`"${quote.text}" - ${quote.author}`);
-    setIsCopied(true);
-    setTimeout(() => setIsCopied(false), 2000);
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -114,7 +104,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
         <figcaption
           className={cn(
-            'flex items-center justify-center text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6',
+            'text-base md:text-lg font-semibold text-white/95 not-italic drop-shadow-md block mb-6',
             'transition-opacity duration-500 ease-out',
             isVisible ? 'opacity-100' : 'opacity-0'
           )}
@@ -123,24 +113,6 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
           }}
         >
           — {quote.author}
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  onClick={handleCopy}
-                  aria-label="Copy quote to clipboard"
-                  variant="ghost"
-                  size="icon"
-                  className="ml-2"
-                >
-                  {isCopied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{isCopied ? 'Copied!' : 'Copy to clipboard'}</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
         </figcaption>
 
         {/* Enhanced category badge */}
@@ -155,10 +127,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-      {/* Visually hidden container for screen reader announcements */}
-      <div className="sr-only" aria-live="polite">
-        {isCopied ? 'Quote copied to clipboard' : ''}
-      </div>
+
 
     </figure>
   );
