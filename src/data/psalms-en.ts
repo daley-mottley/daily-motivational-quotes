@@ -4980,7 +4980,7 @@ export const data: Quote[] = [
   },
   {
     "id": 712,
-    "text": "My mouth shall speak of wisdom; and the meditation of my heart shall be of understanding. 1... The rest of the file is truncated. ...",
+    "text": "My mouth shall speak of wisdom; and the meditation of my heart shall be of understanding.",
     "author": "Psalm 49:3",
     "category": "psalm",
     "backgroundGradient": "from-amber-500 via-orange-500 to-red-500"
