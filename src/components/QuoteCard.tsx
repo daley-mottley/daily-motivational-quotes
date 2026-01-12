@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { Copy, Check } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -16,7 +18,15 @@ interface QuoteCardProps {
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleCopy = () => {
+    const textToCopy = `"${quote.text}" — ${quote.author}`;
+    navigator.clipboard.writeText(textToCopy);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -126,9 +136,35 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
           </span>
         </div>
       </div>
-      
 
+      {/* Action Bar */}
+      <div className="absolute bottom-6 right-6 z-20 flex items-center space-x-2">
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button
+                onClick={handleCopy}
+                aria-label="Copy quote to clipboard"
+                className="p-2 rounded-full bg-white/10 backdrop-blur-sm text-white/80 hover:bg-white/20 hover:text-white transition-all duration-200"
+              >
+                {isCopied ? (
+                  <Check className="w-5 h-5 text-emerald-400" />
+                ) : (
+                  <Copy className="w-5 h-5" />
+                )}
+              </button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Copy to clipboard</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
 
+      {/* Accessibility Announcer */}
+      <div aria-live="polite" className="sr-only">
+        {isCopied && 'Copied to clipboard'}
+      </div>
     </figure>
   );
 });
