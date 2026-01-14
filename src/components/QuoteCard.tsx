@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { useFavorites } from '../hooks/useFavorites';
+import { Heart } from 'lucide-react';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -17,6 +19,8 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const isQuoteFavorite = isFavorite(quote.id.toString());
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -127,7 +131,13 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-
+      <button
+        onClick={() => toggleFavorite(quote)}
+        aria-label={isQuoteFavorite ? 'Remove from favorites' : 'Add to favorites'}
+        className="absolute bottom-6 right-6 text-white/70 hover:text-white transition-colors duration-200"
+      >
+        <Heart className={cn('w-7 h-7', isQuoteFavorite ? 'fill-red-500 text-red-500' : 'fill-transparent')} />
+      </button>
 
     </figure>
   );
