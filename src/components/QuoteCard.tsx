@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { useFavorites } from '../hooks/useFavorites';
+import { Heart } from 'lucide-react';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -15,6 +17,7 @@ interface QuoteCardProps {
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -127,7 +130,24 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-
+      {/* Favorite Button */}
+      <button
+        aria-label={isFavorite(String(quote.id)) ? 'Remove from favorites' : 'Add to favorites'}
+        onClick={() => toggleFavorite(quote)}
+        className={cn(
+          'absolute bottom-6 right-6 p-2 rounded-full transition-all duration-300 ease-in-out',
+          'text-white/70 hover:text-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50',
+          {
+            'text-red-500 bg-white/20': isFavorite(String(quote.id)),
+          }
+        )}
+      >
+        <Heart
+          className={cn('w-6 h-6 transition-all duration-300', {
+            'fill-current': isFavorite(String(quote.id)),
+          })}
+        />
+      </button>
 
     </figure>
   );
