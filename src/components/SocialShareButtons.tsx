@@ -1,11 +1,12 @@
 
 import React, { useState } from 'react';
 import { Quote } from '../data/quotes';
-import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Youtube, Share2, Copy, Check, Heart } from 'lucide-react';
 import { Button } from './ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
+import { useFavorites } from '../hooks/useFavorites';
 
 interface SocialShareButtonsProps {
   quote: Quote;
@@ -20,6 +21,7 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
   const { t } = useTranslation();
+  const { toggleFavorite, isFavorite } = useFavorites();
   
   const shareText = `"${quote.text}" - ${quote.author}`;
   const shareUrl = window.location.href;
@@ -102,6 +104,24 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = React.memo(
               </TooltipContent>
             </Tooltip>
           ))}
+
+          {/* Favorite button */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                onClick={() => toggleFavorite(quote)}
+                aria-label={isFavorite(String(quote.id)) ? t('favorites.remove') : t('favorites.add')}
+                className="bg-pink-500 hover:bg-pink-600 text-white border-0 px-4 py-2 rounded-full font-medium transition-all duration-200 flex items-center justify-center min-w-[48px] h-[48px] shadow-lg hover:shadow-xl active:scale-95"
+                size="icon"
+                data-testid="favorite-button"
+              >
+                <Heart className={`h-5 w-5 ${isFavorite(String(quote.id)) ? 'fill-current' : ''}`} />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{isFavorite(String(quote.id)) ? t('favorites.remove') : t('favorites.add')}</p>
+            </TooltipContent>
+          </Tooltip>
 
           {/* Copy button */}
           <Tooltip>
