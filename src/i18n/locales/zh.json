@@ -36,5 +36,11 @@
   },
   "languageSwitcher": {
     "changeLanguage": "切换语言"
+  },
+  "favorites": {
+    "add": "添加到收藏夹",
+    "remove": "从收藏夹中删除",
+    "added": "名言已添加到收藏夹",
+    "removed": "名言已从收藏夹中删除"
   }
 }
