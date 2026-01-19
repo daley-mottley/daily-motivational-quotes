@@ -36,5 +36,11 @@
   },
   "languageSwitcher": {
     "changeLanguage": "言語を変更"
+  },
+  "favorites": {
+    "add": "お気に入りに追加",
+    "remove": "お気に入りから削除",
+    "added": "引用をお気に入りに追加しました",
+    "removed": "引用をお気に入りから削除しました"
   }
 }

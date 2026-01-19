@@ -36,5 +36,11 @@
   },
   "languageSwitcher": {
     "changeLanguage": "Sprache ändern"
+  },
+  "favorites": {
+    "add": "Zu Favoriten hinzufügen",
+    "remove": "Aus Favoriten entfernen",
+    "added": "Zitat zu Favoriten hinzugefügt",
+    "removed": "Zitat aus Favoriten entfernt"
   }
 }
