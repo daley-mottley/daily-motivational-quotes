@@ -3,6 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { Button } from './ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
+import { Heart } from 'lucide-react';
+import { useFavorites } from '../hooks/useFavorites';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -15,8 +19,12 @@ interface QuoteCardProps {
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const isFav = isFavorite(String(quote.id));
+  const favLabel = isFav ? 'Remove from favorites' : 'Add to favorites';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,6 +65,30 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         backgroundRepeat: 'no-repeat',
       }}
     >
+      {/* Favorite Button */}
+      <div className="absolute top-4 right-4 z-20">
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                onClick={() => toggleFavorite(quote)}
+                aria-label={favLabel}
+                className={cn(
+                  'bg-transparent text-white rounded-full transition-all duration-300 hover:bg-white/20 active:scale-90',
+                  { 'text-red-500': isFav }
+                )}
+                size="icon"
+              >
+                <Heart className={cn('h-6 w-6', { 'fill-current': isFav })} />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{favLabel}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
+
       {/* Enhanced gradient overlay */}
       <div
         className={cn(
