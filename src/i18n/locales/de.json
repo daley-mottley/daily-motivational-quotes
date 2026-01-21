@@ -9,7 +9,9 @@
     "refreshing": "Aktualisieren...",
     "startOver": "Neu Starten",
     "copyLink": "Link Kopieren",
-    "linkCopied": "Link in die Zwischenablage kopiert!"
+    "linkCopied": "Link in die Zwischenablage kopiert!",
+    "favorite": "Favorit",
+    "unfavorite": "Kein Favorit"
   },
   "share": {
     "title": "Dieses Zitat teilen",

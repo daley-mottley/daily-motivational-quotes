@@ -9,7 +9,9 @@
     "refreshing": "更新中...",
     "startOver": "最初から",
     "copyLink": "リンクをコピー",
-    "linkCopied": "リンクをクリップボードにコピーしました！"
+    "linkCopied": "リンクをクリップボードにコピーしました！",
+    "favorite": "お気に入り",
+    "unfavorite": "お気に入り解除"
   },
   "share": {
     "title": "この引用をシェア",
