@@ -9,7 +9,9 @@
     "refreshing": "Actualisation...",
     "startOver": "Recommencer",
     "copyLink": "Copier le Lien",
-    "linkCopied": "Lien copié dans le presse-papiers !"
+    "linkCopied": "Lien copié dans le presse-papiers !",
+    "favorite": "Favori",
+    "unfavorite": "Non favori"
   },
   "share": {
     "title": "Partager cette citation",

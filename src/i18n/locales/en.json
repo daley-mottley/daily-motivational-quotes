@@ -10,7 +10,9 @@
     "startOver": "Start Over",
     "copyLink": "Copy Link",
     "linkCopied": "Link copied to clipboard!",
-    "quoteCopied": "\"{{quote}}\" copied!"
+    "quoteCopied": "\"{{quote}}\" copied!",
+    "favorite": "Favorite",
+    "unfavorite": "Unfavorite"
   },
   "share": {
     "title": "Share this quote",

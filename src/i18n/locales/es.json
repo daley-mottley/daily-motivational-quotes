@@ -9,7 +9,9 @@
     "refreshing": "Actualizando...",
     "startOver": "Empezar de Nuevo",
     "copyLink": "Copiar Enlace",
-    "linkCopied": "¡Enlace copiado al portapapeles!"
+    "linkCopied": "¡Enlace copiado al portapapeles!",
+    "favorite": "Favorito",
+    "unfavorite": "No favorito"
   },
   "share": {
     "title": "Comparte esta cita",

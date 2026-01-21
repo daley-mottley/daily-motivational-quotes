@@ -9,7 +9,9 @@
     "refreshing": "刷新中...",
     "startOver": "重新开始",
     "copyLink": "复制链接",
-    "linkCopied": "链接已复制到剪贴板！"
+    "linkCopied": "链接已复制到剪贴板！",
+    "favorite": "收藏",
+    "unfavorite": "取消收藏"
   },
   "share": {
     "title": "分享这句名言",
