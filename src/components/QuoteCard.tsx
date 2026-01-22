@@ -3,6 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { Heart } from 'lucide-react';
+import { Button } from './ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
+import { useFavorites } from '../hooks/useFavorites';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -17,6 +21,8 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const isQuoteFavorite = isFavorite(String(quote.id));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -127,7 +133,24 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-
+      {/* Favorite Button */}
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={() => toggleFavorite(quote)}
+              aria-label={isQuoteFavorite ? 'Remove from favorites' : 'Add to favorites'}
+              className="absolute bottom-6 right-6 bg-white/20 hover:bg-white/30 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors duration-200"
+              size="icon"
+            >
+              <Heart className={cn('w-6 h-6 transition-all duration-300', isQuoteFavorite ? 'text-red-500 fill-current' : 'text-white')} />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>{isQuoteFavorite ? 'Unfavorite' : 'Favorite'}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
 
     </figure>
   );
