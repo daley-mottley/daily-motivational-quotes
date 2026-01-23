@@ -35,6 +35,10 @@
     "notFound": "Oops! Page not found",
     "returnHome": "Return to Home"
   },
+  "favorites": {
+    "add": "Add to favorites",
+    "remove": "Remove from favorites"
+  },
   "languageSwitcher": {
     "changeLanguage": "Change language"
   }
