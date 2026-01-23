@@ -3,6 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { useFavorites } from '../hooks/useFavorites';
+import { Heart } from 'lucide-react';
+import { Button } from './ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
+import { useTranslation } from 'react-i18next';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -17,6 +22,9 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const { t } = useTranslation();
+  const isQuoteFavorite = isFavorite(String(quote.id));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -127,6 +135,29 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
+      {/* Favorite button */}
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={() => toggleFavorite(quote)}
+              aria-label={isQuoteFavorite ? t('favorites.remove') : t('favorites.add')}
+              className={cn(
+                'absolute bottom-6 right-6 bg-white/20 backdrop-blur-md text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 ease-in-out',
+                'hover:bg-white/30 focus-visible:ring-2 focus-visible:ring-white/50',
+                { 'text-red-500': isQuoteFavorite }
+              )}
+            >
+              <Heart className={cn('w-6 h-6 transition-all duration-300', {
+                'fill-current': isQuoteFavorite,
+              })} />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>{isQuoteFavorite ? t('favorites.remove') : t('favorites.add')}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
 
 
     </figure>
