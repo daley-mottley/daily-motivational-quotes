@@ -37,5 +37,11 @@
   },
   "languageSwitcher": {
     "changeLanguage": "Change language"
+  },
+  "favorites": {
+    "add": "Favorite",
+    "remove": "Remove from favorites",
+    "ariaLabelAdd": "Add to favorites",
+    "ariaLabelRemove": "Remove from favorites"
   }
 }
