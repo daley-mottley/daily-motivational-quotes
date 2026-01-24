@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { FavoriteButton } from './FavoriteButton';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -57,6 +58,7 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         backgroundRepeat: 'no-repeat',
       }}
     >
+      <FavoriteButton quote={quote} />
       {/* Enhanced gradient overlay */}
       <div
         className={cn(
