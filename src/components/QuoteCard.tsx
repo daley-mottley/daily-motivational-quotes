@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { useFavorites } from '../hooks/useFavorites';
+import { FavoriteButton } from './FavoriteButton';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -17,6 +19,12 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
   const { imageData, loading } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  const { isFavorite, toggleFavorite } = useFavorites();
+
+  const handleFavoriteClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    toggleFavorite(quote);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -127,7 +135,11 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-
+      <FavoriteButton
+        isFavorite={isFavorite(String(quote.id))}
+        onClick={handleFavoriteClick}
+        className="absolute bottom-6 right-6 z-20"
+      />
 
     </figure>
   );
