@@ -3,6 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Quote } from '../data/quotes';
 import { cn } from '../lib/utils';
 import { useImageBackground } from '../hooks/useImageBackground';
+import { useFavorites } from '../hooks/useFavorites';
+import { Heart } from 'lucide-react';
+import { Button } from './ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -15,6 +19,7 @@ interface QuoteCardProps {
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
   const { imageData, loading } = useImageBackground(quote);
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -127,8 +132,34 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         </div>
       </div>
       
-
-
+      {/* Favorite Button */}
+      <div className="absolute bottom-6 right-6 z-20">
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleFavorite(quote);
+                }}
+                aria-label={isFavorite(String(quote.id)) ? 'Remove from favorites' : 'Add to favorites'}
+                className="bg-black/20 hover:bg-black/40 rounded-full h-12 w-12 p-3 transition-all duration-200 ease-in-out active:scale-90"
+              >
+                <Heart
+                  fill="currentColor"
+                  className={cn(
+                    'h-full w-full transition-all duration-200 ease-in-out',
+                    isFavorite(String(quote.id)) ? 'text-red-500' : 'text-white/80'
+                  )}
+                />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{isFavorite(String(quote.id)) ? 'Remove from favorites' : 'Add to favorites'}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
     </figure>
   );
 });
