@@ -32,18 +32,18 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms') => {
   const [page, setPage] = useState(0);
   const [shuffledQuotes, setShuffledQuotes] = useState<Quote[]>([]);
 
-  const QUOTES_PER_PAGE = 5;
+  const QUOTES_PER_PAGE = 6;
+  const PREFETCH_PAGES = 2;
 
   // Use refs to store state values that are used in callbacks, to avoid dependencies
-  const loadingRef = useRef(loading);
   const hasMoreRef = useRef(hasMore);
   const pageRef = useRef(page);
+  const isFetchingRef = useRef(false);
 
   useEffect(() => {
-    loadingRef.current = loading;
     hasMoreRef.current = hasMore;
     pageRef.current = page;
-  }, [loading, hasMore, page]);
+  }, [hasMore, page]);
 
 
   // Shuffle quotes on initial load and refresh
@@ -58,32 +58,35 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms') => {
     }
   }, [localizedQuotes]);
 
-  const loadMoreQuotes = useCallback(() => {
-    if (loadingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
+  const loadMoreQuotes = useCallback((showLoading = false) => {
+    if (isFetchingRef.current || !hasMoreRef.current || shuffledQuotes.length === 0) return;
 
-    setLoading(true);
-    
-    // Simulate API delay for better UX
-    setTimeout(() => {
-      const startIndex = pageRef.current * QUOTES_PER_PAGE;
-      const endIndex = startIndex + QUOTES_PER_PAGE;
-      const newQuotes = shuffledQuotes.slice(startIndex, endIndex);
-      
-      if (newQuotes.length === 0) {
-        setHasMore(false);
-      } else {
-        setQuotes(prev => [...prev, ...newQuotes]);
-        setPage(prev => prev + 1);
-      }
-      
+    isFetchingRef.current = true;
+    if (showLoading) {
+      setLoading(true);
+    }
+
+    const startIndex = pageRef.current * QUOTES_PER_PAGE;
+    const endIndex = startIndex + QUOTES_PER_PAGE;
+    const newQuotes = shuffledQuotes.slice(startIndex, endIndex);
+
+    if (newQuotes.length === 0) {
+      setHasMore(false);
+    } else {
+      setQuotes(prev => [...prev, ...newQuotes]);
+      setPage(prev => prev + 1);
+    }
+
+    if (showLoading) {
       setLoading(false);
-    }, 800);
+    }
+    isFetchingRef.current = false;
   }, [shuffledQuotes]);
 
   // Load initial quotes
   useEffect(() => {
     if (quotes.length === 0 && shuffledQuotes.length > 0) {
-      loadMoreQuotes();
+      loadMoreQuotes(true);
     }
   }, [loadMoreQuotes, quotes.length, shuffledQuotes.length]);
 
@@ -91,7 +94,7 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms') => {
   useEffect(() => {
     if (shuffledQuotes.length > quotes.length) {
       const nextBatchStartIndex = quotes.length;
-      const nextBatchEndIndex = nextBatchStartIndex + QUOTES_PER_PAGE;
+      const nextBatchEndIndex = nextBatchStartIndex + QUOTES_PER_PAGE * PREFETCH_PAGES;
       const nextBatch = shuffledQuotes.slice(nextBatchStartIndex, nextBatchEndIndex);
 
       if (nextBatch.length > 0) {
@@ -108,7 +111,7 @@ export const useEndlessScroll = (version: 'quotes' | 'psalms') => {
   // Scroll event listener
   useEffect(() => {
     const handleScroll = throttle(() => {
-      if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 1000) {
+      if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 1600) {
         loadMoreQuotes();
       }
     }, 200);

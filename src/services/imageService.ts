@@ -2,6 +2,7 @@
 // Unsplash API service for fetching dynamic background images
 const UNSPLASH_ACCESS_KEY = 'YOUR_UNSPLASH_ACCESS_KEY'; // User will need to get this
 const UNSPLASH_API_URL = 'https://api.unsplash.com';
+const IMAGE_WIDTH = 1600;
 
 // Fallback images from our placeholder collection
 const FALLBACK_IMAGES = [
@@ -56,7 +57,7 @@ class ImageService {
     if (typeof window !== 'undefined') {
       FALLBACK_IMAGES.forEach(id => {
         const img = new Image();
-        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`;
+        img.src = `https://images.unsplash.com/${id}?ixlib=rb-4.0.3&auto=format&fit=crop&w=${IMAGE_WIDTH}&q=80`;
       });
     }
   }
@@ -91,7 +92,7 @@ class ImageService {
   private getFallbackImage(): ImageData {
     const randomId = FALLBACK_IMAGES[Math.floor(Math.random() * FALLBACK_IMAGES.length)];
     return {
-      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`,
+      url: `https://images.unsplash.com/${randomId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=${IMAGE_WIDTH}&q=80`,
       photographer: 'Unsplash',
       source: 'fallback',
       id: randomId

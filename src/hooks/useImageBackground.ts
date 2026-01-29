@@ -6,12 +6,14 @@ import { Quote } from '../data/quotes';
 export const useImageBackground = (quote: Quote | null) => {
   const [imageData, setImageData] = useState<ImageData | null>(null);
   const [loading, setLoading] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     if (!quote) return;
 
     const fetchImage = async () => {
       setLoading(true);
+      setIsLoaded(false);
       try {
         const image = await imageService.getImageForQuote(quote.text, quote.category);
         setImageData(image);
@@ -19,7 +21,7 @@ export const useImageBackground = (quote: Quote | null) => {
         console.error('Error fetching background image:', error);
         // Use a default fallback
         setImageData({
-          url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+          url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
           photographer: 'Unsplash',
           source: 'fallback',
           id: 'default'
@@ -38,5 +40,27 @@ export const useImageBackground = (quote: Quote | null) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quote?.id, quote?.text, quote?.category]);
 
-  return { imageData, loading };
+  useEffect(() => {
+    if (!imageData?.url) return;
+
+    let isActive = true;
+    const img = new Image();
+    img.src = imageData.url;
+    img.onload = () => {
+      if (isActive) {
+        setIsLoaded(true);
+      }
+    };
+    img.onerror = () => {
+      if (isActive) {
+        setIsLoaded(true);
+      }
+    };
+
+    return () => {
+      isActive = false;
+    };
+  }, [imageData?.url]);
+
+  return { imageData, loading, isLoaded };
 };

@@ -14,7 +14,7 @@ interface QuoteCardProps {
 // have not changed. This is crucial for performance, especially if the parent component
 // re-renders frequently, as it avoids re-calculating animations and styles for visible cards.
 export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, className }) => {
-  const { imageData, loading } = useImageBackground(quote);
+  const { imageData, isLoaded } = useImageBackground(quote);
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -50,13 +50,18 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
         'relative overflow-hidden rounded-3xl p-8 md:p-12 text-white min-h-[400px] md:min-h-[450px] flex flex-col justify-center items-center text-center shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98]',
         className
       )}
-      style={{
-        backgroundImage: imageData ? `url(${imageData.url})` : undefined,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
     >
+      {/* Background image layer with smooth fade-in */}
+      <div
+        className={cn(
+          'absolute inset-0 bg-cover bg-center transition-opacity duration-700',
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        )}
+        style={{
+          backgroundImage: imageData ? `url(${imageData.url})` : undefined,
+        }}
+      />
+
       {/* Enhanced gradient overlay */}
       <div
         className={cn(
@@ -68,13 +73,6 @@ export const QuoteCard: React.FC<QuoteCardProps> = React.memo(({ quote, classNam
 
       {/* Dark overlay for better readability */}
       <div className="absolute inset-0 bg-black/20" />
-
-      {/* Loading state with better animation */}
-      {loading && (
-        <div className="absolute inset-0 bg-black/10 flex items-center justify-center backdrop-blur-sm">
-          <div className="w-10 h-10 border-3 border-white/20 border-t-white rounded-full animate-spin" />
-        </div>
-      )}
 
       {/* Content with improved typography */}
       <div className="relative z-10 max-w-full mx-auto px-4">
